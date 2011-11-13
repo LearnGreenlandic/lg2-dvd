@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
     QCoreApplication app(argc, argv);
     app.setOrganizationDomain("learngreenlandic.com");
     app.setOrganizationName("LearnGreenlandic");
-    app.setApplicationName("LG Encryption Helper");
+    app.setApplicationName("Learn Greenlandic 2");
 
     QStringList args = app.arguments();
     QIODevice *input, *output;

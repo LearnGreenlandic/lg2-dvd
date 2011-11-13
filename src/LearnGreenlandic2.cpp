@@ -1,3 +1,5 @@
+#include "TaskChooser.hpp"
+#include "common.hpp"
 #include <QtGui>
 #include <ctime>
 #include <cstdlib>
@@ -14,7 +16,7 @@ int main(int argc, char *argv[]) {
     QSettings settings;
 
     if (!settings.isWritable()) {
-        QMessageBox::critical(0, "Settings Not Writable!", "Unable to store user-specific settings. Cannot continue...");
+        QMessageBox::critical(0, "Settings Not Writable!", "Unable to store user-specific settings. Maybe you don't have any rights on this machine?");
         app.exit(-1);
         return -1;
     }
@@ -24,22 +26,25 @@ int main(int argc, char *argv[]) {
     qsrand(seed);
     srand(seed);
 
-    QDir tDir(app.applicationDirPath());
-    while (!tDir.exists("./lessons/1/danish/0.png") && tDir.cdUp()) {
-    }
+    dirmap_t dirs;
 
-    QDir dataDir(tDir.absolutePath() + "/lessons");
-    if (!dataDir.exists() || !dataDir.exists("./1/danish/lecture.dat") || !dataDir.exists("./1/danish/0.png")) {
-        QFileInfoList drives = QDir::drives();
-        foreach (QFileInfo drive, drives) {
-            if (drive.absoluteDir().exists("./lessons/1/danish/0.png")) {
-                dataDir = drive.absoluteDir().absolutePath() + "/lessons";
-                break;
-            }
+    QDir tDir(app.applicationDirPath());
+    do {
+        size_t rev = 0;
+        if (tDir.exists("./lessons2/revision.txt") && (rev = read_revision(tDir.absoluteFilePath("./lessons2/revision.txt")))) {
+            dirs.insert(std::make_pair(rev, tDir.absoluteFilePath("lessons2")));
+        }
+    } while (tDir.cdUp());
+
+    QFileInfoList drives = QDir::drives();
+    foreach (QFileInfo drive, drives) {
+        size_t rev = 0;
+        if (drive.absoluteDir().exists("./lessons2/revision.txt") && (rev = read_revision(drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt")))) {
+            dirs.insert(std::make_pair(rev, drive.absoluteDir().absoluteFilePath("lessons2")));
         }
     }
-    if (!dataDir.exists() || !dataDir.exists("./1/danish/lecture.dat") || !dataDir.exists("./1/danish/0.png")) {
-        QMessageBox::critical(0, "Missing Data!", "Could not find required files in lessons/1/danish/");
+    if (dirs.empty() || find_newest(dirs, "./revision.txt").isEmpty()) {
+        QMessageBox::critical(0, "Missing Data!", "Could not find a suitable lessons2 folder. Maybe you forgot to insert the DVD?");
         app.exit(-1);
         return -1;
     }
@@ -62,19 +67,19 @@ int main(int argc, char *argv[]) {
     lang = settings.value("language").toString();
     QTranslator translator;
     if (lang == "english") {
-        translator.load("texts_en", dataDir.absoluteFilePath("./i18n/"));
+        translator.load(find_newest(dirs, "i18n/texts_en.qm"));
     }
     else {
-        translator.load("texts_da", dataDir.absoluteFilePath("./i18n/"));
+        translator.load(find_newest(dirs, "i18n/texts_da.qm"));
     }
     app.installTranslator(&translator);
 
-    /*
-    TaskChooser tc(dataDir, &translator);
+    TaskChooser tc(dirs, &translator);
     tc.show();
     tc.raise();
     tc.activateWindow();
 
+    /*
     QTimer::singleShot(1000, &tc, SLOT(checkFirstRun()));
     //*/
 
