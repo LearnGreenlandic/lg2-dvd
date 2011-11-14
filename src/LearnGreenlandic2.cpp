@@ -7,6 +7,10 @@
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
+
+    QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
+    QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
+
     app.setOrganizationDomain("learngreenlandic.com");
     app.setOrganizationName("LearnGreenlandic");
     app.setApplicationName("Learn Greenlandic 2");
@@ -48,6 +52,10 @@ int main(int argc, char *argv[]) {
         app.exit(-1);
         return -1;
     }
+
+    QTranslator xtl;
+    xtl.load(find_newest(dirs, "i18n/texts_da.qm"));
+    app.installTranslator(&xtl);
 
     QString lang = settings.value("language").toString();
     if (lang != "english" && lang != "danish") {
