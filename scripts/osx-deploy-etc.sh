@@ -1,3 +1,3 @@
-time macdeployqt LearnGreenlandic.app -dmg
-mv LearnGreenlandic.app "Learn Greenlandic.app"
-rsync -avzP --delete "Learn Greenlandic.app" kal@learngreenlandic.com:public_html/demo/
+time macdeployqt LearnGreenlandic2.app -dmg
+mv LearnGreenlandic2.app "Learn Greenlandic 2.app"
+rsync -avzP --delete "Learn Greenlandic 2.app" kal@learngreenlandic.com:public_html/demo2/
