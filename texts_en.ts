@@ -397,6 +397,12 @@ Prøv igen...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="src/TaskChooser.cpp" line="309"/>
+        <location filename="src/TaskChooser.cpp" line="641"/>
+        <source>Øvelse 7.3.1: Absolut og relativ (tekst)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="src/TaskChooser.cpp" line="314"/>
         <location filename="src/TaskChooser.cpp" line="645"/>
         <source>Øvelse 7.3.2: Absolut og relativ (tekst)</source>

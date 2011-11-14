@@ -10,7 +10,7 @@ curAt(-1)
 
     QVBoxLayout *qvbl = new QVBoxLayout;
 
-    QLabel *ql = new QLabel(tr(which.toStdString().c_str()));
+    QLabel *ql = new QLabel(trUtf8(which.toStdString().c_str()));
     ql->setWordWrap(true);
     qvbl->addWidget(ql);
     qvbl->addSpacing(5);
@@ -22,14 +22,14 @@ curAt(-1)
 
     input = new QLineEdit;
     connect(input, SIGNAL(returnPressed()), this, SLOT(checkInput()));
-    QPushButton *check = new QPushButton(tr("Check"));
+    QPushButton *check = new QPushButton(trUtf8("Check"));
     connect(check, SIGNAL(clicked()), this, SLOT(checkInput()));
 
-    yield = new QPushButton(tr("Giv op..."));
+    yield = new QPushButton(trUtf8("Giv op..."));
     connect(yield, SIGNAL(clicked()), this, SLOT(yieldWord()));
 
     result = new QLabel;
-    qvbl->addWidget(new QLabel(tr("Skriv svaret:")));
+    qvbl->addWidget(new QLabel(trUtf8("Skriv svaret:")));
     qvbl->addWidget(input);
     qvbl->addWidget(check);
     qvbl->addWidget(result);
@@ -39,7 +39,7 @@ curAt(-1)
 
     qvbl->addSpacing(15);
 
-    QPushButton *nb = new QPushButton(tr("Gå til næste ord"));
+    QPushButton *nb = new QPushButton(trUtf8("Gå til næste ord"));
     connect(nb, SIGNAL(clicked()), this, SLOT(showNext()));
     qvbl->addWidget(nb);
 
@@ -51,9 +51,9 @@ curAt(-1)
 void QATextOnly::showNext() {
     ++curAt;
     if (curAt >= data.size()) {
-        QMessageBox mbox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?"));
-        QPushButton *yes = mbox.addButton(tr("Ja, næste øvelse"), QMessageBox::YesRole);
-        mbox.addButton(tr("Nej, tilbage til menuen"), QMessageBox::NoRole);
+        QMessageBox mbox(QMessageBox::Question, trUtf8("Færdig!"), trUtf8("Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?"));
+        QPushButton *yes = mbox.addButton(trUtf8("Ja, næste øvelse"), QMessageBox::YesRole);
+        mbox.addButton(trUtf8("Nej, tilbage til menuen"), QMessageBox::NoRole);
         mbox.exec();
 
         if (mbox.clickedButton() == yes) {
@@ -76,15 +76,15 @@ void QATextOnly::showNext() {
 
 void QATextOnly::checkInput() {
     if (input->text() == data.getA(curAt)) {
-        result->setText(QString("<center><span style='color: darkgreen;'><b>") + tr("Korrekt!") + "</b></span></center>");
+        result->setText(QString("<center><span style='color: darkgreen;'><b>") + trUtf8("Korrekt!") + "</b></span></center>");
         yield->hide();
     }
     else if (input->text().compare(data.getA(curAt), Qt::CaseInsensitive) == 0) {
-        result->setText(QString("<center><span style='color: darkyellow;'><b>") + tr("Næsten korrekt.\nStore og små bogstaver gælder...") + "</b></span></center>");
+        result->setText(QString("<center><span style='color: darkyellow;'><b>") + trUtf8("Næsten korrekt.\nStore og små bogstaver gælder...") + "</b></span></center>");
         yield->show();
     }
     else {
-        result->setText(QString("<center><span style='color: darkred;'><b>") + tr("Ikke korrekt.\nPrøv igen...") + "</b></span></center>");
+        result->setText(QString("<center><span style='color: darkred;'><b>") + trUtf8("Ikke korrekt.\nPrøv igen...") + "</b></span></center>");
         yield->show();
     }
     result->show();
@@ -94,6 +94,6 @@ void QATextOnly::checkInput() {
 }
 
 void QATextOnly::yieldWord() {
-    QMessageBox::information(0, tr("Hrhm..."), QString("<h1>") + tr("Det korrekte ord var:") + QString("</h1><br>") + data.getA(curAt));
+    QMessageBox::information(0, trUtf8("Hrhm..."), QString("<h1>") + trUtf8("Det korrekte ord var:") + QString("</h1><br>") + data.getA(curAt));
     showNext();
 }
