@@ -60,10 +60,13 @@ int main(int argc, char *argv[]) {
     QString lang = settings.value("language").toString();
     if (lang != "english" && lang != "danish") {
         QMessageBox langq(QMessageBox::Question,
-                          QT_TR_NOOP_UTF8("First question / Første spørgsmål..."),
-                          QT_TR_NOOP_UTF8("Do you prefer English or Danish?\nYou can change language later from the main menu.\n\nForetrækker du engelsk eller dansk?\nDu kan skife sprog senere fra hovedmenuen."));
-        QPushButton *lang_eng = langq.addButton(QT_TR_NOOP_UTF8("I prefer English"), QMessageBox::YesRole);
-        langq.addButton(QT_TR_NOOP_UTF8("Jeg foretrækker dansk"), QMessageBox::NoRole);
+                          "First question / Første spørgsmål...",
+                          "Do you prefer English or Danish?\n"
+                          "You can change language later from the main menu.\n\n"
+                          "Foretrækker du engelsk eller dansk?\n"
+                          "Du kan skife sprog senere fra hovedmenuen.");
+        QPushButton *lang_eng = langq.addButton("I prefer English", QMessageBox::YesRole);
+        langq.addButton("Jeg foretrækker dansk", QMessageBox::NoRole);
 
         langq.exec();
         if (langq.clickedButton() == lang_eng) {
