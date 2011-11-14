@@ -20,7 +20,8 @@ SOURCES += \
     src/QAData.cpp \
     src/QATextOnly.cpp \
     src/ScalingGraphicsView.cpp \
-    src/TaskChooser.cpp
+    src/TaskChooser.cpp \
+    src/LecturePlayer.cpp
 
 HEADERS  += \
     src/CryptFile.hpp \
@@ -28,7 +29,8 @@ HEADERS  += \
     src/QAData.hpp \
     src/QATextOnly.hpp \
     src/ScalingGraphicsView.hpp \
-    src/TaskChooser.hpp
+    src/TaskChooser.hpp \
+    src/LecturePlayer.hpp
 
 CONFIG -= warn_off
 CONFIG += warn_on

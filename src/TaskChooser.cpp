@@ -1,4 +1,5 @@
 #include "QATextOnly.hpp"
+#include "LecturePlayer.hpp"
 #include "TaskChooser.hpp"
 
 #include <QtGlobal>
@@ -18,6 +19,23 @@ translator(translator)
 
     QVBoxLayout *vbox = new QVBoxLayout;
     vbox->setContentsMargins(0,0,0,0);
+
+    button = new QPushButton(trUtf8("Switch to English"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(toggleLanguage()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    vbox->addSpacing(10);
+
+    button = new QPushButton(trUtf8("Forelæsning 1.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_1_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("Forelæsning 1.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_1_2()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     button = new QPushButton(trUtf8("Øvelse 1.3: Brug Vb+TAR I (tekst)"));
     button->setFlat(true);
@@ -50,6 +68,16 @@ translator(translator)
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     vbox->addSpacing(10);
+
+    button = new QPushButton(trUtf8("Forelæsning 2.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_2_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("Forelæsning 2.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_2_2()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     /*
     button = new QPushButton(trUtf8("Øvelse 2.1: Øv din lydopfattelse"));
@@ -85,6 +113,16 @@ translator(translator)
 
     vbox->addSpacing(10);
 
+    button = new QPushButton(trUtf8("Forelæsning 3.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_3_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("Forelæsning 3.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_3_2()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
     button = new QPushButton(trUtf8("Øvelse 3.1: Personendelser I (tekst)"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_3_1_text()));
@@ -106,6 +144,16 @@ translator(translator)
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     vbox->addSpacing(10);
+
+    button = new QPushButton(trUtf8("Forelæsning 4.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_4_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("Forelæsning 4.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_4_2()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     button = new QPushButton(trUtf8("Øvelse 4.1: Tilhængspartiklerne LI og LU (tekst)"));
     button->setFlat(true);
@@ -138,6 +186,16 @@ translator(translator)
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     vbox->addSpacing(10);
+
+    button = new QPushButton(trUtf8("Forelæsning 5.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_5_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("Forelæsning 5.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_5_2()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     button = new QPushButton(trUtf8("Øvelse 5.1: De første causativer (tekst)"));
     button->setFlat(true);
@@ -175,6 +233,16 @@ translator(translator)
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     vbox->addSpacing(10);
+
+    button = new QPushButton(trUtf8("Forelæsning 6.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_6_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("Forelæsning 6.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_6_2()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     button = new QPushButton(trUtf8("Øvelse 6.1: Øv N-U og N-U-NNGIT sammen med tilhængspartiklerne LI og LU (tekst)"));
     button->setFlat(true);
@@ -218,6 +286,16 @@ translator(translator)
 
     vbox->addSpacing(10);
 
+    button = new QPushButton(trUtf8("Forelæsning 7.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_7_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("Forelæsning 7.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_7_2()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
     button = new QPushButton(trUtf8("Øvelse 7.1: Brug den spørgende dummy su- (tekst)"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_7_1_text()));
@@ -250,6 +328,16 @@ translator(translator)
 
     vbox->addSpacing(10);
 
+    button = new QPushButton(trUtf8("Forelæsning 8.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_8_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("Forelæsning 8.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_8_2()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
     button = new QPushButton(trUtf8("Øvelse 8.2.1: Øv strukturen Vb+TUQ-QAR (tekst)"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_8_2_1_text()));
@@ -270,6 +358,18 @@ translator(translator)
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_8_3_2_text()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
+    vbox->addSpacing(10);
+
+    button = new QPushButton(trUtf8("Forelæsning 9.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_9_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("Forelæsning 9.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showLecture_9_2()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
     vbox->setAlignment(Qt::AlignCenter|Qt::AlignTop);
 
     widget->setLayout(vbox);
@@ -278,11 +378,108 @@ translator(translator)
     setMinimumWidth(widget->width()+50);
 }
 
+void TaskChooser::showLecture(QString which, QString title) {
+    LecturePlayer *lp = new LecturePlayer(*this, which, title);
+    lp->show();
+    lp->raise();
+    lp->activateWindow();
+}
+
 void TaskChooser::showExercise_qaTextOnly(QString which, QString title) {
-    QATextOnly *qa = new QATextOnly(dirs, which, title);
+    QATextOnly *qa = new QATextOnly(*this, which, title);
     qa->show();
     qa->raise();
     qa->activateWindow();
+}
+
+void TaskChooser::showLecture_1_1() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/1.1", trUtf8("Forelæsning 1.1"));
+}
+
+void TaskChooser::showLecture_1_2() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/1.2", trUtf8("Forelæsning 1.2"));
+}
+
+void TaskChooser::showLecture_2_1() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/2.1", trUtf8("Forelæsning 2.1"));
+}
+
+void TaskChooser::showLecture_2_2() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/2.2", trUtf8("Forelæsning 2.2"));
+}
+
+void TaskChooser::showLecture_3_1() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/3.1", trUtf8("Forelæsning 3.1"));
+}
+
+void TaskChooser::showLecture_3_2() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/3.2", trUtf8("Forelæsning 3.2"));
+}
+
+void TaskChooser::showLecture_4_1() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/4.1", trUtf8("Forelæsning 4.1"));
+}
+
+void TaskChooser::showLecture_4_2() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/4.2", trUtf8("Forelæsning 4.2"));
+}
+
+void TaskChooser::showLecture_5_1() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/5.1", trUtf8("Forelæsning 5.1"));
+}
+
+void TaskChooser::showLecture_5_2() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/5.2", trUtf8("Forelæsning 5.2"));
+}
+
+void TaskChooser::showLecture_6_1() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/6.1", trUtf8("Forelæsning 6.1"));
+}
+
+void TaskChooser::showLecture_6_2() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/6.2", trUtf8("Forelæsning 6.2"));
+}
+
+void TaskChooser::showLecture_7_1() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/7.1", trUtf8("Forelæsning 7.1"));
+}
+
+void TaskChooser::showLecture_7_2() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/7.2", trUtf8("Forelæsning 7.2"));
+}
+
+void TaskChooser::showLecture_8_1() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/8.1", trUtf8("Forelæsning 8.1"));
+}
+
+void TaskChooser::showLecture_8_2() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/8.2", trUtf8("Forelæsning 8.2"));
+}
+
+void TaskChooser::showLecture_9_1() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/9.1", trUtf8("Forelæsning 9.1"));
+}
+
+void TaskChooser::showLecture_9_2() {
+    QSettings settings;
+    showLecture(QString("lectures/") + settings.value("language").toString() + "/9.2", trUtf8("Forelæsning 9.2"));
 }
 
 void TaskChooser::showExercise_1_3_text() {

@@ -4,6 +4,8 @@
 #include <QtGui>
 #include <map>
 
+const int revision = 7676;
+
 typedef std::multimap<size_t,QString,std::greater<size_t> > dirmap_t;
 
 QString find_newest(const dirmap_t& dirs, const QString& name);

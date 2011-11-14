@@ -10,6 +10,8 @@ int main(int argc, char *argv[]) {
     app.setOrganizationName("LearnGreenlandic");
     app.setApplicationName("Learn Greenlandic 2");
 
+    QSettings::setDefaultFormat(QSettings::IniFormat);
+
     QStringList args = app.arguments();
     QIODevice *input, *output;
 

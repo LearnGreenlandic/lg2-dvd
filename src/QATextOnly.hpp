@@ -2,13 +2,14 @@
 #define QATEXTONLY_HPP
 
 #include "QAData.hpp"
+#include "TaskChooser.hpp"
 #include <QtGui>
 
 class QATextOnly : public QWidget {
     Q_OBJECT
 
 public:
-    explicit QATextOnly(const dirmap_t& dirs, QString which, QString title);
+    explicit QATextOnly(TaskChooser& tc, QString which, QString title);
 
 public slots:
     void showNext();
@@ -16,6 +17,8 @@ public slots:
     void yieldWord();
 
 private:
+    TaskChooser& tc;
+
     QAData data;
     int curAt;
 

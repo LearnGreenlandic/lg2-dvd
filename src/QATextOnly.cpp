@@ -1,8 +1,9 @@
 #include "QATextOnly.hpp"
 
-QATextOnly::QATextOnly(const dirmap_t& dirs, QString which, QString title) :
+QATextOnly::QATextOnly(TaskChooser& tc, QString which, QString title) :
 QWidget(0, Qt::Window | Qt::WindowTitleHint | Qt::WindowMinMaxButtonsHint | Qt::WindowCloseButtonHint),
-data(dirs, which),
+tc(tc),
+data(tc.dirs, which),
 curAt(-1)
 {
     setWindowTitle(title);
