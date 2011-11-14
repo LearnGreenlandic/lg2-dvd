@@ -4,7 +4,7 @@
 #include "common.hpp"
 #include <QtGui>
 
-class TaskChooser : public QWidget {
+class TaskChooser : public QScrollArea {
     Q_OBJECT
 
 public:
@@ -44,6 +44,27 @@ public slots:
     void showExercise_5_4_2_text();
     void showExercise_5_5_text();
     void showExercise_5_6_text();
+
+    void showExercise_6_1_text();
+    void showExercise_6_2_text();
+    void showExercise_6_3_1_text();
+    void showExercise_6_3_2_text();
+    void showExercise_6_4_1_text();
+    void showExercise_6_4_2_text();
+    void showExercise_6_5_text();
+    void showExercise_6_6_text();
+
+    void showExercise_7_1_text();
+    void showExercise_7_2_text();
+    void showExercise_7_3_1_text();
+    void showExercise_7_3_2_text();
+    void showExercise_7_4_text();
+    void showExercise_7_5_text();
+
+    void showExercise_8_2_1_text();
+    void showExercise_8_2_2_text();
+    void showExercise_8_3_1_text();
+    void showExercise_8_3_2_text();
 
     void toggleLanguage();
 

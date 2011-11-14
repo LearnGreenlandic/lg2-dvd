@@ -7,6 +7,8 @@ TARGET = LearnGreenlandic2
 TEMPLATE = app
 
 TRANSLATIONS = texts_da.ts texts_en.ts
+CODECFORSRC = UTF-8
+CODECFORTR = UTF-8
 
 RC_FILE = lg.rc
 ICON = icon.icns
