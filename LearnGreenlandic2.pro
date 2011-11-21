@@ -21,7 +21,11 @@ SOURCES += \
     src/QATextOnly.cpp \
     src/ScalingGraphicsView.cpp \
     src/TaskChooser.cpp \
-    src/LecturePlayer.cpp
+    src/LecturePlayer.cpp \
+    src/UpdownTwo.cpp \
+    src/UpdownThree.cpp \
+    src/UpdownOne.cpp \
+    src/UpdownData.cpp
 
 HEADERS  += \
     src/CryptFile.hpp \
@@ -30,7 +34,11 @@ HEADERS  += \
     src/QATextOnly.hpp \
     src/ScalingGraphicsView.hpp \
     src/TaskChooser.hpp \
-    src/LecturePlayer.hpp
+    src/LecturePlayer.hpp \
+    src/UpdownTwo.hpp \
+    src/UpdownThree.hpp \
+    src/UpdownOne.hpp \
+    src/UpdownData.hpp
 
 CONFIG -= warn_off
 CONFIG += warn_on

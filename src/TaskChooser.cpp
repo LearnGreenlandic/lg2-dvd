@@ -1,4 +1,7 @@
 #include "QATextOnly.hpp"
+#include "UpdownOne.hpp"
+#include "UpdownTwo.hpp"
+#include "UpdownThree.hpp"
 #include "LecturePlayer.hpp"
 #include "TaskChooser.hpp"
 
@@ -30,6 +33,11 @@ translator(translator)
     button = new QPushButton(trUtf8("Forelæsning 1.1"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture_1_1()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("FST 1.1"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showFST_1_1()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     button = new QPushButton(trUtf8("Forelæsning 1.2"));
@@ -65,6 +73,11 @@ translator(translator)
     button = new QPushButton(trUtf8("Øvelse 1.8: Brug N-U{+vuq} (tekst)"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_1_8_text()));
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    button = new QPushButton(trUtf8("FST 1.2"));
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(showFST_1_2()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
     vbox->addSpacing(10);
@@ -385,11 +398,96 @@ void TaskChooser::showLecture(QString which, QString title) {
     lp->activateWindow();
 }
 
+void TaskChooser::showFST_Reception(QString which, QString title) {
+    UpdownOne *ud = new UpdownOne(*this, which, title);
+    ud->show();
+    ud->raise();
+    ud->activateWindow();
+}
+
+void TaskChooser::showFST_DownFromGloss(QString which, QString title) {
+    UpdownTwo *ud = new UpdownTwo(*this, which, title);
+    ud->show();
+    ud->raise();
+    ud->activateWindow();
+}
+
+void TaskChooser::showFST_DownFromTranslate(QString which, QString title) {
+    UpdownThree *ud = new UpdownThree(*this, which, title);
+    ud->show();
+    ud->raise();
+    ud->activateWindow();
+}
+
 void TaskChooser::showExercise_qaTextOnly(QString which, QString title) {
     QATextOnly *qa = new QATextOnly(*this, which, title);
     qa->show();
     qa->raise();
     qa->activateWindow();
+}
+
+void TaskChooser::showFST_1_1() {
+    showFST_Reception("fsts/1.1", "FST 1.1: Reception");
+}
+
+void TaskChooser::showFST_1_2() {
+
+}
+
+void TaskChooser::showFST_2_1() {
+
+}
+
+void TaskChooser::showFST_2_2() {
+
+}
+
+void TaskChooser::showFST_3_1() {
+
+}
+
+void TaskChooser::showFST_3_2() {
+
+}
+
+void TaskChooser::showFST_4_1() {
+
+}
+
+void TaskChooser::showFST_4_2() {
+
+}
+
+void TaskChooser::showFST_5_1() {
+
+}
+
+void TaskChooser::showFST_5_2() {
+
+}
+
+void TaskChooser::showFST_6_1() {
+
+}
+
+void TaskChooser::showFST_6_2() {
+
+}
+
+void TaskChooser::showFST_7_1() {
+
+}
+
+void TaskChooser::showFST_7_2() {
+
+}
+
+void TaskChooser::showFST_8_1() {
+
+}
+
+void TaskChooser::showFST_8_2() {
+
 }
 
 void TaskChooser::showLecture_1_1() {
