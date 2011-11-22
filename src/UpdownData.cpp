@@ -54,11 +54,11 @@ void UpdownData::loadRandom() {
         throw(-1);
     }
 
-#ifdef Q_WS_WIN
+#if defined(Q_WS_WIN)
     QString foma = find_newest(dirs, "foma/win32/foma.exe");
-#elif Q_WS_MAC
+#elif defined(Q_WS_MAC)
     QString foma = find_newest(dirs, "foma/osx/foma");
-#elif Q_OS_LINUX
+#elif defined(Q_OS_LINUX)
     QString foma;
     if (sizeof(void*) == 8) {
         foma = find_newest(dirs, "foma/linux_64/foma");
