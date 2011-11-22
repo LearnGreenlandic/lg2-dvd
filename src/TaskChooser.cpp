@@ -7,6 +7,30 @@
 
 #include <QtGlobal>
 
+#define MK_FST_RECEPTION(which, title) \
+    p = QPair<QString,QString>(which, title); \
+    button = new QPushButton(p.second); \
+    button->setFlat(true); \
+    mappings[button] = p; \
+    connect(button, SIGNAL(clicked()), this, SLOT(showFST_Reception())); \
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+#define MK_FST_DFG(which, title) \
+    p = QPair<QString,QString>(which, title); \
+    button = new QPushButton(p.second); \
+    button->setFlat(true); \
+    mappings[button] = p; \
+    connect(button, SIGNAL(clicked()), this, SLOT(showFST_DownFromGloss())); \
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+#define MK_FST_DFT(which, title) \
+    p = QPair<QString,QString>(which, title); \
+    button = new QPushButton(p.second); \
+    button->setFlat(true); \
+    mappings[button] = p; \
+    connect(button, SIGNAL(clicked()), this, SLOT(showFST_DownFromTranslate())); \
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
 TaskChooser::TaskChooser(const dirmap_t& dirs, QTranslator *translator) :
 dirs(dirs),
 translator(translator)
@@ -18,7 +42,9 @@ translator(translator)
     QWidget *widget = new QWidget(this);
     widget->setContentsMargins(5,5,5,5);
     widget->setStyleSheet("margin: 0; padding: 0; text-align: left;");
+
     QPushButton *button;
+    QPair<QString,QString> p;
 
     QVBoxLayout *vbox = new QVBoxLayout;
     vbox->setContentsMargins(0,0,0,0);
@@ -35,10 +61,9 @@ translator(translator)
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture_1_1()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
-    button = new QPushButton(trUtf8("FST 1.1"));
-    button->setFlat(true);
-    connect(button, SIGNAL(clicked()), this, SLOT(showFST_1_1()));
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+    MK_FST_RECEPTION("fsts/1.1", tr("FST 1.1.1: Reception"));
+    MK_FST_DFG("fsts/1.1", tr("FST 1.1.2: Produktion"));
+    MK_FST_DFT("fsts/1.1", tr("FST 1.1.3: Oversættelse"));
 
     button = new QPushButton(trUtf8("Forelæsning 1.2"));
     button->setFlat(true);
@@ -75,10 +100,9 @@ translator(translator)
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_1_8_text()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
-    button = new QPushButton(trUtf8("FST 1.2"));
-    button->setFlat(true);
-    connect(button, SIGNAL(clicked()), this, SLOT(showFST_1_2()));
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+    MK_FST_RECEPTION("fsts/1.2", tr("FST 1.2.1: Reception"));
+    MK_FST_DFG("fsts/1.2", tr("FST 1.2.2: Produktion"));
+    MK_FST_DFT("fsts/1.2", tr("FST 1.2.3: Oversættelse"));
 
     vbox->addSpacing(10);
 
@@ -86,6 +110,10 @@ translator(translator)
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture_2_1()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    MK_FST_RECEPTION("fsts/2.1", tr("FST 2.1.1: Reception"));
+    MK_FST_DFG("fsts/2.1", tr("FST 2.1.2: Produktion"));
+    MK_FST_DFT("fsts/2.1", tr("FST 2.1.3: Oversættelse"));
 
     button = new QPushButton(trUtf8("Forelæsning 2.2"));
     button->setFlat(true);
@@ -124,12 +152,20 @@ translator(translator)
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_2_5_text()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
+    MK_FST_RECEPTION("fsts/2.2", tr("FST 2.2.1: Reception"));
+    MK_FST_DFG("fsts/2.2", tr("FST 2.2.2: Produktion"));
+    MK_FST_DFT("fsts/2.2", tr("FST 2.2.3: Oversættelse"));
+
     vbox->addSpacing(10);
 
     button = new QPushButton(trUtf8("Forelæsning 3.1"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture_3_1()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    MK_FST_RECEPTION("fsts/3.1", tr("FST 3.1.1: Reception"));
+    MK_FST_DFG("fsts/3.1", tr("FST 3.1.2: Produktion"));
+    MK_FST_DFT("fsts/3.1", tr("FST 3.1.3: Oversættelse"));
 
     button = new QPushButton(trUtf8("Forelæsning 3.2"));
     button->setFlat(true);
@@ -156,12 +192,20 @@ translator(translator)
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_3_4_text()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
+    MK_FST_RECEPTION("fsts/3.2", tr("FST 3.2.1: Reception"));
+    MK_FST_DFG("fsts/3.2", tr("FST 3.2.2: Produktion"));
+    MK_FST_DFT("fsts/3.2", tr("FST 3.2.3: Oversættelse"));
+
     vbox->addSpacing(10);
 
     button = new QPushButton(trUtf8("Forelæsning 4.1"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture_4_1()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    MK_FST_RECEPTION("fsts/4.1", tr("FST 4.1.1: Reception"));
+    MK_FST_DFG("fsts/4.1", tr("FST 4.1.2: Produktion"));
+    MK_FST_DFT("fsts/4.1", tr("FST 4.1.3: Oversættelse"));
 
     button = new QPushButton(trUtf8("Forelæsning 4.2"));
     button->setFlat(true);
@@ -198,12 +242,20 @@ translator(translator)
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_4_5_text()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
+    MK_FST_RECEPTION("fsts/4.2", tr("FST 4.2.1: Reception"));
+    MK_FST_DFG("fsts/4.2", tr("FST 4.2.2: Produktion"));
+    MK_FST_DFT("fsts/4.2", tr("FST 4.2.3: Oversættelse"));
+
     vbox->addSpacing(10);
 
     button = new QPushButton(trUtf8("Forelæsning 5.1"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture_5_1()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    MK_FST_RECEPTION("fsts/5.1", tr("FST 5.1.1: Reception"));
+    MK_FST_DFG("fsts/5.1", tr("FST 5.1.2: Produktion"));
+    MK_FST_DFT("fsts/5.1", tr("FST 5.1.3: Oversættelse"));
 
     button = new QPushButton(trUtf8("Forelæsning 5.2"));
     button->setFlat(true);
@@ -245,12 +297,20 @@ translator(translator)
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_5_6_text()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
+    MK_FST_RECEPTION("fsts/5.2", tr("FST 5.2.1: Reception"));
+    MK_FST_DFG("fsts/5.2", tr("FST 5.2.2: Produktion"));
+    MK_FST_DFT("fsts/5.2", tr("FST 5.2.3: Oversættelse"));
+
     vbox->addSpacing(10);
 
     button = new QPushButton(trUtf8("Forelæsning 6.1"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture_6_1()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    MK_FST_RECEPTION("fsts/6.1", tr("FST 6.1.1: Reception"));
+    MK_FST_DFG("fsts/6.1", tr("FST 6.1.2: Produktion"));
+    MK_FST_DFT("fsts/6.1", tr("FST 6.1.3: Oversættelse"));
 
     button = new QPushButton(trUtf8("Forelæsning 6.2"));
     button->setFlat(true);
@@ -297,12 +357,20 @@ translator(translator)
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_6_6_text()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
+    MK_FST_RECEPTION("fsts/6.2", tr("FST 6.2.1: Reception"));
+    MK_FST_DFG("fsts/6.2", tr("FST 6.2.2: Produktion"));
+    MK_FST_DFT("fsts/6.2", tr("FST 6.2.3: Oversættelse"));
+
     vbox->addSpacing(10);
 
     button = new QPushButton(trUtf8("Forelæsning 7.1"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture_7_1()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    MK_FST_RECEPTION("fsts/7.1", tr("FST 7.1.1: Reception"));
+    MK_FST_DFG("fsts/7.1", tr("FST 7.1.2: Produktion"));
+    MK_FST_DFT("fsts/7.1", tr("FST 7.1.3: Oversættelse"));
 
     button = new QPushButton(trUtf8("Forelæsning 7.2"));
     button->setFlat(true);
@@ -339,12 +407,20 @@ translator(translator)
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_7_5_text()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
+    MK_FST_RECEPTION("fsts/7.2", tr("FST 7.2.1: Reception"));
+    MK_FST_DFG("fsts/7.2", tr("FST 7.2.2: Produktion"));
+    MK_FST_DFT("fsts/7.2", tr("FST 7.2.3: Oversættelse"));
+
     vbox->addSpacing(10);
 
     button = new QPushButton(trUtf8("Forelæsning 8.1"));
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture_8_1()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    MK_FST_RECEPTION("fsts/8.1", tr("FST 8.1.1: Reception"));
+    MK_FST_DFG("fsts/8.1", tr("FST 8.1.2: Produktion"));
+    MK_FST_DFT("fsts/8.1", tr("FST 8.1.3: Oversættelse"));
 
     button = new QPushButton(trUtf8("Forelæsning 8.2"));
     button->setFlat(true);
@@ -370,6 +446,10 @@ translator(translator)
     button->setFlat(true);
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_8_3_2_text()));
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+    MK_FST_RECEPTION("fsts/8.2", tr("FST 8.2.1: Reception"));
+    MK_FST_DFG("fsts/8.2", tr("FST 8.2.2: Produktion"));
+    MK_FST_DFT("fsts/8.2", tr("FST 8.2.3: Oversættelse"));
 
     vbox->addSpacing(10);
 
@@ -398,22 +478,25 @@ void TaskChooser::showLecture(QString which, QString title) {
     lp->activateWindow();
 }
 
-void TaskChooser::showFST_Reception(QString which, QString title) {
-    UpdownOne *ud = new UpdownOne(*this, which, title);
+void TaskChooser::showFST_Reception() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    UpdownOne *ud = new UpdownOne(*this, p.first, p.second);
     ud->show();
     ud->raise();
     ud->activateWindow();
 }
 
-void TaskChooser::showFST_DownFromGloss(QString which, QString title) {
-    UpdownTwo *ud = new UpdownTwo(*this, which, title);
+void TaskChooser::showFST_DownFromGloss() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    UpdownTwo *ud = new UpdownTwo(*this, p.first, p.second);
     ud->show();
     ud->raise();
     ud->activateWindow();
 }
 
-void TaskChooser::showFST_DownFromTranslate(QString which, QString title) {
-    UpdownThree *ud = new UpdownThree(*this, which, title);
+void TaskChooser::showFST_DownFromTranslate() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    UpdownThree *ud = new UpdownThree(*this, p.first, p.second);
     ud->show();
     ud->raise();
     ud->activateWindow();
@@ -424,70 +507,6 @@ void TaskChooser::showExercise_qaTextOnly(QString which, QString title) {
     qa->show();
     qa->raise();
     qa->activateWindow();
-}
-
-void TaskChooser::showFST_1_1() {
-    showFST_Reception("fsts/1.1", "FST 1.1: Reception");
-}
-
-void TaskChooser::showFST_1_2() {
-
-}
-
-void TaskChooser::showFST_2_1() {
-
-}
-
-void TaskChooser::showFST_2_2() {
-
-}
-
-void TaskChooser::showFST_3_1() {
-
-}
-
-void TaskChooser::showFST_3_2() {
-
-}
-
-void TaskChooser::showFST_4_1() {
-
-}
-
-void TaskChooser::showFST_4_2() {
-
-}
-
-void TaskChooser::showFST_5_1() {
-
-}
-
-void TaskChooser::showFST_5_2() {
-
-}
-
-void TaskChooser::showFST_6_1() {
-
-}
-
-void TaskChooser::showFST_6_2() {
-
-}
-
-void TaskChooser::showFST_7_1() {
-
-}
-
-void TaskChooser::showFST_7_2() {
-
-}
-
-void TaskChooser::showFST_8_1() {
-
-}
-
-void TaskChooser::showFST_8_2() {
-
 }
 
 void TaskChooser::showLecture_1_1() {

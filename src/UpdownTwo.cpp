@@ -14,8 +14,7 @@ curAt(-1)
     qvbl->addWidget(ql);
 
     QVBoxLayout *curWord = new QVBoxLayout;
-    up = new QLabel(QString("<center><h2>") + data.updowns.at(curAt).second + "</h2></center>");
-    up->setToolTip(data.glossUpperDetailed(data.updowns.at(curAt).second));
+    up = new QLabel;
     input = new QLineEdit;
     connect(input, SIGNAL(returnPressed()), this, SLOT(checkInput()));
     check = new QPushButton(tr("Check"));
@@ -40,6 +39,8 @@ curAt(-1)
     qvbl->addWidget(nb);
 
     setLayout(qvbl);
+
+    showNext();
 }
 
 void UpdownTwo::showNext() {
@@ -62,7 +63,7 @@ void UpdownTwo::showNext() {
     yield->hide();
     input->setText("");
     input->setFocus();
-    up->setText(QString("<center><h2>") + data.updowns.at(curAt).second + "</h2></center>");
+    up->setText(QString("<center><h2>") + QString(data.updowns.at(curAt).second).replace("<", "&lt;").replace(">", "&gt;") + "</h2></center>");
     up->setToolTip(data.glossUpperDetailed(data.updowns.at(curAt).second));
     adjustSize();
 }

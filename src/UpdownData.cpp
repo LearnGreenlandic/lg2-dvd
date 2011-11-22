@@ -83,7 +83,7 @@ void UpdownData::loadRandom() {
         args.push_back("-e");
         args.push_back(QString("load ") + fstfn);
         args.push_back("-e");
-        args.push_back("random-upper 10000");
+        args.push_back("random-upper 5000");
         args.push_back("-e");
         args.push_back("quit");
 
@@ -176,25 +176,30 @@ void UpdownData::loadRandom() {
         }
     }
 
-    for (int i=0 ; i<ups.size() ; ++i) {
+    if (ups.size() != downs.size()) {
+        QMessageBox::warning(0, "Foma Warning!", "Number of upper did not match lower.");
+    }
+
+    for (int i=0 ; i<ups.size() && i<downs.size() ; ++i) {
         updowns.push_back(qMakePair(downs.at(i), ups.at(i)));
     }
 }
 
 QString UpdownData::glossUpperDetailed(QString upper) {
     QStringList ql;
-    QRegExp qr("[-+]");
+    QRegExp qr("[-<>+]");
     int o = 0, n = 0;
     while ((n = qr.indexIn(upper, o)) != -1) {
         if (o) {
             --o;
         }
-        QString t = upper.mid(o, n-o);
+        QString t = upper.mid(o, n-o), tx = t;
+        tx.replace("<", "&lt;").replace(">", "&gt;");
         if (glosses.find(t) != glosses.end()) {
-            ql.push_back(QString("<tr><td>") + t + "</td><td width='20'>&nbsp;</td><td>" + glosses[t] + "</td></tr>");
+            ql.push_back(QString("<tr><td>") + tx + "</td><td width='20'>&nbsp;</td><td>" + glosses[t] + "</td></tr>");
         }
         else {
-            ql.push_back(QString("<tr><td>") + t + "</td><td width='20'>&nbsp;</td><td>" + t + "</td></tr>");
+            ql.push_back(QString("<tr><td>") + tx + "</td><td width='20'>&nbsp;</td><td>" + tx + "</td></tr>");
         }
         o = n+1;
     }
@@ -202,12 +207,13 @@ QString UpdownData::glossUpperDetailed(QString upper) {
     if (o) {
         --o;
     }
-    QString t = upper.mid(o);
+    QString t = upper.mid(o), tx = t;
+    tx.replace("<", "&lt;").replace(">", "&gt;");
     if (glosses.find(t) != glosses.end()) {
-        ql.push_back(QString("<tr><td>") + t + "</td><td width='20'>&nbsp;</td><td>" + glosses[t] + "</td></tr>");
+        ql.push_back(QString("<tr><td>") + tx + "</td><td width='20'>&nbsp;</td><td>" + glosses[t] + "</td></tr>");
     }
     else {
-        ql.push_back(QString("<tr><td>") + t + "</td><td width='20'>&nbsp;</td><td>" + t + "</td></tr>");
+        ql.push_back(QString("<tr><td>") + tx + "</td><td width='20'>&nbsp;</td><td>" + tx + "</td></tr>");
     }
 
     return QString("<font size='+2'><table>") + ql.join("\n") + "</table></font>";
@@ -215,18 +221,19 @@ QString UpdownData::glossUpperDetailed(QString upper) {
 
 QString UpdownData::glossUpperShort(QString upper) {
     QStringList ql;
-    QRegExp qr("[-+]");
+    QRegExp qr("[-<>+]");
     int o = 0, n = 0;
     while ((n = qr.indexIn(upper, o)) != -1) {
         if (o) {
             --o;
         }
-        QString t = upper.mid(o, n-o);
+        QString t = upper.mid(o, n-o), tx = t;
+        tx.replace("<", "&lt;").replace(">", "&gt;");
         if (glosses.find(t) != glosses.end()) {
             ql.push_back(glosses[t]);
         }
         else {
-            ql.push_back(t);
+            ql.push_back(tx);
         }
         o = n+1;
     }
@@ -234,12 +241,13 @@ QString UpdownData::glossUpperShort(QString upper) {
     if (o) {
         --o;
     }
-    QString t = upper.mid(o);
+    QString t = upper.mid(o), tx = t;
+    tx.replace("<", "&lt;").replace(">", "&gt;");
     if (glosses.find(t) != glosses.end()) {
         ql.push_back(glosses[t]);
     }
     else {
-        ql.push_back(t);
+        ql.push_back(tx);
     }
 
     return QString("<font size='+2'>") + ql.join(" + ") + "</font>";

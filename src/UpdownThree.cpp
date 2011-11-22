@@ -14,7 +14,7 @@ curAt(-1)
     qvbl->addWidget(ql);
 
     QVBoxLayout *curWord = new QVBoxLayout;
-    up = new QLabel(QString("<center><h2>") + data.glossUpperShort(data.updowns.at(curAt).second) + "</h2></center>");
+    up = new QLabel;
     input = new QLineEdit;
     connect(input, SIGNAL(returnPressed()), this, SLOT(checkInput()));
     check = new QPushButton(tr("Check"));
@@ -39,6 +39,8 @@ curAt(-1)
     qvbl->addWidget(nb);
 
     setLayout(qvbl);
+
+    showNext();
 }
 
 void UpdownThree::showNext() {

@@ -59,7 +59,7 @@ void UpdownOne::showNext() {
 
 void UpdownOne::showHelp() {
     help->hide();
-    up->setText(QString("<center><i>") + data.updowns.at(curAt).second + "</i></center>");
+    up->setText(QString("<center><i>") + QString(data.updowns.at(curAt).second).replace("<", "&lt;").replace(">", "&gt;") + "</i></center>");
     up->setToolTip(data.glossUpperDetailed(data.updowns.at(curAt).second));
     up->show();
     adjustSize();
