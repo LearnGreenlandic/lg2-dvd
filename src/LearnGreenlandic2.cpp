@@ -38,6 +38,9 @@ int main(int argc, char *argv[]) {
         if (tDir.exists("./lessons2/revision.txt") && (rev = read_revision(tDir.absoluteFilePath("./lessons2/revision.txt")))) {
             dirs.insert(std::make_pair(rev, tDir.absoluteFilePath("lessons2")));
         }
+        if (tDir.exists("./demo2/lessons2/revision.txt") && (rev = read_revision(tDir.absoluteFilePath("./demo2/lessons2/revision.txt")))) {
+            dirs.insert(std::make_pair(rev, tDir.absoluteFilePath("demo2/lessons2")));
+        }
     } while (tDir.cdUp());
 
     QFileInfoList drives = QDir::drives();

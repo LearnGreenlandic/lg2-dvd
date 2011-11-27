@@ -6,7 +6,7 @@ tc(tc),
 data(tc.dirs, which),
 curAt(-1)
 {
-    setWindowTitle(tr("Ordbygning: Reception"));
+    setWindowTitle(title);
 
     QLabel *ql = new QLabel(tr("Prøv at forstå og at udtale følgende ord:"));
 
