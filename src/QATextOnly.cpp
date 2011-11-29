@@ -10,7 +10,7 @@ curAt(-1)
 
     QVBoxLayout *qvbl = new QVBoxLayout;
 
-    QLabel *ql = new QLabel(trUtf8(which.toStdString().c_str()));
+    QLabel *ql = new QLabel(tc.tr(which.toStdString().c_str()));
     ql->setWordWrap(true);
     qvbl->addWidget(ql);
     qvbl->addSpacing(5);

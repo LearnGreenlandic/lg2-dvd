@@ -234,7 +234,7 @@ Prøv igen...</source>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="105"/>
-        <source>FST 2.2.1: Reception</source>
+        <source>FST 2.2e.1: Reception</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -759,32 +759,32 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="80"/>
         <source>exercises/1.3</source>
-        <translation type="unfinished"></translation>
+        <translation>Her er en række spørgsmål til dig dvs. de er i 2. person ental. De drejer sig alle om gentagne forhold, så de indeholder alle sammen elementet Vb+TAR. Forstå spørgsmålet, forstå de processer, der har været på spil da ordene blev dannet, og besvar spørgsmålene positivt. Indled dine svar med ordet &lt;i&gt;aap&lt;/i&gt; ...</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="81"/>
         <source>exercises/1.4</source>
-        <translation type="unfinished"></translation>
+        <translation>De følgende ord er udsagn om handlinger, der kun foregår een gang eller altid. Gentag ordene uden at ændre personendelser men tilføj Vb+TAR, så du retter sætningen til at udtrykke en gentagen handling.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="82"/>
         <source>exercises/1.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Omskriv de følgende udsagn til at-sætninger. Brug sætningen &lt;i&gt;Nuliara oqarpoq&lt;/i&gt; som anførende sætning.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="83"/>
         <source>exercises/1.6</source>
-        <translation type="unfinished"></translation>
+        <translation>Sæt følgende navneord i instrumentalis med endelsen {-mik}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="84"/>
         <source>exercises/1.7</source>
-        <translation type="unfinished"></translation>
+        <translation>Sæt følgende navneord i terminalis ('til N') med endelsen {+mut}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="85"/>
         <source>exercises/1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Dan ord af typerne "Han/ det er en N" af følgende navneord</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="100"/>

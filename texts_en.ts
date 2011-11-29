@@ -759,32 +759,32 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="80"/>
         <source>exercises/1.3</source>
-        <translation type="unfinished"></translation>
+        <translation>The following questions are all in the second person singular. That is, they are questions directly to you. All questions are about repeated action which means that all of them contain the morpheme Vb+TAR. Understand the question, understand why it is shaped the way it is, and answer the question affirmatively. Say &lt;i&gt;aap&lt;/i&gt; ...</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="81"/>
         <source>exercises/1.4</source>
-        <translation type="unfinished"></translation>
+        <translation>The following sentences tell about verbal action that takes place only once or always. Repeat the sentences but add Vb+TAR to make statements about repeated action.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="82"/>
         <source>exercises/1.5</source>
-        <translation type="unfinished"></translation>
+        <translation>Change the following superordinate sentences into subordinate ones by means of the introductory clause &lt;i&gt;Nuliara oqar­poq&lt;/i&gt; (my wife says ...)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="83"/>
         <source>exercises/1.6</source>
-        <translation type="unfinished"></translation>
+        <translation>Put the following nouns in the instrumental case using {-mik}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="84"/>
         <source>exercises/1.7</source>
-        <translation type="unfinished"></translation>
+        <translation>Put the following nouns in the allative case ('to N') using {+mut}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="85"/>
         <source>exercises/1.8</source>
-        <translation type="unfinished"></translation>
+        <translation>Make words of the type “He/ it is an N” from the following nouns</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="100"/>
