@@ -177,7 +177,7 @@ void UpdownData::loadRandom() {
     }
 
     if (ups.size() != downs.size()) {
-        QMessageBox::warning(0, "Foma Warning!", "Number of upper did not match lower.");
+        QMessageBox::warning(0, "Foma Warning!", QString("Number of upper (%1) did not match lower (%2).").arg(ups.size()).arg(downs.size()));
     }
 
     for (int i=0 ; i<ups.size() && i<downs.size() ; ++i) {
