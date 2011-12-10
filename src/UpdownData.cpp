@@ -56,15 +56,20 @@ void UpdownData::loadRandom() {
 
 #if defined(Q_WS_WIN)
     QString foma = find_newest(dirs, "foma/win32/foma.exe");
+    QString flookup = find_newest(dirs, "foma/win32/flookup.exe");
 #elif defined(Q_WS_MAC)
     QString foma = find_newest(dirs, "foma/osx/foma");
+    QString flookup = find_newest(dirs, "foma/osx/flookup");
 #elif defined(Q_OS_LINUX)
     QString foma;
+    QString flookup;
     if (sizeof(void*) == 8) {
         foma = find_newest(dirs, "foma/linux_64/foma");
+        flookup = find_newest(dirs, "foma/linux_64/flookup");
     }
     else {
         foma = find_newest(dirs, "foma/linux/foma");
+        flookup = find_newest(dirs, "foma/linux/flookup");
     }
 #else
     #error "Sorry, please provide a Foma for this arch."
@@ -80,6 +85,7 @@ void UpdownData::loadRandom() {
         pf.setProcessChannelMode(QProcess::MergedChannels);
         pf.setProcessEnvironment(env);
         QStringList args;
+        args.push_back("-q");
         args.push_back("-e");
         args.push_back(QString("load ") + fstfn);
         args.push_back("-e");
@@ -126,53 +132,51 @@ void UpdownData::loadRandom() {
         //pf.setProcessChannelMode(QProcess::MergedChannels);
         pf.setProcessEnvironment(env);
         QStringList args;
-        args.push_back("-e");
-        args.push_back(QString("load ") + fstfn);
+        args.push_back("-x");
+        args.push_back("-i");
+        args.push_back(fstfn);
 
-        pf.start(foma, args);
+        pf.start(flookup, args);
         if (!pf.waitForStarted()) {
-            QMessageBox::critical(0, "Foma Error!", QString("Could not launch ") + foma);
+            QMessageBox::critical(0, "Flookup Error!", QString("Could not launch ") + flookup);
             throw(-1);
         }
 
         QByteArray ab;
         foreach (QString s, ups) {
-            ab.append("down ");
             ab.append(s.toUtf8());
             ab.append("\n");
         }
-        ab.append("quit\n");
         if (pf.write(ab) != ab.size()) {
-            QMessageBox::critical(0, "Foma Error!", "Could not write to Foma");
+            QMessageBox::critical(0, "Flookup Error!", "Could not write to Flookup");
             throw(-1);
         }
 
         pf.closeWriteChannel();
         if (!pf.waitForReadyRead()) {
-            QMessageBox::critical(0, "Foma Error!", "Could not read from Foma");
+            QMessageBox::critical(0, "Flookup Error!", "Could not read from Flookup");
             throw(-1);
         }
 
         if (!pf.waitForFinished()) {
-            QMessageBox::critical(0, "Foma Error!", "Foma did not terminate");
+            QMessageBox::critical(0, "Flookup Error!", "Flookup did not terminate");
             throw(-1);
         }
         ab = pf.readAllStandardOutput();
 
         QTextStream tg(&ab, QIODevice::ReadOnly);
         tg.setCodec("UTF-8");
-        QRegExp rx("^foma\\[\\d+\\]:.*\\s(.+)$");
         QString tmp;
         while (!tg.atEnd()) {
             tmp = tg.readLine();
+            tmp = tmp.trimmed();
             if (tmp.isNull()) {
                 break;
             }
-            tmp = tmp.trimmed();
-            if (rx.indexIn(tmp) != -1) {
-                QString s = rx.capturedTexts().at(1);
-                downs.push_back(s);
+            if (tmp.isEmpty()) {
+                continue;
             }
+            downs.push_back(tmp);
         }
     }
 
