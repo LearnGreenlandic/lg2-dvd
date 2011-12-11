@@ -15,6 +15,7 @@ public:
 public slots:
     void toggleLanguage();
     void showLecture();
+    void showListenRepeat();
     void showExercise_qaTextOnly();
     void showFST_Reception();
     void showFST_DownFromGloss();

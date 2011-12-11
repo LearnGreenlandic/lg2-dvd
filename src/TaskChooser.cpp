@@ -3,6 +3,7 @@
 #include "UpdownTwo.hpp"
 #include "UpdownThree.hpp"
 #include "LecturePlayer.hpp"
+#include "ListenRepeatPlayer.hpp"
 #include "TaskChooser.hpp"
 
 #include <QtGlobal>
@@ -13,6 +14,14 @@
     button->setFlat(true); \
     mappings[button] = p; \
     connect(button, SIGNAL(clicked()), this, SLOT(showLecture())); \
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+#define MK_LISTENREPEAT(which, title) \
+    p = QPair<QString,QString>(which, title); \
+    button = new QPushButton(p.second); \
+    button->setFlat(true); \
+    mappings[button] = p; \
+    connect(button, SIGNAL(clicked()), this, SLOT(showListenRepeat())); \
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
 #define MK_EXERCISE_TEXT(which, title) \
@@ -76,6 +85,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.3: Oversættelse"));
+    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/1"), tr("LFG 1"));
     MK_LECTURE("1.2", tr("Forelæsning 1.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.4"), tr("Øvelse 1.4 (tekst)"));
@@ -93,6 +103,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/2.1"), tr("FST 2.1.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/2.1"), tr("FST 2.1.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/2.1"), tr("FST 2.1.3: Oversættelse"));
+    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/2"), tr("LFG 2"));
     MK_LECTURE("2.2", tr("Forelæsning 2.2"));
     /*
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/2.1"), tr("Øvelse 2.1: Øv din lydopfattelse"));
@@ -112,6 +123,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/3.1"), tr("FST 3.1.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/3.1"), tr("FST 3.1.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/3.1"), tr("FST 3.1.3: Oversættelse"));
+    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/3"), tr("LFG 3"));
     MK_LECTURE("3.2", tr("Forelæsning 3.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/3.1"), tr("Øvelse 3.1 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/3.2"), tr("Øvelse 3.2 (tekst)"));
@@ -127,6 +139,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/4.1"), tr("FST 4.1.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/4.1"), tr("FST 4.1.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/4.1"), tr("FST 4.1.3: Oversættelse"));
+    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/4"), tr("LFG 4"));
     MK_LECTURE("4.2", tr("Forelæsning 4.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/4.1"), tr("Øvelse 4.1 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/4.2"), tr("Øvelse 4.2 (tekst)"));
@@ -144,6 +157,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/5.1"), tr("FST 5.1.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/5.1"), tr("FST 5.1.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/5.1"), tr("FST 5.1.3: Oversættelse"));
+    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/5"), tr("LFG 5"));
     MK_LECTURE("5.2", tr("Forelæsning 5.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.1"), tr("Øvelse 5.1 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.2"), tr("Øvelse 5.2 (tekst)"));
@@ -162,6 +176,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/6.1"), tr("FST 6.1.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/6.1"), tr("FST 6.1.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/6.1"), tr("FST 6.1.3: Oversættelse"));
+    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/6"), tr("LFG 6"));
     MK_LECTURE("6.2", tr("Forelæsning 6.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.1"), tr("Øvelse 6.1 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.2"), tr("Øvelse 6.2 (tekst)"));
@@ -181,6 +196,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/7.1"), tr("FST 7.1.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/7.1"), tr("FST 7.1.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/7.1"), tr("FST 7.1.3: Oversættelse"));
+    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/7"), tr("LFG 7"));
     MK_LECTURE("7.2", tr("Forelæsning 7.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.1"), tr("Øvelse 7.1 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.2"), tr("Øvelse 7.2 (tekst)"));
@@ -198,6 +214,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/8.1"), tr("FST 8.1.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/8.1"), tr("FST 8.1.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/8.1"), tr("FST 8.1.3: Oversættelse"));
+    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/8"), tr("LFG 8"));
     MK_LECTURE("8.2", tr("Forelæsning 8.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.2.1"), tr("Øvelse 8.2.1 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.2.2"), tr("Øvelse 8.2.2 (tekst)"));
@@ -222,6 +239,14 @@ translator(translator)
 void TaskChooser::showLecture() {
     const QPair<QString,QString>& p = mappings[sender()];
     LecturePlayer *lp = new LecturePlayer(*this, p.first, p.second);
+    lp->show();
+    lp->raise();
+    lp->activateWindow();
+}
+
+void TaskChooser::showListenRepeat() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    ListenRepeatPlayer *lp = new ListenRepeatPlayer(*this, p.first, p.second);
     lp->show();
     lp->raise();
     lp->activateWindow();

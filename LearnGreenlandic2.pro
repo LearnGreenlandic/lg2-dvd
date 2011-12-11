@@ -25,7 +25,8 @@ SOURCES += \
     src/UpdownTwo.cpp \
     src/UpdownThree.cpp \
     src/UpdownOne.cpp \
-    src/UpdownData.cpp
+    src/UpdownData.cpp \
+    src/ListenRepeatPlayer.cpp
 
 HEADERS  += \
     src/CryptFile.hpp \
@@ -38,7 +39,8 @@ HEADERS  += \
     src/UpdownTwo.hpp \
     src/UpdownThree.hpp \
     src/UpdownOne.hpp \
-    src/UpdownData.hpp
+    src/UpdownData.hpp \
+    src/ListenRepeatPlayer.hpp
 
 CONFIG -= warn_off
 CONFIG += warn_on
