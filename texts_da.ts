@@ -145,6 +145,27 @@ Prøv igen...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="src/TaskChooser.cpp" line="84"/>
+        <location filename="src/TaskChooser.cpp" line="89"/>
+        <location filename="src/TaskChooser.cpp" line="102"/>
+        <location filename="src/TaskChooser.cpp" line="107"/>
+        <location filename="src/TaskChooser.cpp" line="122"/>
+        <location filename="src/TaskChooser.cpp" line="127"/>
+        <location filename="src/TaskChooser.cpp" line="138"/>
+        <location filename="src/TaskChooser.cpp" line="143"/>
+        <location filename="src/TaskChooser.cpp" line="156"/>
+        <location filename="src/TaskChooser.cpp" line="161"/>
+        <location filename="src/TaskChooser.cpp" line="175"/>
+        <location filename="src/TaskChooser.cpp" line="180"/>
+        <location filename="src/TaskChooser.cpp" line="195"/>
+        <location filename="src/TaskChooser.cpp" line="200"/>
+        <location filename="src/TaskChooser.cpp" line="213"/>
+        <location filename="src/TaskChooser.cpp" line="218"/>
+        <location filename="src/TaskChooser.cpp" line="229"/>
+        <source>lectures/danish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="src/TaskChooser.cpp" line="85"/>
         <location filename="src/TaskChooser.cpp" line="86"/>
         <location filename="src/TaskChooser.cpp" line="87"/>
@@ -774,16 +795,6 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="225"/>
         <source>FST 8.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="src/TaskChooser.cpp" line="229"/>
-        <source>Forelæsning 9.1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="src/TaskChooser.cpp" line="230"/>
-        <source>Forelæsning 9.2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
