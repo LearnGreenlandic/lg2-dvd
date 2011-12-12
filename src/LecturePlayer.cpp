@@ -1,5 +1,4 @@
 #include "LecturePlayer.hpp"
-#include <QtGlobal>
 #if defined(Q_WS_WIN)
 
 #include <QProgressDialog>
