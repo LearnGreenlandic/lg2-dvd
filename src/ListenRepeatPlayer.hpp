@@ -75,7 +75,6 @@ public slots:
     void yieldWord();
     void tick(qint64 time);
     void togglePlay();
-    void finished();
 
 private:
     TaskChooser& tc;
