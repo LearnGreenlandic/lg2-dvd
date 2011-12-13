@@ -30,7 +30,12 @@ curAt(-1)
     QTextStream input_t(&input_f);
     input_t.setCodec("UTF-8");
     QString input_s = input_t.readAll().trimmed();
-    words = input_s.split(QRegExp("\\s+"), QString::SkipEmptyParts);
+    QRegExp rx("(\\S+\\s*)");
+    int pos = 0;
+    while ((pos = rx.indexIn(input_s, pos)) != -1) {
+        words << rx.cap(1);
+        pos += rx.matchedLength();
+    }
 
     setWindowTitle(title);
     setMinimumSize(minimumSizeHint());
@@ -179,7 +184,12 @@ curAt(-1)
     QTextStream input_t(&input_f);
     input_t.setCodec("UTF-8");
     QString input_s = input_t.readAll().trimmed();
-    words = input_s.split(QRegExp("\\s+"), QString::SkipEmptyParts);
+    QRegExp rx("(\\S+\\s*)");
+    int pos = 0;
+    while ((pos = rx.indexIn(input_s, pos)) != -1) {
+        words << rx.cap(1);
+        pos += rx.matchedLength();
+    }
 
     setWindowTitle(title);
     setMinimumSize(minimumSizeHint());
@@ -195,7 +205,6 @@ curAt(-1)
     media->setCurrentSource(mediafile);
     media->setTickInterval(1000);
     connect(media, SIGNAL(tick(qint64)), this, SLOT(tick(qint64)));
-    connect(media, SIGNAL(finished()), this, SLOT(finished()));
 
     video->setAspectRatio(Phonon::VideoWidget::AspectRatio16_9);
     video->setMinimumSize(400, 225);
@@ -204,7 +213,7 @@ curAt(-1)
 
     QVBoxLayout *qvbl = new QVBoxLayout;
 
-    QLabel *label = new QLabel(tr("Aflyt og nedkriv hvad der bliver sagt i videoen ord for ord."));
+    QLabel *label = new QLabel(tr("Aflyt og nedkriv hvad der bliver sagt ord for ord."));
     //label->setWordWrap(true);
     qvbl->addWidget(label);
 
@@ -306,10 +315,6 @@ void ListenRepeatPlayer::togglePlay() {
     }
 }
 
-void ListenRepeatPlayer::finished() {
-
-}
-
 QSize ListenRepeatPlayer::sizeHint() const {
     return QSize(1010, 335);
 }
@@ -325,10 +330,10 @@ void ListenRepeatPlayer::showNext() {
 
     QString sumtext = "<i>";
     for (int i=0 ; i<curAt ; ++i) {
-        sumtext += words.at(i) + " ";
+        sumtext += words.at(i);
     }
     sumtext += " ...</i>";
-    sum->setText(sumtext);
+    sum->setText(sumtext.replace('\n', "<br>"));
 
     if (curAt >= words.size()) {
         /*

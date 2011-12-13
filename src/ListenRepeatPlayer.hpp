@@ -5,7 +5,7 @@
 #include "TaskChooser.hpp"
 
 #include <QtGlobal>
-#undef Q_WS_WIN
+//#undef Q_WS_WIN
 #if defined(Q_WS_WIN)
 
 #include <QAxWidget>
