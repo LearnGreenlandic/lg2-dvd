@@ -1,4 +1,5 @@
 #include "QATextOnly.hpp"
+#include "QAAudio.hpp"
 #include "UpdownOne.hpp"
 #include "UpdownTwo.hpp"
 #include "UpdownThree.hpp"
@@ -39,6 +40,14 @@
     button->setFlat(true); \
     mappings[button] = p; \
     connect(button, SIGNAL(clicked()), this, SLOT(showExercise_qaTextOnly())); \
+    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+
+#define MK_EXERCISE_AUDIO(which, title) \
+    p = QPair<QString,QString>(which, title); \
+    button = new QPushButton(p.second); \
+    button->setFlat(true); \
+    mappings[button] = p; \
+    connect(button, SIGNAL(clicked()), this, SLOT(showExercise_qaAudio())); \
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
 #define MK_FST_RECEPTION(which, title) \
@@ -98,11 +107,17 @@ translator(translator)
     // Exercise 1.1
     MK_LECTURE(tr("lectures/danish") + "/1.2", tr("Forelæsning 1.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.4"), tr("Øvelse 1.4 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.4"), tr("Øvelse 1.4 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.5"), tr("Øvelse 1.5 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.5"), tr("Øvelse 1.5 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.6"), tr("Øvelse 1.6 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.6"), tr("Øvelse 1.6 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.7"), tr("Øvelse 1.7 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.7"), tr("Øvelse 1.7 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.8"), tr("Øvelse 1.8 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.8"), tr("Øvelse 1.8 (audio)"));
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.3: Oversættelse"));
@@ -117,10 +132,15 @@ translator(translator)
     MK_LECTURE(tr("lectures/danish") + "/2.2", tr("Forelæsning 2.2"));
     MK_ANY(QT_TR_NOOP("exercises/2.1"), tr("Øvelse 2.1"), showListenRepeatAudio);
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/2.2"), tr("Øvelse 2.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/2.2"), tr("Øvelse 2.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/2.3.1"), tr("Øvelse 2.3.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/2.3.1"), tr("Øvelse 2.3.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/2.3.2"), tr("Øvelse 2.3.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/2.3.2"), tr("Øvelse 2.3.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/2.4"), tr("Øvelse 2.4 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/2.4"), tr("Øvelse 2.4 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/2.5"), tr("Øvelse 2.5 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/2.5"), tr("Øvelse 2.5 (audio)"));
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/2.2"), tr("FST 2.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/2.2"), tr("FST 2.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/2.2"), tr("FST 2.2.3: Oversættelse"));
@@ -134,9 +154,13 @@ translator(translator)
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/3"), tr("LFG 3"));
     MK_LECTURE(tr("lectures/danish") + "/3.2", tr("Forelæsning 3.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/3.1"), tr("Øvelse 3.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/3.1"), tr("Øvelse 3.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/3.2"), tr("Øvelse 3.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/3.2"), tr("Øvelse 3.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/3.3"), tr("Øvelse 3.3 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/3.3"), tr("Øvelse 3.3 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/3.4"), tr("Øvelse 3.4 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/3.4"), tr("Øvelse 3.4 (audio)"));
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/3.2"), tr("FST 3.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/3.2"), tr("FST 3.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/3.2"), tr("FST 3.2.3: Oversættelse"));
@@ -150,11 +174,17 @@ translator(translator)
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/4"), tr("LFG 4"));
     MK_LECTURE(tr("lectures/danish") + "/4.2", tr("Forelæsning 4.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/4.1"), tr("Øvelse 4.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/4.1"), tr("Øvelse 4.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/4.2"), tr("Øvelse 4.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/4.2"), tr("Øvelse 4.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/4.3"), tr("Øvelse 4.3 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/4.3"), tr("Øvelse 4.3 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/4.4.1"), tr("Øvelse 4.4.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/4.4.1"), tr("Øvelse 4.4.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/4.4.2"), tr("Øvelse 4.4.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/4.4.2"), tr("Øvelse 4.4.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/4.5"), tr("Øvelse 4.5 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/4.5"), tr("Øvelse 4.5 (audio)"));
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/4.2"), tr("FST 4.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/4.2"), tr("FST 4.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/4.2"), tr("FST 4.2.3: Oversættelse"));
@@ -168,12 +198,19 @@ translator(translator)
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/5"), tr("LFG 5"));
     MK_LECTURE(tr("lectures/danish") + "/5.2", tr("Forelæsning 5.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.1"), tr("Øvelse 5.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/5.1"), tr("Øvelse 5.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.2"), tr("Øvelse 5.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/5.2"), tr("Øvelse 5.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.3"), tr("Øvelse 5.3 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/5.3"), tr("Øvelse 5.3 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.4.1"), tr("Øvelse 5.4.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/5.4.1"), tr("Øvelse 5.4.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.4.2"), tr("Øvelse 5.4.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/5.4.2"), tr("Øvelse 5.4.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.5"), tr("Øvelse 5.5 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/5.5"), tr("Øvelse 5.5 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.6"), tr("Øvelse 5.6 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/5.6"), tr("Øvelse 5.6 (audio)"));
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/5.2"), tr("FST 5.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/5.2"), tr("FST 5.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/5.2"), tr("FST 5.2.3: Oversættelse"));
@@ -187,12 +224,19 @@ translator(translator)
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/6"), tr("LFG 6"));
     MK_LECTURE(tr("lectures/danish") + "/6.2", tr("Forelæsning 6.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.1"), tr("Øvelse 6.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/6.1"), tr("Øvelse 6.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.2"), tr("Øvelse 6.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/6.2"), tr("Øvelse 6.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.3.1"), tr("Øvelse 6.3.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/6.3.1"), tr("Øvelse 6.3.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.3.2"), tr("Øvelse 6.3.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/6.3.2"), tr("Øvelse 6.3.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.4.1"), tr("Øvelse 6.4.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/6.4.1"), tr("Øvelse 6.4.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.4.2"), tr("Øvelse 6.4.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/6.4.2"), tr("Øvelse 6.4.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.5"), tr("Øvelse 6.5 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/6.5"), tr("Øvelse 6.5 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.6"), tr("Øvelse 6.6 (tekst)"));
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/6.2"), tr("FST 6.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/6.2"), tr("FST 6.2.2: Produktion"));
@@ -209,8 +253,11 @@ translator(translator)
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.1"), tr("Øvelse 7.1 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.2"), tr("Øvelse 7.2 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.3.1"), tr("Øvelse 7.3.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/7.3.1"), tr("Øvelse 7.3.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.3.2"), tr("Øvelse 7.3.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/7.3.2"), tr("Øvelse 7.3.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.4"), tr("Øvelse 7.4 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/7.4"), tr("Øvelse 7.4 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.5"), tr("Øvelse 7.5 (tekst)"));
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/7.2"), tr("FST 7.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/7.2"), tr("FST 7.2.2: Produktion"));
@@ -226,9 +273,13 @@ translator(translator)
     MK_LECTURE(tr("lectures/danish") + "/8.2", tr("Forelæsning 8.2"));
     // Exercise 8.1
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.2.1"), tr("Øvelse 8.2.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/8.2.1"), tr("Øvelse 8.2.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.2.2"), tr("Øvelse 8.2.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/8.2.2"), tr("Øvelse 8.2.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.3.1"), tr("Øvelse 8.3.1 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/8.3.1"), tr("Øvelse 8.3.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.3.2"), tr("Øvelse 8.3.2 (tekst)"));
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/8.3.2"), tr("Øvelse 8.3.2 (audio)"));
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/8.2"), tr("FST 8.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/8.2"), tr("FST 8.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/8.2"), tr("FST 8.2.3: Oversættelse"));
@@ -295,6 +346,14 @@ void TaskChooser::showFST_DownFromTranslate() {
 void TaskChooser::showExercise_qaTextOnly() {
     const QPair<QString,QString>& p = mappings[sender()];
     QATextOnly *qa = new QATextOnly(*this, p.first, p.second);
+    qa->show();
+    qa->raise();
+    qa->activateWindow();
+}
+
+void TaskChooser::showExercise_qaAudio() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    QAAudio *qa = new QAAudio(*this, p.first, p.second);
     qa->show();
     qa->raise();
     qa->activateWindow();

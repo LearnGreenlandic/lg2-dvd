@@ -1,6 +1,6 @@
-#include "QATextOnly.hpp"
+#include "QAAudio.hpp"
 
-QATextOnly::QATextOnly(TaskChooser& tc, QString which, QString title) :
+QAAudio::QAAudio(TaskChooser& tc, QString which, QString title) :
 QWidget(0, Qt::Window | Qt::WindowTitleHint | Qt::WindowMinMaxButtonsHint | Qt::WindowCloseButtonHint),
 tc(tc),
 data(tc.dirs, which),
@@ -15,14 +15,18 @@ curAt(-1)
     qvbl->addWidget(ql);
     qvbl->addSpacing(5);
 
-    query = new QLabel;
-    qvbl->addWidget(query);
+    media_q = new Phonon::MediaObject;
+    audio_q = new Phonon::AudioOutput;
+    Phonon::createPath(media_q, audio_q);
+    playquestion = new QPushButton(tr("Hør opgaven igen"));
+    connect(playquestion, SIGNAL(clicked()), this, SLOT(playQuestion()));
+    qvbl->addWidget(playquestion);
 
     qvbl->addSpacing(5);
 
     input = new QLineEdit;
     connect(input, SIGNAL(returnPressed()), this, SLOT(checkInput()));
-    qvbl->addWidget(new QLabel(tr("Skriv svaret:")));
+    qvbl->addWidget(new QLabel(tr("Skriv og udtal svaret:")));
     qvbl->addWidget(input);
 
     QPushButton *check = new QPushButton(tr("Check"));
@@ -58,8 +62,11 @@ curAt(-1)
     showNext();
 }
 
-void QATextOnly::showNext() {
+void QAAudio::showNext() {
     ++curAt;
+    while (data.getQW(curAt).isEmpty()) {
+        ++curAt;
+    }
     if (curAt >= data.size()) {
         QMessageBox mbox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?"));
         QPushButton *yes = mbox.addButton(tr("Ja, næste øvelse"), QMessageBox::YesRole);
@@ -72,11 +79,9 @@ void QATextOnly::showNext() {
         close();
         return;
     }
-    QString text = QString("<b>") + data.getQ(curAt) + "</b>";
-    if (!data.getStar(curAt).isEmpty()) {
-        text += QString("<br/><i>") + data.getStar(curAt) + "</i>";
-    }
-    query->setText(text);
+    media_q->setCurrentSource(data.getQW(curAt));
+    media_q->stop();
+    media_q->play();
     result->hide();
     media->stop();
     playanswer->hide();
@@ -86,7 +91,7 @@ void QATextOnly::showNext() {
     adjustSize();
 }
 
-void QATextOnly::checkInput() {
+void QAAudio::checkInput() {
     playanswer->hide();
     yield->show();
     if (input->text() == data.getA(curAt)) {
@@ -111,12 +116,17 @@ void QATextOnly::checkInput() {
     adjustSize();
 }
 
-void QATextOnly::yieldWord() {
+void QAAudio::yieldWord() {
     QMessageBox::information(0, tr("Hrhm..."), QString("<h1>") + tr("Det korrekte ord var:") + QString("</h1><br>") + data.getA(curAt));
     showNext();
 }
 
-void QATextOnly::playAnswer() {
+void QAAudio::playQuestion() {
+    media_q->stop();
+    media_q->play();
+}
+
+void QAAudio::playAnswer() {
     media->stop();
     media->play();
 }

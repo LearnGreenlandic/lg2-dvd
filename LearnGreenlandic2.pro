@@ -28,7 +28,8 @@ SOURCES += \
     src/UpdownData.cpp \
     src/ListenRepeatPlayer.cpp \
     src/Fillout11.cpp \
-    src/ListenRepeatAudio.cpp
+    src/ListenRepeatAudio.cpp \
+    src/QAAudio.cpp
 
 HEADERS  += \
     src/CryptFile.hpp \
@@ -44,7 +45,8 @@ HEADERS  += \
     src/UpdownData.hpp \
     src/ListenRepeatPlayer.hpp \
     src/Fillout11.hpp \
-    src/ListenRepeatAudio.hpp
+    src/ListenRepeatAudio.hpp \
+    src/QAAudio.hpp
 
 CONFIG -= warn_off
 CONFIG += warn_on

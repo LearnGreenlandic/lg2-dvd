@@ -1,5 +1,5 @@
-#ifndef QATEXTONLY_HPP
-#define QATEXTONLY_HPP
+#ifndef QAAUDIO_HPP
+#define QAAUDIO_HPP
 
 #include "QAData.hpp"
 #include "TaskChooser.hpp"
@@ -8,16 +8,17 @@
 #include <phonon/mediasource.h>
 #include <QtGui>
 
-class QATextOnly : public QWidget {
+class QAAudio : public QWidget {
     Q_OBJECT
 
 public:
-    explicit QATextOnly(TaskChooser& tc, QString which, QString title);
+    explicit QAAudio(TaskChooser& tc, QString which, QString title);
 
 public slots:
     void showNext();
     void checkInput();
     void yieldWord();
+    void playQuestion();
     void playAnswer();
 
 private:
@@ -26,13 +27,17 @@ private:
     QAData data;
     int curAt;
 
-    QLabel *query, *result;
+    QLabel *result;
     QLineEdit *input;
     QPushButton *yield;
+
+    Phonon::MediaObject *media_q;
+    Phonon::AudioOutput *audio_q;
+    QPushButton *playquestion;
 
     Phonon::MediaObject *media;
     Phonon::AudioOutput *audio;
     QPushButton *playanswer;
 };
 
-#endif // QATEXTONLY_HPP
+#endif // QAAUDIO_HPP

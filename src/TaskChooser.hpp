@@ -18,6 +18,7 @@ public slots:
     void showListenRepeat();
     void showListenRepeatAudio();
     void showExercise_qaTextOnly();
+    void showExercise_qaAudio();
     void showFST_Reception();
     void showFST_DownFromGloss();
     void showFST_DownFromTranslate();
