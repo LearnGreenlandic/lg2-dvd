@@ -6,6 +6,7 @@
 #include "LecturePlayer.hpp"
 #include "ListenRepeatPlayer.hpp"
 #include "ListenRepeatAudio.hpp"
+#include "Fillout11.hpp"
 #include "TaskChooser.hpp"
 
 #include <QtGlobal>
@@ -104,7 +105,8 @@ translator(translator)
     MK_FST_DFG(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.3: Oversættelse"));
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/1"), tr("LFG 1"));
-    // Exercise 1.1
+    MK_ANY(QT_TR_NOOP("exercises/1.1"), tr("Øvelse 1.1"), showFillout11);
+    // Exercise 1.2
     MK_LECTURE(tr("lectures/danish") + "/1.2", tr("Forelæsning 1.2"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (audio)"));
@@ -298,6 +300,14 @@ translator(translator)
 void TaskChooser::showLecture() {
     const QPair<QString,QString>& p = mappings[sender()];
     LecturePlayer *lp = new LecturePlayer(*this, p.first, p.second);
+    lp->show();
+    lp->raise();
+    lp->activateWindow();
+}
+
+void TaskChooser::showFillout11() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    Fillout11 *lp = new Fillout11(*this, p.first, p.second);
     lp->show();
     lp->raise();
     lp->activateWindow();
