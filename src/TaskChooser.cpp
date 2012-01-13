@@ -123,6 +123,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.3: Oversættelse"));
+    MK_ANY(tr("lectures/danish") + "/1.1", tr("Forelæsning 1 som PDF"), showLecturePDF);
 
     vbox->addSpacing(10);
 
@@ -146,6 +147,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/2.2"), tr("FST 2.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/2.2"), tr("FST 2.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/2.2"), tr("FST 2.2.3: Oversættelse"));
+    MK_ANY(tr("lectures/danish") + "/2.1", tr("Forelæsning 2 som PDF"), showLecturePDF);
 
     vbox->addSpacing(10);
 
@@ -166,6 +168,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/3.2"), tr("FST 3.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/3.2"), tr("FST 3.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/3.2"), tr("FST 3.2.3: Oversættelse"));
+    MK_ANY(tr("lectures/danish") + "/3.1", tr("Forelæsning 3 som PDF"), showLecturePDF);
 
     vbox->addSpacing(10);
 
@@ -190,6 +193,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/4.2"), tr("FST 4.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/4.2"), tr("FST 4.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/4.2"), tr("FST 4.2.3: Oversættelse"));
+    MK_ANY(tr("lectures/danish") + "/4.1", tr("Forelæsning 4 som PDF"), showLecturePDF);
 
     vbox->addSpacing(10);
 
@@ -216,6 +220,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/5.2"), tr("FST 5.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/5.2"), tr("FST 5.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/5.2"), tr("FST 5.2.3: Oversættelse"));
+    MK_ANY(tr("lectures/danish") + "/5.1", tr("Forelæsning 5 som PDF"), showLecturePDF);
 
     vbox->addSpacing(10);
 
@@ -243,6 +248,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/6.2"), tr("FST 6.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/6.2"), tr("FST 6.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/6.2"), tr("FST 6.2.3: Oversættelse"));
+    MK_ANY(tr("lectures/danish") + "/6.1", tr("Forelæsning 6 som PDF"), showLecturePDF);
 
     vbox->addSpacing(10);
 
@@ -264,6 +270,7 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/7.2"), tr("FST 7.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/7.2"), tr("FST 7.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/7.2"), tr("FST 7.2.3: Oversættelse"));
+    MK_ANY(tr("lectures/danish") + "/7.1", tr("Forelæsning 7 som PDF"), showLecturePDF);
 
     vbox->addSpacing(10);
 
@@ -285,10 +292,13 @@ translator(translator)
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/8.2"), tr("FST 8.2.1: Reception"));
     MK_FST_DFG(QT_TR_NOOP("fsts/8.2"), tr("FST 8.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/8.2"), tr("FST 8.2.3: Oversættelse"));
+    MK_ANY(tr("lectures/danish") + "/8.1", tr("Forelæsning 8 som PDF"), showLecturePDF);
 
     vbox->addSpacing(10);
 
     MK_LECTURE(tr("lectures/danish") + "/9", tr("Forelæsning 9"));
+    MK_ANY(tr("lectures/danish") + "/9", tr("Forelæsning 9 som PDF"), showLecturePDF);
+
     vbox->setAlignment(Qt::AlignCenter|Qt::AlignTop);
 
     widget->setLayout(vbox);
@@ -303,6 +313,11 @@ void TaskChooser::showLecture() {
     lp->show();
     lp->raise();
     lp->activateWindow();
+}
+
+void TaskChooser::showLecturePDF() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    QDesktopServices::openUrl(QUrl::fromLocalFile(find_newest(dirs, p.first + "/lecture.pdf")));
 }
 
 void TaskChooser::showFillout11() {
