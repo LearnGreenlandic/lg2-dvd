@@ -16,6 +16,7 @@ public slots:
     void toggleLanguage();
     void showLecture();
     void showLecturePDF();
+    void showSlidesPDF();
     void showFillout11();
     void showListenRepeat();
     void showListenRepeatAudio();
