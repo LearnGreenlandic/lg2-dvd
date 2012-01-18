@@ -75,31 +75,62 @@
     connect(button, SIGNAL(clicked()), this, SLOT(showFST_DownFromTranslate())); \
     vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
 
+#define ADD_TO_STACK \
+    vbox->setAlignment(Qt::AlignLeft|Qt::AlignTop); \
+    widget = new QWidget; \
+    widget->setStyleSheet("margin: 0; padding: 0; text-align: left;"); \
+    widget->setLayout(vbox); \
+    stack->addWidget(widget);
+
+#define MK_SECTION(which) \
+    section_texts.push_back(which); \
+    section = new ClickLabel(QString("<h2>") + which + "</h2>"); \
+    connect(section, SIGNAL(onClick()), this, SLOT(switchSection())); \
+    section_list.push_back(section); \
+    sections->addWidget(section);
+
+
 TaskChooser::TaskChooser(const dirmap_t& dirs, QTranslator *translator) :
 dirs(dirs),
 translator(translator)
 {
-    setWindowTitle(trUtf8("Grønlandsk for voksne 2"));
+    setWindowTitle(tr("Grønlandsk for voksne 2"));
     setWindowFlags(Qt::Window | Qt::WindowTitleHint | Qt::WindowMinMaxButtonsHint | Qt::WindowCloseButtonHint);
     setStyleSheet("margin: 0; padding: 0; text-align: left;");
-
-    QWidget *widget = new QWidget(this);
-    widget->setContentsMargins(5,5,5,5);
-    widget->setStyleSheet("margin: 0; padding: 0; text-align: left;");
 
     QPushButton *button;
     QPair<QString,QString> p;
 
-    QVBoxLayout *vbox = new QVBoxLayout;
-    vbox->setContentsMargins(0,0,0,0);
+    QVBoxLayout *outerVBox = new QVBoxLayout;
+    outerVBox->setContentsMargins(0,0,0,0);
+    outerVBox->setSpacing(0);
 
-    button = new QPushButton(trUtf8("Switch to English"));
-    button->setFlat(true);
-    connect(button, SIGNAL(clicked()), this, SLOT(toggleLanguage()));
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+    QHBoxLayout *hbox = new QHBoxLayout;
+    hbox->setContentsMargins(0,0,0,0);
+    hbox->setSpacing(0);
 
-    vbox->addSpacing(10);
+    QVBoxLayout *sections = new QVBoxLayout;
+    sections->setContentsMargins(0,0,0,0);
+    sections->setSpacing(0);
+    ClickLabel *section = 0;
+    MK_SECTION(tr("Kapitel 1"));
+    MK_SECTION(tr("Kapitel 2"));
+    MK_SECTION(tr("Kapitel 3"));
+    MK_SECTION(tr("Kapitel 4"));
+    MK_SECTION(tr("Kapitel 5"));
+    MK_SECTION(tr("Kapitel 6"));
+    MK_SECTION(tr("Kapitel 7"));
+    MK_SECTION(tr("Kapitel 8"));
+    MK_SECTION(tr("Kapitel 9"));
+    hbox->addLayout(sections);
 
+    stack = new QStackedLayout;
+    stack->setContentsMargins(5,5,5,5);
+    QWidget *widget = 0;
+
+    QVBoxLayout *vbox;
+
+    vbox = new QVBoxLayout;
     MK_LECTURE(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1"));
     MK_ANY(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.1: Reception"));
@@ -126,9 +157,9 @@ translator(translator)
     MK_FST_DFG(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.3: Oversættelse"));
     MK_ANY(tr("lectures/danish") + "/1.1", tr("Forelæsning 1 som PDF"), showLecturePDF);
+    ADD_TO_STACK;
 
-    vbox->addSpacing(10);
-
+    vbox = new QVBoxLayout;
     MK_LECTURE(tr("lectures/danish") + "/2.1", tr("Forelæsning 2.1"));
     MK_ANY(tr("lectures/danish") + "/2.1", tr("Forelæsning 2.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/2.1"), tr("FST 2.1.1: Reception"));
@@ -152,9 +183,9 @@ translator(translator)
     MK_FST_DFG(QT_TR_NOOP("fsts/2.2"), tr("FST 2.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/2.2"), tr("FST 2.2.3: Oversættelse"));
     MK_ANY(tr("lectures/danish") + "/2.1", tr("Forelæsning 2 som PDF"), showLecturePDF);
+    ADD_TO_STACK;
 
-    vbox->addSpacing(10);
-
+    vbox = new QVBoxLayout;
     MK_LECTURE(tr("lectures/danish") + "/3.1", tr("Forelæsning 3.1"));
     MK_ANY(tr("lectures/danish") + "/3.1", tr("Forelæsning 3.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/3.1"), tr("FST 3.1.1: Reception"));
@@ -175,9 +206,9 @@ translator(translator)
     MK_FST_DFG(QT_TR_NOOP("fsts/3.2"), tr("FST 3.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/3.2"), tr("FST 3.2.3: Oversættelse"));
     MK_ANY(tr("lectures/danish") + "/3.1", tr("Forelæsning 3 som PDF"), showLecturePDF);
+    ADD_TO_STACK;
 
-    vbox->addSpacing(10);
-
+    vbox = new QVBoxLayout;
     MK_LECTURE(tr("lectures/danish") + "/4.1", tr("Forelæsning 4.1"));
     MK_ANY(tr("lectures/danish") + "/4.1", tr("Forelæsning 4.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/4.1"), tr("FST 4.1.1: Reception"));
@@ -202,9 +233,9 @@ translator(translator)
     MK_FST_DFG(QT_TR_NOOP("fsts/4.2"), tr("FST 4.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/4.2"), tr("FST 4.2.3: Oversættelse"));
     MK_ANY(tr("lectures/danish") + "/4.1", tr("Forelæsning 4 som PDF"), showLecturePDF);
+    ADD_TO_STACK;
 
-    vbox->addSpacing(10);
-
+    vbox = new QVBoxLayout;
     MK_LECTURE(tr("lectures/danish") + "/5.1", tr("Forelæsning 5.1"));
     MK_ANY(tr("lectures/danish") + "/5.1", tr("Forelæsning 5.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/5.1"), tr("FST 5.1.1: Reception"));
@@ -231,9 +262,9 @@ translator(translator)
     MK_FST_DFG(QT_TR_NOOP("fsts/5.2"), tr("FST 5.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/5.2"), tr("FST 5.2.3: Oversættelse"));
     MK_ANY(tr("lectures/danish") + "/5.1", tr("Forelæsning 5 som PDF"), showLecturePDF);
+    ADD_TO_STACK;
 
-    vbox->addSpacing(10);
-
+    vbox = new QVBoxLayout;
     MK_LECTURE(tr("lectures/danish") + "/6.1", tr("Forelæsning 6.1"));
     MK_ANY(tr("lectures/danish") + "/6.1", tr("Forelæsning 6.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/6.1"), tr("FST 6.1.1: Reception"));
@@ -261,9 +292,9 @@ translator(translator)
     MK_FST_DFG(QT_TR_NOOP("fsts/6.2"), tr("FST 6.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/6.2"), tr("FST 6.2.3: Oversættelse"));
     MK_ANY(tr("lectures/danish") + "/6.1", tr("Forelæsning 6 som PDF"), showLecturePDF);
+    ADD_TO_STACK;
 
-    vbox->addSpacing(10);
-
+    vbox = new QVBoxLayout;
     MK_LECTURE(tr("lectures/danish") + "/7.1", tr("Forelæsning 7.1"));
     MK_ANY(tr("lectures/danish") + "/7.1", tr("Forelæsning 7.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/7.1"), tr("FST 7.1.1: Reception"));
@@ -285,9 +316,9 @@ translator(translator)
     MK_FST_DFG(QT_TR_NOOP("fsts/7.2"), tr("FST 7.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/7.2"), tr("FST 7.2.3: Oversættelse"));
     MK_ANY(tr("lectures/danish") + "/7.1", tr("Forelæsning 7 som PDF"), showLecturePDF);
+    ADD_TO_STACK;
 
-    vbox->addSpacing(10);
-
+    vbox = new QVBoxLayout;
     MK_LECTURE(tr("lectures/danish") + "/8.1", tr("Forelæsning 8.1"));
     MK_ANY(tr("lectures/danish") + "/8.1", tr("Forelæsning 8.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/8.1"), tr("FST 8.1.1: Reception"));
@@ -309,19 +340,48 @@ translator(translator)
     MK_FST_DFG(QT_TR_NOOP("fsts/8.2"), tr("FST 8.2.2: Produktion"));
     MK_FST_DFT(QT_TR_NOOP("fsts/8.2"), tr("FST 8.2.3: Oversættelse"));
     MK_ANY(tr("lectures/danish") + "/8.1", tr("Forelæsning 8 som PDF"), showLecturePDF);
+    ADD_TO_STACK;
 
-    vbox->addSpacing(10);
-
+    vbox = new QVBoxLayout;
     MK_LECTURE(tr("lectures/danish") + "/9", tr("Forelæsning 9"));
     MK_ANY(tr("lectures/danish") + "/9", tr("Forelæsning 9 dias"), showSlidesPDF);
     MK_ANY(tr("lectures/danish") + "/9", tr("Forelæsning 9 som PDF"), showLecturePDF);
+    ADD_TO_STACK;
 
-    vbox->setAlignment(Qt::AlignCenter|Qt::AlignTop);
+    hbox->addSpacing(10);
+    hbox->addLayout(stack);
 
-    widget->setLayout(vbox);
+    outerVBox->addLayout(hbox);
 
-    setWidget(widget);
-    setMinimumWidth(widget->width()+50);
+    widget = new QWidget;
+    widget->setContentsMargins(0,0,0,0);
+    widget->setStyleSheet("QWidget { background-color: #fff; border-top: 2px solid #000; }");
+    hbox = new QHBoxLayout;
+    hbox->setContentsMargins(5, 5, 5, 5);
+    hbox->setAlignment(Qt::AlignRight|Qt::AlignTop);
+
+    button = new QPushButton(tr("Switch to English"));
+    button->setStyleSheet("QWidget { border-top: 0; }");
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(toggleLanguage()));
+    hbox->addWidget(button);
+
+    hbox->addSpacing(20);
+
+    button = new QPushButton(tr("Afslut LG2"));
+    button->setStyleSheet("QWidget { border-top: 0; }");
+    button->setFlat(true);
+    connect(button, SIGNAL(clicked()), this, SLOT(quit()));
+    hbox->addWidget(button);
+
+    widget->setLayout(hbox);
+    outerVBox->addWidget(widget);
+
+    setLayout(outerVBox);
+
+    QSettings settings;
+    int si = settings.value("chapter", 0).toInt();
+    dynamic_cast<ClickLabel*>(section_list.at(si))->mousePressEvent(0);
 }
 
 void TaskChooser::showLecture() {
@@ -429,4 +489,24 @@ void TaskChooser::toggleLanguage() {
     tc->show();
 
     close();
+}
+
+void TaskChooser::switchSection() {
+    QSettings settings;
+    QObject *s = sender();
+
+    for (int i=0 ; i<section_list.length() ; ++i) {
+        ClickLabel *l = dynamic_cast<ClickLabel*>(section_list.at(i));
+        if (section_list.at(i) == s) {
+            l->setText(QString("<h1>") + section_texts.at(i) + " &raquo;</h1>");
+            l->setStyleSheet("QLabel { background-color: #007030; color: #fff; }");
+            stack->setCurrentIndex(i);
+            settings.setValue("chapter", i);
+        }
+        else {
+            l->setText(QString("<h2>") + section_texts.at(i) + "</h2>");
+            l->setStyleSheet("QLabel { background-color: #fff; color: #000; border-right: 2px solid #000; }");
+        }
+    }
+    adjustSize();
 }

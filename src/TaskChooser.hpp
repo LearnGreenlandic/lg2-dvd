@@ -2,9 +2,10 @@
 #define TASKCHOOSER_HPP
 
 #include "common.hpp"
+#include "ClickLabel.hpp"
 #include <QtGui>
 
-class TaskChooser : public QScrollArea {
+class TaskChooser : public QWidget {
     Q_OBJECT
 
 public:
@@ -14,6 +15,7 @@ public:
 
 public slots:
     void toggleLanguage();
+    void switchSection();
     void showLecture();
     void showLecturePDF();
     void showSlidesPDF();
@@ -28,6 +30,9 @@ public slots:
 
 private:
     QHash<QObject*,QPair<QString,QString> > mappings;
+    QList<QObject*> section_list;
+    QList<QString> section_texts;
+    QStackedLayout *stack;
     QTranslator *translator;
 };
 
