@@ -43,12 +43,23 @@ int main(int argc, char *argv[]) {
         }
     } while (tDir.cdUp());
 
-    QFileInfoList drives = QDir::drives();
-    foreach (QFileInfo drive, drives) {
-        size_t rev = 0;
-        if (drive.absoluteDir().exists("./lessons2/revision.txt") && (rev = read_revision(drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt")))) {
-            dirs.insert(std::make_pair(rev, drive.absoluteDir().absoluteFilePath("lessons2")));
+    {
+        QProgressDialog progress("Checking all drives for LG2 data...", "", 0, 26);
+        progress.setWindowModality(Qt::WindowModal);
+        progress.setCancelButton(0);
+        progress.show();
+        QFileInfoList drives = QDir::drives();
+        progress.setMaximum(drives.size());
+
+        foreach (QFileInfo drive, drives) {
+            size_t rev = 0;
+            progress.setLabelText(QString("Trying to read ") + drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt") + " ...");
+            if (drive.absoluteDir().exists("./lessons2/revision.txt") && (rev = read_revision(drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt")))) {
+                dirs.insert(std::make_pair(rev, drive.absoluteDir().absoluteFilePath("lessons2")));
+            }
+            progress.setValue(progress.value()+1);
         }
+        progress.setValue(drives.size());
     }
     if (dirs.empty() || find_newest(dirs, "./revision.txt").isEmpty()) {
         QMessageBox::critical(0, "Missing Data!", "Could not find a suitable lessons2 folder. Maybe you forgot to insert the DVD?");
