@@ -11,75 +11,40 @@
 
 #include <QtGlobal>
 
-#define MK_ANY(which, title, function) \
+#define MK_ANY(which, title, function, y, x) \
     p = QPair<QString,QString>(which, title); \
     button = new QPushButton(p.second); \
     button->setFlat(true); \
     mappings[button] = p; \
     connect(button, SIGNAL(clicked()), this, SLOT(function())); \
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+    grid->addWidget(button, x, y, Qt::AlignLeft|Qt::AlignTop);
 
-#define MK_LECTURE(which, title) \
-    p = QPair<QString,QString>(which, title); \
-    button = new QPushButton(p.second); \
-    button->setFlat(true); \
-    mappings[button] = p; \
-    connect(button, SIGNAL(clicked()), this, SLOT(showLecture())); \
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+#define MK_LECTURE(which, title, y, x) \
+    MK_ANY(which, title, showLecture, y, x);
 
-#define MK_LISTENREPEAT(which, title) \
-    p = QPair<QString,QString>(which, title); \
-    button = new QPushButton(p.second); \
-    button->setFlat(true); \
-    mappings[button] = p; \
-    connect(button, SIGNAL(clicked()), this, SLOT(showListenRepeat())); \
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+#define MK_LISTENREPEAT(which, title, y, x) \
+    MK_ANY(which, title, showListenRepeat, y, x);
 
-#define MK_EXERCISE_TEXT(which, title) \
-    p = QPair<QString,QString>(which, title); \
-    button = new QPushButton(p.second); \
-    button->setFlat(true); \
-    mappings[button] = p; \
-    connect(button, SIGNAL(clicked()), this, SLOT(showExercise_qaTextOnly())); \
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+#define MK_EXERCISE_TEXT(which, title, y, x) \
+    MK_ANY(which, title, showExercise_qaTextOnly, y, x);
 
-#define MK_EXERCISE_AUDIO(which, title) \
-    p = QPair<QString,QString>(which, title); \
-    button = new QPushButton(p.second); \
-    button->setFlat(true); \
-    mappings[button] = p; \
-    connect(button, SIGNAL(clicked()), this, SLOT(showExercise_qaAudio())); \
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+#define MK_EXERCISE_AUDIO(which, title, y, x) \
+    MK_ANY(which, title, showExercise_qaAudio, y, x);
 
-#define MK_FST_RECEPTION(which, title) \
-    p = QPair<QString,QString>(which, title); \
-    button = new QPushButton(p.second); \
-    button->setFlat(true); \
-    mappings[button] = p; \
-    connect(button, SIGNAL(clicked()), this, SLOT(showFST_Reception())); \
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+#define MK_FST_RECEPTION(which, title, y, x) \
+    MK_ANY(which, title, showFST_Reception, y, x);
 
-#define MK_FST_DFG(which, title) \
-    p = QPair<QString,QString>(which, title); \
-    button = new QPushButton(p.second); \
-    button->setFlat(true); \
-    mappings[button] = p; \
-    connect(button, SIGNAL(clicked()), this, SLOT(showFST_DownFromGloss())); \
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+#define MK_FST_DFG(which, title, y, x) \
+    MK_ANY(which, title, showFST_DownFromGloss, y, x);
 
-#define MK_FST_DFT(which, title) \
-    p = QPair<QString,QString>(which, title); \
-    button = new QPushButton(p.second); \
-    button->setFlat(true); \
-    mappings[button] = p; \
-    connect(button, SIGNAL(clicked()), this, SLOT(showFST_DownFromTranslate())); \
-    vbox->addWidget(button, 0, Qt::AlignLeft|Qt::AlignTop);
+#define MK_FST_DFT(which, title, y, x) \
+    MK_ANY(which, title, showFST_DownFromTranslate, y, x);
 
 #define ADD_TO_STACK \
-    vbox->setAlignment(Qt::AlignLeft|Qt::AlignTop); \
+    grid->setAlignment(Qt::AlignLeft|Qt::AlignTop); \
     widget = new QWidget; \
     widget->setStyleSheet("margin: 0; padding: 0; text-align: left;"); \
-    widget->setLayout(vbox); \
+    widget->setLayout(grid); \
     stack->addWidget(widget);
 
 #define MK_SECTION(which) \
@@ -128,38 +93,39 @@ translator(translator)
     stack->setContentsMargins(5,5,5,5);
     QWidget *widget = 0;
 
-    QVBoxLayout *vbox;
+    QGridLayout *grid;
 
-    vbox = new QVBoxLayout;
-    MK_LECTURE(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1"));
-    MK_ANY(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1 dias"), showSlidesPDF);
-    MK_FST_RECEPTION(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.1: Reception"));
-    MK_FST_DFG(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.2: Produktion"));
-    MK_FST_DFT(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.3: Oversættelse"));
-    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/1"), tr("LFG 1"));
-    MK_ANY(QT_TR_NOOP("exercises/1.1"), tr("Øvelse 1.1"), showFillout11);
+    grid = new QGridLayout;
+    MK_LECTURE(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1"), 0, 0);
+    MK_ANY(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1 dias"), showSlidesPDF, 0, 1);
+    MK_FST_RECEPTION(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.1: Reception"), 0, 3);
+    MK_FST_DFG(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.2: Produktion"), 0, 4);
+    MK_FST_DFT(QT_TR_NOOP("fsts/1.1"), tr("FST 1.1.3: Oversættelse"), 0, 5);
+    MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/1"), tr("LFG 1"), 0, 7);
+    MK_LECTURE(tr("lectures/danish") + "/1.2", tr("Forelæsning 1.2"), 1, 0);
+    MK_ANY(tr("lectures/danish") + "/1.2", tr("Forelæsning 1.2 dias"), showSlidesPDF, 1, 1);
+    MK_ANY(QT_TR_NOOP("exercises/1.1"), tr("Øvelse 1.1"), showFillout11, 2, 0);
     // Exercise 1.2
-    MK_LECTURE(tr("lectures/danish") + "/1.2", tr("Forelæsning 1.2"));
-    MK_ANY(tr("lectures/danish") + "/1.2", tr("Forelæsning 1.2 dias"), showSlidesPDF);
-    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (tekst)"));
-    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (audio)"));
-    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.4"), tr("Øvelse 1.4 (tekst)"));
-    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.4"), tr("Øvelse 1.4 (audio)"));
-    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.5"), tr("Øvelse 1.5 (tekst)"));
-    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.5"), tr("Øvelse 1.5 (audio)"));
-    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.6"), tr("Øvelse 1.6 (tekst)"));
-    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.6"), tr("Øvelse 1.6 (audio)"));
-    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.7"), tr("Øvelse 1.7 (tekst)"));
-    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.7"), tr("Øvelse 1.7 (audio)"));
-    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.8"), tr("Øvelse 1.8 (tekst)"));
-    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.8"), tr("Øvelse 1.8 (audio)"));
-    MK_FST_RECEPTION(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.1: Reception"));
-    MK_FST_DFG(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.2: Produktion"));
-    MK_FST_DFT(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.3: Oversættelse"));
-    MK_ANY(tr("lectures/danish") + "/1.1", tr("Forelæsning 1 som PDF"), showLecturePDF);
+    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (tekst)"), 2, 1);
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (audio)"), 2, 2);
+    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.4"), tr("Øvelse 1.4 (tekst)"), 2, 3);
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.4"), tr("Øvelse 1.4 (audio)"), 2, 4);
+    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.5"), tr("Øvelse 1.5 (tekst)"), 2, 5);
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.5"), tr("Øvelse 1.5 (audio)"), 2, 6);
+    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.6"), tr("Øvelse 1.6 (tekst)"), 2, 7);
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.6"), tr("Øvelse 1.6 (audio)"), 2, 8);
+    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.7"), tr("Øvelse 1.7 (tekst)"), 2, 9);
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.7"), tr("Øvelse 1.7 (audio)"), 2, 10);
+    MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.8"), tr("Øvelse 1.8 (tekst)"), 2, 11);
+    MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.8"), tr("Øvelse 1.8 (audio)"), 2, 12);
+    MK_FST_RECEPTION(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.1: Reception"), 3, 0);
+    MK_FST_DFG(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.2: Produktion"), 3, 1);
+    MK_FST_DFT(QT_TR_NOOP("fsts/1.2"), tr("FST 1.2.3: Oversættelse"), 3, 2);
+    MK_ANY(tr("lectures/danish") + "/1.1", tr("Forelæsning 1 som PDF"), showLecturePDF, 3, 4);
     ADD_TO_STACK;
 
-    vbox = new QVBoxLayout;
+    /*
+    grid = new QGridLayout;
     MK_LECTURE(tr("lectures/danish") + "/2.1", tr("Forelæsning 2.1"));
     MK_ANY(tr("lectures/danish") + "/2.1", tr("Forelæsning 2.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/2.1"), tr("FST 2.1.1: Reception"));
@@ -185,7 +151,7 @@ translator(translator)
     MK_ANY(tr("lectures/danish") + "/2.1", tr("Forelæsning 2 som PDF"), showLecturePDF);
     ADD_TO_STACK;
 
-    vbox = new QVBoxLayout;
+    grid = new QGridLayout;
     MK_LECTURE(tr("lectures/danish") + "/3.1", tr("Forelæsning 3.1"));
     MK_ANY(tr("lectures/danish") + "/3.1", tr("Forelæsning 3.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/3.1"), tr("FST 3.1.1: Reception"));
@@ -208,7 +174,7 @@ translator(translator)
     MK_ANY(tr("lectures/danish") + "/3.1", tr("Forelæsning 3 som PDF"), showLecturePDF);
     ADD_TO_STACK;
 
-    vbox = new QVBoxLayout;
+    grid = new QGridLayout;
     MK_LECTURE(tr("lectures/danish") + "/4.1", tr("Forelæsning 4.1"));
     MK_ANY(tr("lectures/danish") + "/4.1", tr("Forelæsning 4.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/4.1"), tr("FST 4.1.1: Reception"));
@@ -235,7 +201,7 @@ translator(translator)
     MK_ANY(tr("lectures/danish") + "/4.1", tr("Forelæsning 4 som PDF"), showLecturePDF);
     ADD_TO_STACK;
 
-    vbox = new QVBoxLayout;
+    grid = new QGridLayout;
     MK_LECTURE(tr("lectures/danish") + "/5.1", tr("Forelæsning 5.1"));
     MK_ANY(tr("lectures/danish") + "/5.1", tr("Forelæsning 5.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/5.1"), tr("FST 5.1.1: Reception"));
@@ -264,7 +230,7 @@ translator(translator)
     MK_ANY(tr("lectures/danish") + "/5.1", tr("Forelæsning 5 som PDF"), showLecturePDF);
     ADD_TO_STACK;
 
-    vbox = new QVBoxLayout;
+    grid = new QGridLayout;
     MK_LECTURE(tr("lectures/danish") + "/6.1", tr("Forelæsning 6.1"));
     MK_ANY(tr("lectures/danish") + "/6.1", tr("Forelæsning 6.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/6.1"), tr("FST 6.1.1: Reception"));
@@ -294,7 +260,7 @@ translator(translator)
     MK_ANY(tr("lectures/danish") + "/6.1", tr("Forelæsning 6 som PDF"), showLecturePDF);
     ADD_TO_STACK;
 
-    vbox = new QVBoxLayout;
+    grid = new QGridLayout;
     MK_LECTURE(tr("lectures/danish") + "/7.1", tr("Forelæsning 7.1"));
     MK_ANY(tr("lectures/danish") + "/7.1", tr("Forelæsning 7.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/7.1"), tr("FST 7.1.1: Reception"));
@@ -318,7 +284,7 @@ translator(translator)
     MK_ANY(tr("lectures/danish") + "/7.1", tr("Forelæsning 7 som PDF"), showLecturePDF);
     ADD_TO_STACK;
 
-    vbox = new QVBoxLayout;
+    grid = new QGridLayout;
     MK_LECTURE(tr("lectures/danish") + "/8.1", tr("Forelæsning 8.1"));
     MK_ANY(tr("lectures/danish") + "/8.1", tr("Forelæsning 8.1 dias"), showSlidesPDF);
     MK_FST_RECEPTION(QT_TR_NOOP("fsts/8.1"), tr("FST 8.1.1: Reception"));
@@ -342,11 +308,12 @@ translator(translator)
     MK_ANY(tr("lectures/danish") + "/8.1", tr("Forelæsning 8 som PDF"), showLecturePDF);
     ADD_TO_STACK;
 
-    vbox = new QVBoxLayout;
+    grid = new QGridLayout;
     MK_LECTURE(tr("lectures/danish") + "/9", tr("Forelæsning 9"));
     MK_ANY(tr("lectures/danish") + "/9", tr("Forelæsning 9 dias"), showSlidesPDF);
     MK_ANY(tr("lectures/danish") + "/9", tr("Forelæsning 9 som PDF"), showLecturePDF);
     ADD_TO_STACK;
+    //*/
 
     hbox->addSpacing(10);
     hbox->addLayout(stack);

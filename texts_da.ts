@@ -1531,7 +1531,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="150"/>
         <source>Øvelse 1.6 (tekst)</source>
-        <translation>Øvelse 1-6: Brug N{-mik} og væn dig til de skiftende vokalkvalite­ter (tekst)</translation>
+        <translation>Øvelse 1-6: Brug N{-mik} og væn dig til de skiftende vokalkvaliteter (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="152"/>
@@ -1553,7 +1553,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="154"/>
         <source>Øvelse 1.8 (tekst)</source>
-        <translation>Øvelse 1-8: Brug N-U{+vuq} og væn dig til de konstante for­andringer, der hvor elementerne støder sammen (tekst)</translation>
+        <translation>Øvelse 1-8: Brug N-U{+vuq} og væn dig til de konstante forandringer,&#10;der hvor elementerne støder sammen (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="172"/>

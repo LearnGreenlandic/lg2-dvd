@@ -48,7 +48,7 @@ curAt(-1)
 
     QGridLayout *grid = new QGridLayout;
 
-    grid->addWidget(new QLabel(QString("<b>") + tr("Intransitiv indikativ / fremsættemåde") + "</b>"), 0, 0, 1, 3);
+    grid->addWidget(new QLabel(QString("<b>") + tr("Intransitiv indikativ / fremsættemåde") + "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"), 0, 0, 1, 3);
     grid->addWidget(new QLabel(tr("1.ental \"jeg\"")), 1, 0);
     grid->addWidget(new QLabel(QString("<i>") + tr("2.ental \"du\"") + "</i>"), 2, 0);
     grid->addWidget(new QLabel(tr("3.ental \"han\"")), 3, 0);
@@ -56,19 +56,19 @@ curAt(-1)
     grid->addWidget(new QLabel(QString("<i>") + tr("2.flertal \"I\"") + "</i>"), 5, 0);
     grid->addWidget(new QLabel(QString("<i>") + tr("3.flertal \"de\"") + "</i>"), 6, 0);
 
-    grid->addWidget(new QLabel(QString("<b>") + tr("Intransitiv interrogativ / spørgemåde") + "</b>"), 7, 0, 1, 3);
-    grid->addWidget(new QLabel(tr("2.ental \"du\"")), 8, 0);
-    grid->addWidget(new QLabel(QString("<i>") + tr("3.ental \"han\"") + "</i>"), 9, 0);
-    grid->addWidget(new QLabel(QString("<i>") + tr("2.flertal \"I\"") + "</i>"), 10, 0);
-    grid->addWidget(new QLabel(QString("<i>") + tr("3.flertal \"de\"") + "</i>"), 11, 0);
+    grid->addWidget(new QLabel(QString("<b>") + tr("Intransitiv interrogativ / spørgemåde") + "</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"), 0, 3, 1, 3);
+    grid->addWidget(new QLabel(tr("2.ental \"du\"")), 1, 3);
+    grid->addWidget(new QLabel(QString("<i>") + tr("3.ental \"han\"") + "</i>"), 2, 3);
+    grid->addWidget(new QLabel(QString("<i>") + tr("2.flertal \"I\"") + "</i>"), 3, 3);
+    grid->addWidget(new QLabel(QString("<i>") + tr("3.flertal \"de\"") + "</i>"), 4, 3);
 
-    grid->addWidget(new QLabel(QString("<b>") + tr("Intransitiv participium / navnemåde") + "</b>"), 12, 0, 1, 3);
-    grid->addWidget(new QLabel(tr("1.ental \"jeg\"")), 13, 0);
-    grid->addWidget(new QLabel(QString("<i>") + tr("2.ental \"du\"") + "</i>"), 14, 0);
-    grid->addWidget(new QLabel(QString("<i>") + tr("3.ental \"han\"") + "</i>"), 15, 0);
-    grid->addWidget(new QLabel(QString("<i>") + tr("1.flertal \"vi\"") + "</i>"), 16, 0);
-    grid->addWidget(new QLabel(QString("<i>") + tr("2.flertal \"I\"") + "</i>"), 17, 0);
-    grid->addWidget(new QLabel(QString("<i>") + tr("3.flertal \"de\"") + "</i>"), 18, 0);
+    grid->addWidget(new QLabel(QString("<b>") + tr("Intransitiv participium / navnemåde") + "</b>"), 0, 6, 1, 3);
+    grid->addWidget(new QLabel(tr("1.ental \"jeg\"")), 1, 6);
+    grid->addWidget(new QLabel(QString("<i>") + tr("2.ental \"du\"") + "</i>"), 2, 6);
+    grid->addWidget(new QLabel(QString("<i>") + tr("3.ental \"han\"") + "</i>"), 3, 6);
+    grid->addWidget(new QLabel(QString("<i>") + tr("1.flertal \"vi\"") + "</i>"), 4, 6);
+    grid->addWidget(new QLabel(QString("<i>") + tr("2.flertal \"I\"") + "</i>"), 5, 6);
+    grid->addWidget(new QLabel(QString("<i>") + tr("3.flertal \"de\"") + "</i>"), 6, 6);
 
     inputs.push_back(new QLineEdit);
     connect(inputs.back(), SIGNAL(editingFinished()), this, SLOT(checkInputs()));
@@ -84,8 +84,8 @@ curAt(-1)
     grid->addWidget(inputs[0], 1, 1);
     grid->addWidget(inputs[1], 3, 1);
     grid->addWidget(inputs[2], 4, 1);
-    grid->addWidget(inputs[3], 8, 1);
-    grid->addWidget(inputs[4], 13, 1);
+    grid->addWidget(inputs[3], 1, 4);
+    grid->addWidget(inputs[4], 1, 7);
 
     checks.push_back(new QLabel);
     checks.push_back(new QLabel);
@@ -96,8 +96,8 @@ curAt(-1)
     grid->addWidget(checks[0], 1, 2);
     grid->addWidget(checks[1], 3, 2);
     grid->addWidget(checks[2], 4, 2);
-    grid->addWidget(checks[3], 8, 2);
-    grid->addWidget(checks[4], 13, 2);
+    grid->addWidget(checks[3], 1, 5);
+    grid->addWidget(checks[4], 1, 8);
 
     qvbl->addLayout(grid);
 
