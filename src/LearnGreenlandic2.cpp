@@ -43,6 +43,7 @@ int main(int argc, char *argv[]) {
         }
     } while (tDir.cdUp());
 
+    /*
     {
         QProgressDialog progress("Checking all drives for LG2 data...", "", 0, 26);
         progress.setWindowModality(Qt::WindowModal);
@@ -61,6 +62,7 @@ int main(int argc, char *argv[]) {
         }
         progress.setValue(drives.size());
     }
+    //*/
     if (dirs.empty() || find_newest(dirs, "./revision.txt").isEmpty()) {
         QMessageBox::critical(0, "Missing Data!", "Could not find a suitable lessons2 folder. Maybe you forgot to insert the DVD?");
         app.exit(-1);
