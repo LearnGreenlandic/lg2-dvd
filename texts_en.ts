@@ -67,27 +67,27 @@
     <message>
         <location filename="src/Fillout11.cpp" line="110"/>
         <source>Gå til næste ord</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to next word</translation>
     </message>
     <message>
         <location filename="src/Fillout11.cpp" line="122"/>
         <source>Færdig!</source>
-        <translation type="unfinished"></translation>
+        <translation>Done!</translation>
     </message>
     <message>
         <location filename="src/Fillout11.cpp" line="122"/>
         <source>Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nothing remains in this exercise. Do you wish to go to next exercise?</translation>
     </message>
     <message>
         <location filename="src/Fillout11.cpp" line="123"/>
         <source>Ja, næste øvelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Yes, next exercise</translation>
     </message>
     <message>
         <location filename="src/Fillout11.cpp" line="124"/>
         <source>Nej, tilbage til menuen</source>
-        <translation type="unfinished"></translation>
+        <translation>No, back to the menu</translation>
     </message>
     <message>
         <location filename="src/Fillout11.cpp" line="142"/>
@@ -97,72 +97,67 @@
     <message>
         <location filename="src/Fillout11.cpp" line="154"/>
         <source>Korrekt!</source>
-        <translation type="unfinished"></translation>
+        <translation>Correct!</translation>
     </message>
     <message>
         <location filename="src/Fillout11.cpp" line="157"/>
         <source>Næsten korrekt</source>
-        <translation type="unfinished"></translation>
+        <translation>Almost correct</translation>
     </message>
     <message>
         <location filename="src/Fillout11.cpp" line="160"/>
         <source>Ikke korrekt</source>
-        <translation type="unfinished"></translation>
+        <translation>Incorrect</translation>
     </message>
 </context>
 <context>
     <name>ListenRepeatAudio</name>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="65"/>
-        <source>Aflyt og nedkriv hvad der bliver sagt ord for ord.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="86"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="87"/>
         <source>Check</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="88"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="89"/>
         <source>Giv op...</source>
-        <translation type="unfinished"></translation>
+        <translation>Give up...</translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="100"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="101"/>
         <source>Gå til næste ord</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to next word</translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="168"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="169"/>
         <source>Skriv ord nummer %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>Write word number %1:</translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="187"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="188"/>
         <source>Korrekt!</source>
-        <translation type="unfinished"></translation>
+        <translation>Correct!</translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="191"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="192"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
-        <translation type="unfinished"></translation>
+        <translation>Almost correct. Upper and lower case matters...</translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="195"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="196"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
-        <translation type="unfinished"></translation>
+        <translation>Incorrect. Try again...</translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="205"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="206"/>
         <source>Hrhm...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="205"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="206"/>
         <source>Det korrekte ord var:</source>
-        <translation type="unfinished"></translation>
+        <translation>The correct word was:</translation>
     </message>
 </context>
 <context>
@@ -182,13 +177,13 @@ Prøv igen...</source>
         <location filename="src/ListenRepeatPlayer.cpp" line="113"/>
         <location filename="src/ListenRepeatPlayer.cpp" line="235"/>
         <source>Giv op...</source>
-        <translation type="unfinished"></translation>
+        <translation>Give up...</translation>
     </message>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="125"/>
         <location filename="src/ListenRepeatPlayer.cpp" line="247"/>
         <source>Gå til næste ord</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to next word</translation>
     </message>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="216"/>
@@ -198,24 +193,24 @@ Prøv igen...</source>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="353"/>
         <source>Skriv ord nummer %1:</source>
-        <translation type="unfinished"></translation>
+        <translation>Write word number %1:</translation>
     </message>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="372"/>
         <source>Korrekt!</source>
-        <translation type="unfinished"></translation>
+        <translation>Correct!</translation>
     </message>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="376"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
-        <translation type="unfinished"></translation>
+        <translation>Almost correct. Upper and lower case matters...</translation>
     </message>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="380"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
-        <translation type="unfinished"></translation>
+        <translation>Incorrect. Try again...</translation>
     </message>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="390"/>
@@ -225,7 +220,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="390"/>
         <source>Det korrekte ord var:</source>
-        <translation type="unfinished"></translation>
+        <translation>The correct word was:</translation>
     </message>
 </context>
 <context>
@@ -253,49 +248,49 @@ Prøv igen...</source>
     <message>
         <location filename="src/QAAudio.cpp" line="48"/>
         <source>Giv op...</source>
-        <translation type="unfinished"></translation>
+        <translation>Give up...</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="56"/>
         <source>Gå til næste ord</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to next word</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="71"/>
         <source>Færdig!</source>
-        <translation type="unfinished"></translation>
+        <translation>Done!</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="71"/>
         <source>Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nothing remains in this exercise. Do you wish to go to next exercise?</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="72"/>
         <source>Ja, næste øvelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Yes, next exercise</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="73"/>
         <source>Nej, tilbage til menuen</source>
-        <translation type="unfinished"></translation>
+        <translation>No, back to the menu</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="98"/>
         <source>Korrekt!</source>
-        <translation type="unfinished"></translation>
+        <translation>Correct!</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="108"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
-        <translation type="unfinished"></translation>
+        <translation>Almost correct. Upper and lower case matters...</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="111"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
-        <translation type="unfinished"></translation>
+        <translation>Incorrect. Try again...</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="120"/>
@@ -305,7 +300,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/QAAudio.cpp" line="120"/>
         <source>Det korrekte ord var:</source>
-        <translation type="unfinished"></translation>
+        <translation>The correct word was:</translation>
     </message>
 </context>
 <context>
@@ -318,7 +313,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/QATextOnly.cpp" line="44"/>
         <source>Giv op...</source>
-        <translation type="unfinished"></translation>
+        <translation>Give up...</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="25"/>
@@ -333,44 +328,44 @@ Prøv igen...</source>
     <message>
         <location filename="src/QATextOnly.cpp" line="52"/>
         <source>Gå til næste ord</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to next word</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="64"/>
         <source>Færdig!</source>
-        <translation type="unfinished"></translation>
+        <translation>Done!</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="64"/>
         <source>Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nothing remains in this exercise. Do you wish to go to next exercise?</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="65"/>
         <source>Ja, næste øvelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Yes, next exercise</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="66"/>
         <source>Nej, tilbage til menuen</source>
-        <translation type="unfinished"></translation>
+        <translation>No, back to the menu</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="93"/>
         <source>Korrekt!</source>
-        <translation type="unfinished"></translation>
+        <translation>Correct!</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="103"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
-        <translation type="unfinished"></translation>
+        <translation>Almost correct. Upper and lower case matters...</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="106"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
-        <translation type="unfinished"></translation>
+        <translation>Incorrect. Try again...</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="115"/>
@@ -380,7 +375,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/QATextOnly.cpp" line="115"/>
         <source>Det korrekte ord var:</source>
-        <translation type="unfinished"></translation>
+        <translation>The correct word was:</translation>
     </message>
 </context>
 <context>
@@ -388,7 +383,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="103"/>
         <source>Grønlandsk for voksne 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Greenlandic for Foreigners 2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="411"/>
@@ -398,7 +393,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="441"/>
         <source>Forelæsning 9 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 9 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="461"/>
@@ -408,7 +403,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="142"/>
         <source>Forelæsning 1.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 1.1</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="122"/>
@@ -505,7 +500,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="146"/>
         <source>Forelæsning 1.1 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 1.1 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="151"/>
@@ -522,12 +517,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="152"/>
         <source>FST 1.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>FST 1.1.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="153"/>
         <source>FST 1.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>FST 1.1.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="155"/>
@@ -537,7 +532,8 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="155"/>
         <source>LFG 1</source>
-        <translation>Listen/ understand/ repeat 1: Tikaajaat Kristensen</translation>
+        <translation>Listen/ understand/ repeat 1: 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="158"/>
@@ -547,27 +543,27 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="158"/>
         <source>Øvelse 1.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 1-1: Forms of intransitive verbs</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="144"/>
         <source>Forelæsning 1.2</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 1.2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="147"/>
         <source>Forelæsning 1.2 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 1.2 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="159"/>
         <source>exercises/1.2</source>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {1.2?}</translation>
+        <translation>Here you have a few empty paradigms for some of the transitive verbal moods. Fill out all fields you have learned this far. Use the following transitive verb:</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="159"/>
         <source>Øvelse 1.2 NOT FINISHED</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Exercise 1-2: Forms of transitive verbs</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="160"/>
@@ -577,7 +573,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="161"/>
         <source>Øvelse 1.3 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 1-3: Use Vb+TAR first exercise (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="162"/>
@@ -587,7 +583,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="163"/>
         <source>Øvelse 1.4 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 1-4: Use Vb+TAR second exercise (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="164"/>
@@ -597,37 +593,45 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="165"/>
         <source>Øvelse 1.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 1-5: Use the participle (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="166"/>
         <source>Øvelse 1.6 (tekst)</source>
-        <translation>Exercise 1-6: Use N{-mik} to get accustomed to changing vowel qualities (text)</translation>
+        <translation>Exercise 1-6: Use N{-mik} to get accustomed 
+to changing vowel qualities (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="167"/>
         <source>Øvelse 1.6 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 1-6: Use N{-mik} to get accustomed 
+to changing vowel qualities (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="170"/>
         <source>Øvelse 1.7 (tekst)</source>
-        <translation>Exercise 1-7: Use {+mut} to get accustomed to the C1C2-rule (text)</translation>
+        <translation>Exercise 1-7: Use {+mut} to get accustomed 
+to the C1C2-rule (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="171"/>
         <source>Øvelse 1.7 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 1-7: Use {+mut} to get accustomed 
+to the C1C2-rule (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="172"/>
         <source>Øvelse 1.8 (tekst)</source>
-        <translation>Exercise 1-8: Use N-U{+vuq} to accustom yourself with the constant sound changes whenever stems, morphemes, and endings meet (text)</translation>
+        <translation>Exercise 1-8: Use N-U{+vuq} to accustom 
+yourself with the constant sound changes 
+whenever stems, morphemes, and endings meet (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="173"/>
         <source>Øvelse 1.8 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 1-8: Use N-U{+vuq} to accustom 
+yourself with the constant sound changes 
+whenever stems, morphemes, and endings meet (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="175"/>
@@ -644,22 +648,22 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="176"/>
         <source>FST 1.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {1.2.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="177"/>
         <source>FST 1.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {1.2.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="182"/>
         <source>Forelæsning 2.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 2.1</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="186"/>
         <source>Forelæsning 2.1 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 2.1 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="191"/>
@@ -676,12 +680,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="192"/>
         <source>FST 2.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {2.1.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="193"/>
         <source>FST 2.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {2.1.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="195"/>
@@ -691,27 +695,43 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="195"/>
         <source>LFG 2</source>
-        <translation>Listen/ understand/ repeat 2: Tikaajaat Kristensen</translation>
+        <translation>Listen/ understand/ repeat 2: 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="184"/>
         <source>Forelæsning 2.2</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 2.2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="187"/>
         <source>Forelæsning 2.2 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 2.2 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="198"/>
         <source>exercises/2.1</source>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {2.1?}</translation>
+        <translation>Practice your reception. You now hear a recording of the first stanza from each of the two national anthems. Write them down pressing the skip button only when absolutely needed.&lt;br&gt;
+&lt;br&gt;
+Here is a very direct word-by-word translation into English of Henrik Lund&apos;s &lt;i&gt;Qitor­nat saperasi&lt;/i&gt;. It was first printed in 1913:
+&lt;blockquote&gt;Our-land because-you-have-grown-very-old&lt;br&gt;
+your-head it-is-full of-grey-hair&lt;br&gt;
+your-children you-have-always-embraced-them&lt;br&gt;
+yoy-have-given-them your-cost&apos;s things&lt;/blockquote&gt;
+&lt;br&gt;
+And here a word-by-word translation of Jonathan Petersen&apos;s &lt;i&gt;Sine­riak&lt;/i&gt; from the same year:
+&lt;blockquote&gt;a-land that-is-roomy&lt;br&gt;
+Greenlanders we-have-it&lt;br&gt;
+it-all mountainous&lt;br&gt;
+lots-of-fiords its-coast&lt;br&gt;
+they-make-it-a-good-place-to-live&lt;br&gt;
+the-whole its-coast&lt;br&gt;
+islands they-lie-in-front-of-it&lt;/blockquote&gt;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="198"/>
         <source>Øvelse 2.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 2-1: Dictation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="199"/>
@@ -721,7 +741,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="200"/>
         <source>Øvelse 2.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 2-2: Locative with p-stems and up-stems (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="201"/>
@@ -731,7 +751,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="202"/>
         <source>Øvelse 2.3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 2-3A: p-stammer og up-stammer (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="203"/>
@@ -741,7 +761,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="204"/>
         <source>Øvelse 2.3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 2-3B: p-stems and up-stems (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="205"/>
@@ -751,7 +771,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="206"/>
         <source>Øvelse 2.4 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 2-4: Contemporative as substitute when more than one indicative (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="209"/>
@@ -761,7 +781,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="210"/>
         <source>Øvelse 2.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 2-5: Use contemporative as a subordinate mood (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="212"/>
@@ -778,22 +798,22 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="213"/>
         <source>FST 2.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {2.2.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="214"/>
         <source>FST 2.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {2.2.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="219"/>
         <source>Forelæsning 3.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 3.1</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="223"/>
         <source>Forelæsning 3.1 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 3.1 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="228"/>
@@ -810,12 +830,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="229"/>
         <source>FST 3.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {3.1.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="230"/>
         <source>FST 3.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {3.1.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="232"/>
@@ -825,17 +845,18 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="232"/>
         <source>LFG 3</source>
-        <translation>Listen/ understand/ repeat 3: Tikaajaat Kristensen</translation>
+        <translation>Listen/ understand/ repeat 3: 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="221"/>
         <source>Forelæsning 3.2</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 3.2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="224"/>
         <source>Forelæsning 3.2 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 3.2 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="235"/>
@@ -845,7 +866,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="236"/>
         <source>Øvelse 3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 3-1: Play with personal endings I (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="237"/>
@@ -855,7 +876,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="238"/>
         <source>Øvelse 3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 3-2: Play with personal endings II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="239"/>
@@ -865,7 +886,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="240"/>
         <source>Øvelse 3.3 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 3-3: Use the participle with clitic UNA (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="241"/>
@@ -875,7 +896,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="242"/>
         <source>Øvelse 3.4 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 3-4: Use the contemporative mood (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="245"/>
@@ -892,22 +913,22 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="246"/>
         <source>FST 3.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {3.2.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="247"/>
         <source>FST 3.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {3.2.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="252"/>
         <source>Forelæsning 4.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 4.1</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="256"/>
         <source>Forelæsning 4.1 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 4.1 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="261"/>
@@ -924,12 +945,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="262"/>
         <source>FST 4.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {4.1.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="263"/>
         <source>FST 4.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {4.1.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="265"/>
@@ -939,17 +960,18 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="265"/>
         <source>LFG 4</source>
-        <translation>Listen/ understand/ repeat 4: Per Rosing</translation>
+        <translation>Listen/ understand/ repeat 4: 
+Per Rosing</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="254"/>
         <source>Forelæsning 4.2</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 4.2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="257"/>
         <source>Forelæsning 4.2 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 4.2 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="268"/>
@@ -959,7 +981,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="269"/>
         <source>Øvelse 4.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 4-1: Work with clitics LI and LU (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="270"/>
@@ -969,7 +991,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="271"/>
         <source>Øvelse 4.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 4-2: Plural with p-stems and up-stems (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="272"/>
@@ -986,7 +1008,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="273"/>
         <source>Øvelse 4.3 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 4-3: Introduction to possessum I (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="274"/>
@@ -1003,7 +1025,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="275"/>
         <source>Øvelse 4.4.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 4-4A: Introduction to possessum II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="276"/>
@@ -1020,7 +1042,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="277"/>
         <source>Øvelse 4.4.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 4-4B: Introduction to possessum II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="280"/>
@@ -1030,7 +1052,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="281"/>
         <source>Øvelse 4.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 4-5: Practise clitics LI and LU together with the contemporative mood (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="283"/>
@@ -1047,22 +1069,22 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="284"/>
         <source>FST 4.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {4.2.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="285"/>
         <source>FST 4.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {4.2.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="290"/>
         <source>Forelæsning 5.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 5.1</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="294"/>
         <source>Forelæsning 5.1 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 5.1 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="299"/>
@@ -1079,12 +1101,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="300"/>
         <source>FST 5.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {5.1.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="301"/>
         <source>FST 5.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {5.1.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="303"/>
@@ -1094,17 +1116,18 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="303"/>
         <source>LFG 5</source>
-        <translation>Listen/ understand/ repeat 5: Tikaajaat Kristensen</translation>
+        <translation>Listen/ understand/ repeat 5: 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="292"/>
         <source>Forelæsning 5.2</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 5.2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="295"/>
         <source>Forelæsning 5.2 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 5.2 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="306"/>
@@ -1114,7 +1137,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="307"/>
         <source>Øvelse 5.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 5-1: Introducing causative mood (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="308"/>
@@ -1124,7 +1147,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="309"/>
         <source>Øvelse 5.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 5-2: Comparison using +NIRU (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="310"/>
@@ -1134,7 +1157,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="311"/>
         <source>Øvelse 5.3 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 5-3: Variations of ә (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="312"/>
@@ -1144,7 +1167,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="313"/>
         <source>Øvelse 5.4.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 5-4A: Variations of ә II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="314"/>
@@ -1154,7 +1177,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="315"/>
         <source>Øvelse 5.4.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 5-4B: Variations of ә II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="318"/>
@@ -1164,7 +1187,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="319"/>
         <source>Øvelse 5.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 5-5: Variations of ә III (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="320"/>
@@ -1174,7 +1197,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="321"/>
         <source>Øvelse 5.6 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 5-6: The contemporative and the participle (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="323"/>
@@ -1191,22 +1214,22 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="324"/>
         <source>FST 5.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {5.2.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="325"/>
         <source>FST 5.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {5.2.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="330"/>
         <source>Forelæsning 6.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 6.1</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="334"/>
         <source>Forelæsning 6.1 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 6.1 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="339"/>
@@ -1223,12 +1246,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="340"/>
         <source>FST 6.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {6.1.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="341"/>
         <source>FST 6.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {6.1.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="343"/>
@@ -1238,37 +1261,38 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="343"/>
         <source>LFG 6</source>
-        <translation>Listen/ understand/ repeat 6: Per Rosing</translation>
+        <translation>Listen/ understand/ repeat 6: 
+Per Rosing</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="332"/>
         <source>Forelæsning 6.2</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 6.2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="335"/>
         <source>Forelæsning 6.2 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 6.2 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="346"/>
         <source>Øvelse 6.1 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {6.1 ?}</translation>
+        <translation>Exercise 6-1: Practice N-U and N-U-NNGIT in combination with the clitic particle LI (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="347"/>
         <source>Øvelse 6.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 6-1: Practice N-U and N-U-NNGIT in combination with the clitic particle LI (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="348"/>
         <source>Øvelse 6.2 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {6.2 ?}</translation>
+        <translation>Exercise 6-2: Practice N-INNAQ (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="349"/>
         <source>Øvelse 6.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 6-2: Practice N-INNAQ (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="350"/>
@@ -1280,12 +1304,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="350"/>
         <source>Øvelse 6.3.1 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {6.3.1 ?}</translation>
+        <translation>Exercise 6-3A: Practise Vb+GUSUP (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="351"/>
         <source>Øvelse 6.3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 6-3A: Practise Vb+GUSUP (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="352"/>
@@ -1297,12 +1321,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="352"/>
         <source>Øvelse 6.3.2 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {6.3.2 ?}</translation>
+        <translation>Exercise 6-3B: Practise Vb+GUSUP-NNGIT (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="353"/>
         <source>Øvelse 6.3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 6-3B: Practise Vb+GUSUP-NNGIT (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="354"/>
@@ -1314,12 +1338,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="354"/>
         <source>Øvelse 6.4.1 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {6.4.1 ?}</translation>
+        <translation>Exercise 6-4A: Practise Vb+TAR (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="355"/>
         <source>Øvelse 6.4.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 6-4A: Practise Vb+TAR (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="358"/>
@@ -1331,27 +1355,27 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="358"/>
         <source>Øvelse 6.4.2 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {6.4.2 ?}</translation>
+        <translation>Exercise 6-4B: Practise Vb+TAR=NNGIT (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="359"/>
         <source>Øvelse 6.4.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 6-4B: Practise Vb+TAR=NNGIT (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="360"/>
         <source>Øvelse 6.5 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {6.5 ?}</translation>
+        <translation>Exercise 6-5: Practise TERMINALIS-KAR (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="361"/>
         <source>Øvelse 6.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 6-5: Practise TERMINALIS-KAR (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="362"/>
         <source>Øvelse 6.6 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {6.6 ?}</translation>
+        <translation>Exercise 6-6: Practise TERMINALIS-KAR with further morphemes (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="364"/>
@@ -1368,22 +1392,22 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="365"/>
         <source>FST 6.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {6.2.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="366"/>
         <source>FST 6.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {6.2.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="371"/>
         <source>Forelæsning 7.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 7.1</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="375"/>
         <source>Forelæsning 7.1 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 7.1 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="380"/>
@@ -1400,12 +1424,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="381"/>
         <source>FST 7.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {7.1.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="382"/>
         <source>FST 7.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {7.1.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="384"/>
@@ -1415,62 +1439,63 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="384"/>
         <source>LFG 7</source>
-        <translation>Listen/ understand/ repeat 7: Per Rosing</translation>
+        <translation>Listen/ understand/ repeat 7: 
+Per Rosing</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="373"/>
         <source>Forelæsning 7.2</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 7.2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="376"/>
         <source>Forelæsning 7.2 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 7.2 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="387"/>
         <source>Øvelse 7.1 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {7.1 ?}</translation>
+        <translation>Exercise 7-1: Practise the interrogative dummy su-</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="388"/>
         <source>Øvelse 7.2 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {7.2 ?}</translation>
+        <translation>exercise 7-2: Practise ila</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="389"/>
         <source>Øvelse 7.3.1 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {7.3.1 ?}</translation>
+        <translation>Exercise 7-3A: Absolutive and relative (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="390"/>
         <source>Øvelse 7.3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 7-3A: Absolutive and relative (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="391"/>
         <source>Øvelse 7.3.2 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {7.3.2 ?}</translation>
+        <translation>Exercise 7-3B: Absolutive and relative (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="392"/>
         <source>Øvelse 7.3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 7-3B: Absolutive and relative (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="393"/>
         <source>Øvelse 7.4 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {7.4 ?}</translation>
+        <translation>Exercise 7-4: Play with half-transitive (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="394"/>
         <source>Øvelse 7.4 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 7-4: Play with half-transitive (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="395"/>
         <source>Øvelse 7.5 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {7.5 ?}</translation>
+        <translation>Exercise 7-5: Play with half-transitive II</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="398"/>
@@ -1487,22 +1512,22 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="399"/>
         <source>FST 7.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {7.2.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="400"/>
         <source>FST 7.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {7.2.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="405"/>
         <source>Forelæsning 8.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 8.1</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="409"/>
         <source>Forelæsning 8.1 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 8.1 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="414"/>
@@ -1519,12 +1544,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="415"/>
         <source>FST 8.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {8.1.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="416"/>
         <source>FST 8.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {8.1.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="418"/>
@@ -1534,17 +1559,18 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="418"/>
         <source>LFG 8</source>
-        <translation>Listen/ understand/ repeat 8: Tikaajaat Kristensen</translation>
+        <translation>Listen/ understand/ repeat 8: 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="407"/>
         <source>Forelæsning 8.2</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 8.2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="410"/>
         <source>Forelæsning 8.2 dias</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 8.2 slides</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="421"/>
@@ -1554,47 +1580,47 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="421"/>
         <source>Øvelse 8.1 NOT FINISHED</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 8-1: Tread carefully when you understand and produce nominal wordforms for you must be able to handle case, person and number at the same time</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="422"/>
         <source>Øvelse 8.2.1 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {8.2.1 ?}</translation>
+        <translation>Exercise 8-2A: Practise Vb+TUQ-QAR (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="423"/>
         <source>Øvelse 8.2.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 8-2A: Practise Vb+TUQ-QAR (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="424"/>
         <source>Øvelse 8.2.2 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {8.2.2 ?}</translation>
+        <translation>Exercise 8-2B: Practise the structure Vb+TUQ-QAR-NNGIT (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="425"/>
         <source>Øvelse 8.2.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 8-2B: Practise the structure Vb+TUQ-QAR-NNGIT (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="426"/>
         <source>Øvelse 8.3.1 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {8.3.1 ?}</translation>
+        <translation>Exercise 8-3A Practise the structure Vb+TUQ-RUJUK=SUAQ-U (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="427"/>
         <source>Øvelse 8.3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 8-3A Practise the structure Vb+TUQ-RUJUK=SUAQ-U (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="428"/>
         <source>Øvelse 8.3.2 (tekst)</source>
-        <translation type="unfinished">Exercise 5-6: The contemporative and the participle (text) {8.3.2 ?}</translation>
+        <translation>Exercise 8-3B: Practise the structure Vb+TUQ-RUJUK=SUAQ-U-NNGIT (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="429"/>
         <source>Øvelse 8.3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Exercise 8-3B: Practise the structure Vb+TUQ-RUJUK=SUAQ-U-NNGIT (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="432"/>
@@ -1611,17 +1637,17 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="433"/>
         <source>FST 8.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.2: Production {8.2.2:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="434"/>
         <source>FST 8.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">FST 1.1.3: Translation {8.2.3:?}</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="439"/>
         <source>Forelæsning 9</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture 9</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="445"/>
@@ -1639,9 +1665,14 @@ Prøv igen...</source>
         <translation>Chapter 9 as PDF</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="469"/>
+        <location filename="src/TaskChooser.cpp" line="465"/>
+        <source>gfx/english.png</source>
+        <translation>gfx/danish.png</translation>
+    </message>
+    <message>
+        <location filename="src/TaskChooser.cpp" line="471"/>
         <source>Afslut LG2</source>
-        <translation type="unfinished"></translation>
+        <translation>Exit LG2</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="160"/>
@@ -1930,27 +1961,27 @@ Remember that transitive as well as intransitive statements can be put in compar
     <message>
         <location filename="src/UpdownOne.cpp" line="27"/>
         <source>Gå til næste ord</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to next word</translation>
     </message>
     <message>
         <location filename="src/UpdownOne.cpp" line="41"/>
         <source>Færdig!</source>
-        <translation type="unfinished"></translation>
+        <translation>Done!</translation>
     </message>
     <message>
         <location filename="src/UpdownOne.cpp" line="41"/>
         <source>Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nothing remains in this exercise. Do you wish to go to next exercise?</translation>
     </message>
     <message>
         <location filename="src/UpdownOne.cpp" line="42"/>
         <source>Ja, næste øvelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Yes, next exercise</translation>
     </message>
     <message>
         <location filename="src/UpdownOne.cpp" line="43"/>
         <source>Nej, tilbage til menuen</source>
-        <translation type="unfinished"></translation>
+        <translation>No, back to the menu</translation>
     </message>
 </context>
 <context>
@@ -1968,17 +1999,17 @@ Remember that transitive as well as intransitive statements can be put in compar
     <message>
         <location filename="src/UpdownThree.cpp" line="22"/>
         <source>Giv op...</source>
-        <translation type="unfinished"></translation>
+        <translation>Give up...</translation>
     </message>
     <message>
         <location filename="src/UpdownThree.cpp" line="34"/>
         <source>Gå til næste ord</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to next word</translation>
     </message>
     <message>
         <location filename="src/UpdownThree.cpp" line="49"/>
         <source>Færdig!</source>
-        <translation type="unfinished"></translation>
+        <translation>Done!</translation>
     </message>
     <message>
         <location filename="src/UpdownThree.cpp" line="49"/>
@@ -1988,24 +2019,24 @@ Remember that transitive as well as intransitive statements can be put in compar
     <message>
         <location filename="src/UpdownThree.cpp" line="63"/>
         <source>Korrekt!</source>
-        <translation type="unfinished"></translation>
+        <translation>Correct!</translation>
     </message>
     <message>
         <location filename="src/UpdownThree.cpp" line="67"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
-        <translation type="unfinished"></translation>
+        <translation>Almost correct. Upper and lower case matters...</translation>
     </message>
     <message>
         <location filename="src/UpdownThree.cpp" line="71"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
-        <translation type="unfinished"></translation>
+        <translation>Incorrect. Try again...</translation>
     </message>
     <message>
         <location filename="src/UpdownThree.cpp" line="82"/>
         <source>Det korrekte færdige ord var:</source>
-        <translation type="unfinished"></translation>
+        <translation>The correct final word was:</translation>
     </message>
 </context>
 <context>
@@ -2013,7 +2044,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/UpdownTwo.cpp" line="11"/>
         <source>Skriv følgende ord i færdig form:</source>
-        <translation type="unfinished"></translation>
+        <translation>Write the following in final form:</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="20"/>
@@ -2023,54 +2054,54 @@ Prøv igen...</source>
     <message>
         <location filename="src/UpdownTwo.cpp" line="22"/>
         <source>Giv op...</source>
-        <translation type="unfinished"></translation>
+        <translation>Give up...</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="34"/>
         <source>Gå til næste ord</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to next word</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="49"/>
         <source>Færdig!</source>
-        <translation type="unfinished"></translation>
+        <translation>Done!</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="49"/>
         <source>Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nothing remains in this exercise. Do you wish to go to next exercise?</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="50"/>
         <source>Ja, næste øvelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Yes, next exercise</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="51"/>
         <source>Nej, tilbage til menuen</source>
-        <translation type="unfinished"></translation>
+        <translation>No, back to the menu</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="73"/>
         <source>Korrekt!</source>
-        <translation type="unfinished"></translation>
+        <translation>Correct!</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="77"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
-        <translation type="unfinished"></translation>
+        <translation>Almost correct. Upper and lower case matters...</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="81"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
-        <translation type="unfinished"></translation>
+        <translation>Incorrect. Try again...</translation>
     </message>
     <message>
         <location filename="src/UpdownTwo.cpp" line="91"/>
         <source>Det korrekte færdige ord var:</source>
-        <translation type="unfinished"></translation>
+        <translation>The correct final word was:</translation>
     </message>
 </context>
 </TS>

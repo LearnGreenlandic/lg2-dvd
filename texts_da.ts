@@ -113,54 +113,49 @@
 <context>
     <name>ListenRepeatAudio</name>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="65"/>
-        <source>Aflyt og nedkriv hvad der bliver sagt ord for ord.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="86"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="87"/>
         <source>Check</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="88"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="89"/>
         <source>Giv op...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="100"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="101"/>
         <source>Gå til næste ord</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="168"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="169"/>
         <source>Skriv ord nummer %1:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="187"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="188"/>
         <source>Korrekt!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="191"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="192"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="195"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="196"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="205"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="206"/>
         <source>Hrhm...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ListenRepeatAudio.cpp" line="205"/>
+        <location filename="src/ListenRepeatAudio.cpp" line="206"/>
         <source>Det korrekte ord var:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -537,7 +532,8 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="155"/>
         <source>LFG 1</source>
-        <translation>Lyt/ forstå/ gentag 1 v. Tikaajaat Kristensen</translation>
+        <translation>Lyt/ forstå/ gentag 1 v. 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="158"/>
@@ -547,7 +543,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="158"/>
         <source>Øvelse 1.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 1-1: Forskellige former af intransitive verber</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="144"/>
@@ -562,22 +558,22 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="159"/>
         <source>exercises/1.2</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {1.2?}</translation>
+        <translation>Her finder du nu nogle uudfyldte skemaer til nogle af de mange forskellige former af de transitive verber. Udfyld alle de felter, som du foreløbig har lært med følgende transitive verbum:</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="159"/>
         <source>Øvelse 1.2 NOT FINISHED</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Øvelse 1-2: Forskellige former af transitive verber</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="161"/>
         <source>Øvelse 1.3 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 1-3: Brug Vb+TAR første øvelse (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="163"/>
         <source>Øvelse 1.4 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 1-4: Brug Vb+TAR anden øvelse (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="164"/>
@@ -587,22 +583,26 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="165"/>
         <source>Øvelse 1.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 1-5: Brug participium (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="167"/>
         <source>Øvelse 1.6 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 1-6: Brug N{-mik} og væn dig til 
+de skiftende vokalkvaliteter (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="171"/>
         <source>Øvelse 1.7 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 1-7: Brug {+mut} og væn dig til 
+C1C2-reglen (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="173"/>
         <source>Øvelse 1.8 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 1-8: Brug N-U{+vuq} og væn dig til 
+de konstante forandringer, 
+der hvor elementerne støder sammen (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="175"/>
@@ -666,7 +666,8 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="195"/>
         <source>LFG 2</source>
-        <translation>Lyt/ forstå/ gentag 2 v. Tikaajaat Kristensen</translation>
+        <translation>Lyt/ forstå/ gentag 2 v. 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="184"/>
@@ -681,17 +682,32 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="198"/>
         <source>exercises/2.1</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {2.1?}</translation>
+        <translation>Vi skal øve lydopfattelse. Du hører nu en indtaling af før­ste vers af de to na­tional­san­ge. Nedskriv dem så vidt mu­ligt uden at misbruge skip-knappen. Det lærer du nemlig ikke noget af.&lt;br&gt;
+&lt;br&gt;
+Her er først en meget direkte ord-til-ord oversættelse til dansk af Hen­rik Lunds &lt;i&gt;Qitor­nat saperasi&lt;/i&gt;, som blev trykt første gang i 1913:
+&lt;blockquote&gt;Vort-land  fordi-du-er-blevet-meget-gammel&lt;br&gt;
+dit-hoved  det-er-fuldt  af-grå-hår&lt;br&gt;
+dine-børn  du-har-altid-favnet-dem&lt;br&gt;
+du-har-givet-dem  din-kysts  ting&lt;/blockquote&gt;
+&lt;br&gt;
+Og her en ligeledes direkte oversættelse af Jonathan Petersens &lt;i&gt;Sine­riak&lt;/i&gt; fra samme år:
+&lt;blockquote&gt;Et-land  som-er-rummelig&lt;br&gt;
+grønlændere  vi-har-det&lt;br&gt;
+det-hele  bjergrig&lt;br&gt;
+masser-af-fjorde  dens kyst&lt;br&gt;
+de-gør-den-til-et-godt-sted-at-bo&lt;br&gt;
+hele  dens-kyst&lt;br&gt;
+øer  de-ligger-foran-den&lt;/blockquote&gt;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="198"/>
         <source>Øvelse 2.1</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 2-1: Øv din lydopfattelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="200"/>
         <source>Øvelse 2.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 2-2: Lokalis på hhv. p-stammer og up-stammer (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="201"/>
@@ -701,7 +717,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="202"/>
         <source>Øvelse 2.3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 2-3A: p-stammer og up-stammer (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="203"/>
@@ -711,17 +727,17 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="204"/>
         <source>Øvelse 2.3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 2-3B: p-stammer og up-stammer (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="206"/>
         <source>Øvelse 2.4 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 2-4: Brug ledsagemåden som indikativ nummer 2 (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="210"/>
         <source>Øvelse 2.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 2-5: Brug ledsagemåden til det sekundære udsagn (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="212"/>
@@ -780,7 +796,8 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="232"/>
         <source>LFG 3</source>
-        <translation>Lyt/ forstå/ gentag 3 v. Tikaajaat Kristensen</translation>
+        <translation>Lyt/ forstå/ gentag 3 v. 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="221"/>
@@ -795,7 +812,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="236"/>
         <source>Øvelse 3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 3-1: Jongler lidt med personendelserne I (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="237"/>
@@ -805,12 +822,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="238"/>
         <source>Øvelse 3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 3-2: Jongler lidt med personendelserne II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="240"/>
         <source>Øvelse 3.3 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 3-3: Prøv participium sammen med efterhængt UNA (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="241"/>
@@ -820,7 +837,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="242"/>
         <source>Øvelse 3.4 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 3-4: Brug ledsagemåde (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="245"/>
@@ -884,7 +901,8 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="265"/>
         <source>LFG 4</source>
-        <translation>Lyt/ forstå/ gentag 4 v. Per Rosing</translation>
+        <translation>Lyt/ forstå/ gentag 4 v. 
+Per Rosing</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="254"/>
@@ -899,12 +917,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="269"/>
         <source>Øvelse 4.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 4-1: Øv tilhængspartiklerne LI og LU (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="271"/>
         <source>Øvelse 4.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 4-2: Flertal af hhv. p-stammer og up-stammer (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="272"/>
@@ -914,7 +932,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="273"/>
         <source>Øvelse 4.3 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 4-3: Introduktion til personendelserne (possessum) I (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="274"/>
@@ -924,7 +942,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="275"/>
         <source>Øvelse 4.4.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 4-4A: Introduktion til personendelse (possessum) II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="276"/>
@@ -934,7 +952,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="277"/>
         <source>Øvelse 4.4.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 4-4B: Introduktion til personendelse (possessum) II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="280"/>
@@ -944,7 +962,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="281"/>
         <source>Øvelse 4.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 4-5: Øv tilhængspartiklerne LI og LU + ledsagemåde (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="283"/>
@@ -1008,7 +1026,8 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="303"/>
         <source>LFG 5</source>
-        <translation>Lyt/ forstå/ gentag 5 v. Tikaajaat Kristensen</translation>
+        <translation>Lyt/ forstå/ gentag 5 v. 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="292"/>
@@ -1028,7 +1047,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="307"/>
         <source>Øvelse 5.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 5-1: De første causativer (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="308"/>
@@ -1038,7 +1057,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="309"/>
         <source>Øvelse 5.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 5-2: Gradbøjning med +NIRU (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="310"/>
@@ -1048,7 +1067,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="311"/>
         <source>Øvelse 5.3 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 5-3: Variationer over ә (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="312"/>
@@ -1058,7 +1077,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="313"/>
         <source>Øvelse 5.4.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 5-4A: Variationer over ә II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="314"/>
@@ -1068,7 +1087,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="315"/>
         <source>Øvelse 5.4.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 5-4B: Variationer over ә II (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="318"/>
@@ -1078,12 +1097,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="319"/>
         <source>Øvelse 5.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 5-5: Variationer over ә III (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="321"/>
         <source>Øvelse 5.6 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 5-6: Ledsagemåde og participium (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="323"/>
@@ -1147,7 +1166,8 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="343"/>
         <source>LFG 6</source>
-        <translation>Lyt/ forstå/ gentag 6 v. Per Rosing</translation>
+        <translation>Lyt/ forstå/ gentag 6 v. 
+Per Rosing</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="332"/>
@@ -1162,67 +1182,67 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="347"/>
         <source>Øvelse 6.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængs­par­tik­len LI (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="348"/>
         <source>Øvelse 6.2 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {6.2 ?}</translation>
+        <translation>Øvelse 6-2: Øv N-INNAQ (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="349"/>
         <source>Øvelse 6.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 6-2: Øv N-INNAQ (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="350"/>
         <source>Øvelse 6.3.1 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {6.3.1 ?}</translation>
+        <translation>Øvelse 6-3A: Øv Vb+GUSUP (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="351"/>
         <source>Øvelse 6.3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 6-3A: Øv Vb+GUSUP (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="352"/>
         <source>Øvelse 6.3.2 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {6.3.2 ?}</translation>
+        <translation>Øvelse 6-3B: Øv Vb+GUSUP-NNGIT (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="353"/>
         <source>Øvelse 6.3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 6-3B: Øv Vb+GUSUP-NNGIT (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="354"/>
         <source>Øvelse 6.4.1 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {6.4.1 ?}</translation>
+        <translation>Øvelse 6-4A: Øv Vb+TAR (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="355"/>
         <source>Øvelse 6.4.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 6-4A: Øv Vb+TAR (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="358"/>
         <source>Øvelse 6.4.2 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {6.4.2 ?}</translation>
+        <translation>Øvelse 6-4B: Øv Vb+TAR=NNGIT (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="359"/>
         <source>Øvelse 6.4.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 6-4B: Øv Vb+TAR=NNGIT (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="360"/>
         <source>Øvelse 6.5 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {6.5 ?}</translation>
+        <translation>Øvelse 6-5: Øv TERMINALIS-KAR (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="361"/>
         <source>Øvelse 6.5 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 6-5: Øv TERMINALIS-KAR (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="364"/>
@@ -1286,7 +1306,8 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="384"/>
         <source>LFG 7</source>
-        <translation>Lyt/ forstå/ gentag 7 v. Per Rosing</translation>
+        <translation>Lyt/ forstå/ gentag 7 v. 
+Per Rosing</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="373"/>
@@ -1301,32 +1322,32 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="388"/>
         <source>Øvelse 7.2 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {7.2 ?}</translation>
+        <translation>Øvelse 7-2: Øv dig i brugen af ila</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="389"/>
         <source>Øvelse 7.3.1 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {7.3.1 ?}</translation>
+        <translation>Øvelse 7-3A: Absolut og relativ (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="390"/>
         <source>Øvelse 7.3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 7-3A: Absolut og relativ (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="391"/>
         <source>Øvelse 7.3.2 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {7.3.2 ?}</translation>
+        <translation>Øvelse 7-3B: Absolut og relativ (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="392"/>
         <source>Øvelse 7.3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 7-3B: Absolut og relativ (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="394"/>
         <source>Øvelse 7.4 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 7-4: Leg lidt med halvtransitiv (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="398"/>
@@ -1390,7 +1411,8 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="418"/>
         <source>LFG 8</source>
-        <translation>Lyt/ forstå/ gentag 8 v. Tikaajaat Kristensen</translation>
+        <translation>Lyt/ forstå/ gentag 8 v. 
+Tikaajaat Kristensen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="407"/>
@@ -1410,37 +1432,37 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="421"/>
         <source>Øvelse 8.1 NOT FINISHED</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 8-1: Hold tungen lige i munden, når du skal forstå og forme nav­ne­ord, for der er altid 3 forskellige størrelser at holde styr på, nemlig ka­sus, person og tal</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="422"/>
         <source>Øvelse 8.2.1 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {8.2.1 ?}</translation>
+        <translation>Øvelse 8-2A: Øv strukturen Vb+TUQ-QAR (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="423"/>
         <source>Øvelse 8.2.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 8-2A: Øv strukturen Vb+TUQ-QAR (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="424"/>
         <source>Øvelse 8.2.2 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {8.2.2 ?}</translation>
+        <translation>Øvelse 8-2B: Øv strukturen Vb+TUQ-QAR-NNGIT (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="425"/>
         <source>Øvelse 8.2.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 8-2B: Øv strukturen Vb+TUQ-QAR-NNGIT (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="427"/>
         <source>Øvelse 8.3.1 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 8-3A Øv strukturen Vb+TUQ-RUJUK=SUAQ-U (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="429"/>
         <source>Øvelse 8.3.2 (audio)</source>
-        <translation type="unfinished"></translation>
+        <translation>Øvelse 8-3B Øv strukturen Vb+TUQ-RUJUK=SUAQ-U-NNGIT (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="432"/>
@@ -1485,7 +1507,12 @@ Prøv igen...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="469"/>
+        <location filename="src/TaskChooser.cpp" line="465"/>
+        <source>gfx/english.png</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/TaskChooser.cpp" line="471"/>
         <source>Afslut LG2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1768,7 +1795,7 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="346"/>
         <source>Øvelse 6.1 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {6.1 ?}</translation>
+        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængs­par­tik­len LI (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="348"/>
@@ -1814,7 +1841,7 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="362"/>
         <source>Øvelse 6.6 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {6.6 ?}</translation>
+        <translation>Øvelse 6-6: Øv TERMINALIS-KAR med yderligere tilhæng (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="336"/>
@@ -1829,7 +1856,7 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="387"/>
         <source>Øvelse 7.1 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {7.1 ?}</translation>
+        <translation>Øvelse 7-1: Øv dig i brugen af den spørgende dummy su-</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="388"/>
@@ -1857,7 +1884,7 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="393"/>
         <source>Øvelse 7.4 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {7.4 ?}</translation>
+        <translation>Øvelse 7-4: Leg lidt med halvtransitiv (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="395"/>
@@ -1867,7 +1894,7 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="395"/>
         <source>Øvelse 7.5 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {7.5 ?}</translation>
+        <translation>Øvelse 7-5: Leg lidt med halvtransitiv II</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="377"/>
@@ -1895,7 +1922,7 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="426"/>
         <source>Øvelse 8.3.1 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {8.3.1 ?}</translation>
+        <translation>Øvelse 8-3A Øv strukturen Vb+TUQ-RUJUK=SUAQ-U (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="428"/>
@@ -1906,7 +1933,7 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="428"/>
         <source>Øvelse 8.3.2 (tekst)</source>
-        <translation type="unfinished">Øvelse 5-6: Ledsagemåde og participium (tekst) {8.3.2 ?}</translation>
+        <translation>Øvelse 8-3B Øv strukturen Vb+TUQ-RUJUK=SUAQ-U-NNGIT (tekst)</translation>
     </message>
 </context>
 <context>

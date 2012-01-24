@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
         }
     } while (tDir.cdUp());
 
-    /*
+    //*
     {
         QProgressDialog progress("Checking all drives for LG2 data...", "", 0, 26);
         progress.setWindowModality(Qt::WindowModal);

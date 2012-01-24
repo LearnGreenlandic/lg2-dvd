@@ -62,8 +62,9 @@ curAt(-1)
 
     QVBoxLayout *qvbl = new QVBoxLayout;
 
-    QLabel *label = new QLabel(tr("Aflyt og nedkriv hvad der bliver sagt ord for ord."));
-    //label->setWordWrap(true);
+    QLabel *label = new QLabel(tc.tr(which.toStdString().c_str()));
+    label->setTextFormat(Qt::RichText);
+    label->setWordWrap(true);
     qvbl->addWidget(label);
 
     qvbl->addSpacing(10);

@@ -461,6 +461,8 @@ translator(translator)
     button = new QPushButton(tr("Switch to English"));
     button->setStyleSheet("QWidget { border-top: 0; }");
     button->setFlat(true);
+    button->setIconSize(QSize(44, 22));
+    button->setIcon(QIcon(find_newest(dirs, tr("gfx/english.png"))));
     connect(button, SIGNAL(clicked()), this, SLOT(toggleLanguage()));
     middleHBox->addWidget(button);
 
@@ -469,6 +471,8 @@ translator(translator)
     button = new QPushButton(tr("Afslut LG2"));
     button->setStyleSheet("QWidget { border-top: 0; }");
     button->setFlat(true);
+    button->setIconSize(QSize(22, 22));
+    button->setIcon(QIcon(find_newest(dirs, "gfx/exit.png")));
     connect(button, SIGNAL(clicked()), this, SLOT(close()));
     middleHBox->addWidget(button);
 
