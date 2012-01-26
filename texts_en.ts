@@ -1677,7 +1677,7 @@ Tikaajaat Kristensen</translation>
         <location filename="src/TaskChooser.cpp" line="160"/>
         <location filename="src/TaskChooser.cpp" line="161"/>
         <source>exercises/1.3</source>
-        <translation>The following questions are all in the second person singular. That is, they are questions directly to you. All questions are about repeated action which means that all of them contain the morpheme Vb+TAR. Understand the question, understand why it is shaped the way it is, and answer the question affirmatively. Say &lt;i&gt;aap&lt;/i&gt; ...</translation>
+        <translation>The following questions are all in the second person singular. That is, they are questions directly to you. All questions are about repeated action which means that all of them contain the morpheme Vb+TAR. Understand the question, understand why it is shaped the way it is, and answer the question affirmatively. Start with &lt;i&gt;Aap, ...&lt;/i&gt;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="148"/>

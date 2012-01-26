@@ -1519,7 +1519,7 @@ Tikaajaat Kristensen</translation>
         <location filename="src/TaskChooser.cpp" line="160"/>
         <location filename="src/TaskChooser.cpp" line="161"/>
         <source>exercises/1.3</source>
-        <translation>Her er en række spørgsmål til dig dvs. de er i 2. person ental. De drejer sig alle om gentagne forhold, så de indeholder alle sammen elementet Vb+TAR. Forstå spørgsmålet, forstå de processer, der har været på spil da ordene blev dannet, og besvar spørgsmålene positivt. Indled dine svar med ordet &lt;i&gt;aap&lt;/i&gt; ...</translation>
+        <translation>Her er en række spørgsmål til dig dvs. de er i 2. person ental. De drejer sig alle om gentagne forhold, så de indeholder alle sammen elementet Vb+TAR. Forstå spørgsmålet, forstå de processer, der har været på spil da ordene blev dannet, og besvar spørgsmålene positivt. Indled dine svar med &lt;i&gt;Aap, ...&lt;/i&gt;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="148"/>
