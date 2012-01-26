@@ -91,7 +91,7 @@ curAt(-1)
 
     qvbl = new QVBoxLayout;
 
-    QLabel *label = new QLabel(tr("Aflyt og nedkriv hvad der bliver sagt i videoen ord for ord."));
+    QLabel *label = new QLabel(tr("Aflyt og nedkriv hvad der bliver sagt ord for ord."));
     //label->setWordWrap(true);
     qvbl->addWidget(label);
 

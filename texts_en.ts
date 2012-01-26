@@ -164,8 +164,10 @@ Prøv igen...</source>
     <name>ListenRepeatPlayer</name>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="94"/>
-        <source>Aflyt og nedkriv hvad der bliver sagt i videoen ord for ord.</source>
-        <translation type="unfinished"></translation>
+        <location filename="src/ListenRepeatPlayer.cpp" line="216"/>
+        <source>Aflyt og nedkriv hvad der bliver sagt ord for ord.</source>
+        <oldsource>Aflyt og nedkriv hvad der bliver sagt i videoen ord for ord.</oldsource>
+        <translation>Listen and write what is said word for word.</translation>
     </message>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="111"/>
@@ -184,11 +186,6 @@ Prøv igen...</source>
         <location filename="src/ListenRepeatPlayer.cpp" line="247"/>
         <source>Gå til næste ord</source>
         <translation>Go to next word</translation>
-    </message>
-    <message>
-        <location filename="src/ListenRepeatPlayer.cpp" line="216"/>
-        <source>Aflyt og nedkriv hvad der bliver sagt ord for ord.</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="353"/>
@@ -228,12 +225,12 @@ Prøv igen...</source>
     <message>
         <location filename="src/QAAudio.cpp" line="21"/>
         <source>Hør opgaven igen</source>
-        <translation type="unfinished"></translation>
+        <translation>Listen to the task again</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="29"/>
         <source>Skriv og udtal svaret:</source>
-        <translation type="unfinished"></translation>
+        <translation>Write and pronounce the answer:</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="32"/>
@@ -243,7 +240,7 @@ Prøv igen...</source>
     <message>
         <location filename="src/QAAudio.cpp" line="43"/>
         <source>Hør det rigtige igen</source>
-        <translation type="unfinished"></translation>
+        <translation>Listen to the correct again</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="48"/>
@@ -252,8 +249,9 @@ Prøv igen...</source>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="56"/>
-        <source>Gå til næste ord</source>
-        <translation>Go to next word</translation>
+        <source>Gå til næste opgave</source>
+        <oldsource>Gå til næste ord</oldsource>
+        <translation>Go to next task</translation>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="71"/>
@@ -299,8 +297,8 @@ Prøv igen...</source>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="120"/>
-        <source>Det korrekte ord var:</source>
-        <translation>The correct word was:</translation>
+        <source>Det korrekte svar var:</source>
+        <translation>The correct answer was:</translation>
     </message>
 </context>
 <context>
@@ -318,17 +316,18 @@ Prøv igen...</source>
     <message>
         <location filename="src/QATextOnly.cpp" line="25"/>
         <source>Skriv svaret:</source>
-        <translation type="unfinished"></translation>
+        <translation>Write the answer:</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="39"/>
         <source>Hør det rigtige igen</source>
-        <translation type="unfinished"></translation>
+        <translation>Listen to the correct again</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="52"/>
-        <source>Gå til næste ord</source>
-        <translation>Go to next word</translation>
+        <source>Gå til næste opgave</source>
+        <oldsource>Gå til næste ord</oldsource>
+        <translation>Go to next task</translation>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="64"/>
@@ -374,8 +373,8 @@ Prøv igen...</source>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="115"/>
-        <source>Det korrekte ord var:</source>
-        <translation>The correct word was:</translation>
+        <source>Det korrekte svar var:</source>
+        <translation>The correct answer was:</translation>
     </message>
 </context>
 <context>
@@ -998,7 +997,7 @@ Per Rosing</translation>
         <location filename="src/TaskChooser.cpp" line="273"/>
         <source>exercises/4.3</source>
         <oldsource>Exercise 4.3: Possessum I (text)</oldsource>
-        <translation type="unfinished">In this exercise you will be presented with sentences of the type “Subject has/ subjects have N”. Rephrase them to “Subject&apos;s/ subjects&apos; one N”. Endings are N{-a} when possessor is singular and N{-at} when possessor is plural</translation>
+        <translation>In this exercise you will be presented with sentences of the type “Subject has/ subjects have N”. Rephrase them to “Subject&apos;s/ subjects&apos; one N”. Endings are N{-a} when possessor is singular and N{-at} when possessor is plural</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="272"/>
@@ -1015,7 +1014,7 @@ Per Rosing</translation>
         <location filename="src/TaskChooser.cpp" line="275"/>
         <source>exercises/4.4.1</source>
         <oldsource>Exercise 4.4.1: Possessum II (text)</oldsource>
-        <translation type="unfinished">This far you have seen 3 possessive endings with nouns in the singular N{+ga}, N{-a} and N{-at}. Use them and become safe with the sound shifts they produce. &lt;i&gt;taassuma&lt;/i&gt; means “that one&apos;s ..” and &lt;i&gt;taakku&lt;/i&gt; means “those ones&apos; ..”</translation>
+        <translation>This far you have seen 3 possessive endings with nouns in the singular N{+ga}, N{-a} and N{-at}. Use them and become safe with the sound shifts they produce. &lt;i&gt;taassuma&lt;/i&gt; means “that one&apos;s ..” and &lt;i&gt;taakku&lt;/i&gt; means “those ones&apos; ..”</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="274"/>
@@ -1032,7 +1031,7 @@ Per Rosing</translation>
         <location filename="src/TaskChooser.cpp" line="277"/>
         <source>exercises/4.4.2</source>
         <oldsource>Exercise 4.4.2: Possessum II (text)</oldsource>
-        <translation type="unfinished">This far you have only seen one possissive ending with nouns in the plural namely N{-kka}. Use it without getting lost because of the soundshifts it sometimes produces</translation>
+        <translation>This far you have only seen one possissive ending with nouns in the plural namely N{-kka}. Use it without getting lost because of the soundshifts it sometimes produces</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="276"/>
@@ -1299,7 +1298,7 @@ Per Rosing</translation>
         <location filename="src/TaskChooser.cpp" line="351"/>
         <source>exercises/6.3.1</source>
         <oldsource>Exercise 6.3.1: Øv Vb+GUSUP (text)</oldsource>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {6.3.1?}</translation>
+        <translation>Add the morpheme Vb+GUSUP to the verbs hereunder. Note that Vb+GUSUP belongs to a small group of morphemes with a slightly deviation behaviour after vowels. The initial g behaves as g normally behaves i connection with consonants (rg ⇒ r and pg ⇒ *gg ⇒ kk). But after vowels it takes the shape of -rusup- instead of expected * ­gusup-.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="350"/>
@@ -1316,7 +1315,7 @@ Per Rosing</translation>
         <location filename="src/TaskChooser.cpp" line="353"/>
         <source>exercises/6.3.2</source>
         <oldsource>Exercise 6.3.2: Øv Vb+GUSUP (text)</oldsource>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {6.3.2?}</translation>
+        <translation>Add the morphemes Vb+GUSUP-NNGIT to the following verbs</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="352"/>
@@ -1333,7 +1332,7 @@ Per Rosing</translation>
         <location filename="src/TaskChooser.cpp" line="355"/>
         <source>exercises/6.4.1</source>
         <oldsource>Exercise 6.4.1: Øv Vb+TAR (text)</oldsource>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {6.4.1?}</translation>
+        <translation>Add the very important morpheme Vb+TAR to the verbs hereunder. Remember that  Vb+TAR belongs to the group of derivatives and endings with a variable first consonant (T turns /t/ after a consonant but /s/ after a vowel). In dictionaries and word lists +TAR&apos;s meaning is often glossed as &apos;uses to Vb&apos;. That is as mentioned a rather unprecise glossing but unfortunately we have no adequate short glossing into English. The negative translation is probably the best one: If the verb does not include +TAR it means &apos;to Vb only once&apos; as in 1969-imi ilisimatusarfimmi taamaatip­punga or &apos;to Vb always&apos; as in arnaavu­nga. It would have been taamaatittarpunga had I dropped out of studyuing several times and it would have been arnaasar­punga if I worked as a drag queen every Saturday. Remember that +TAR is mandatory in connection with words meaning repeated time:</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="354"/>
@@ -1350,7 +1349,7 @@ Per Rosing</translation>
         <location filename="src/TaskChooser.cpp" line="359"/>
         <source>exercises/6.4.2</source>
         <oldsource>Exercise 6.4.2: Øv Vb+TAR (text)</oldsource>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {6.4.2?}</translation>
+        <translation>Use the high-frequent combination of morphemes Vb+TAR=NNGIT with all the verbs hereunder</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="358"/>
@@ -1859,24 +1858,24 @@ Remember that transitive as well as intransitive statements can be put in compar
         <location filename="src/TaskChooser.cpp" line="346"/>
         <location filename="src/TaskChooser.cpp" line="347"/>
         <source>exercises/6.1</source>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {6.1?}</translation>
+        <translation>Glue the two pieces of information hereunder together by means of N-U or N-U-NNGIT and the clitic LI</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="348"/>
         <location filename="src/TaskChooser.cpp" line="349"/>
         <source>exercises/6.2</source>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {6.2?}</translation>
+        <translation>Add the derivational morpheme N-INNAQ to each of the following nouns. You must add the morpheme even if the nominal stem is followed by N-U. Remember that stems which include N-INNAQ are -up-stems. It is therefore the ending {-it} you need in the plural</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="360"/>
         <location filename="src/TaskChooser.cpp" line="361"/>
         <source>exercises/6.5</source>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {6.5?}</translation>
+        <translation>Add TERMINALIS-KAR to all nouns hereunder. The process is rather simple since all you have to do is to mechanically add -KAR after the terminal case. Depending on N the combined terminal case ending plus -KAR can thus take four different shapes: N-mukar with uninflected p-stems, N-nukar with inflected p-stems, N+mukar with uninflected up-stems and N+nukar with most inflected up-stems. Use &quot;I&quot; as subject.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="362"/>
         <source>exercises/6.6</source>
-        <translation type="unfinished">Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference) {6.6?}</translation>
+        <translation>This exercise is an expanded form of exercise 6-5. Add TERMINALIS-KAR to the nouns hereunder but add a little context to the words you create. Include ullumi, naamik and aqagu (&apos;tomorrow&apos;) and make the sentences both with subject &apos;they&apos; and subject &apos;I&apos;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="336"/>

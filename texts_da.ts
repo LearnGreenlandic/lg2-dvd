@@ -164,7 +164,9 @@ Prøv igen...</source>
     <name>ListenRepeatPlayer</name>
     <message>
         <location filename="src/ListenRepeatPlayer.cpp" line="94"/>
-        <source>Aflyt og nedkriv hvad der bliver sagt i videoen ord for ord.</source>
+        <location filename="src/ListenRepeatPlayer.cpp" line="216"/>
+        <source>Aflyt og nedkriv hvad der bliver sagt ord for ord.</source>
+        <oldsource>Aflyt og nedkriv hvad der bliver sagt i videoen ord for ord.</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -183,11 +185,6 @@ Prøv igen...</source>
         <location filename="src/ListenRepeatPlayer.cpp" line="125"/>
         <location filename="src/ListenRepeatPlayer.cpp" line="247"/>
         <source>Gå til næste ord</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="src/ListenRepeatPlayer.cpp" line="216"/>
-        <source>Aflyt og nedkriv hvad der bliver sagt ord for ord.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -252,7 +249,8 @@ Prøv igen...</source>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="56"/>
-        <source>Gå til næste ord</source>
+        <source>Gå til næste opgave</source>
+        <oldsource>Gå til næste ord</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -299,7 +297,7 @@ Prøv igen...</source>
     </message>
     <message>
         <location filename="src/QAAudio.cpp" line="120"/>
-        <source>Det korrekte ord var:</source>
+        <source>Det korrekte svar var:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -327,7 +325,8 @@ Prøv igen...</source>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="52"/>
-        <source>Gå til næste ord</source>
+        <source>Gå til næste opgave</source>
+        <oldsource>Gå til næste ord</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -374,7 +373,7 @@ Prøv igen...</source>
     </message>
     <message>
         <location filename="src/QATextOnly.cpp" line="115"/>
-        <source>Det korrekte ord var:</source>
+        <source>Det korrekte svar var:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1790,7 +1789,7 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
         <location filename="src/TaskChooser.cpp" line="346"/>
         <location filename="src/TaskChooser.cpp" line="347"/>
         <source>exercises/6.1</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {6.1?}</translation>
+        <translation>Bind de to informationer, du får givet, sammen til eet udsagn ved hjælp af N-U eller N-U-NNGIT og tilhængspartiklen LI</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="346"/>
@@ -1801,42 +1800,42 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
         <location filename="src/TaskChooser.cpp" line="348"/>
         <location filename="src/TaskChooser.cpp" line="349"/>
         <source>exercises/6.2</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {6.2?}</translation>
+        <translation>Sæt tilhænget N-INNAQ på samtlige følgende navneord. Du skal også sætte til­hæn­get på navneordene selv om der kommer N-U efter dem. Husk at navneord med N-INNAQ er -up-stammer. Det er altså endelsen {-it}, du skal bruge i flertal</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="350"/>
         <location filename="src/TaskChooser.cpp" line="351"/>
         <source>exercises/6.3.1</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {6.3.1?}</translation>
+        <translation>Sæt tilhænget Vb+GUSUP på samtlige følgende ver­ber. Vb+GUSUP tilhører en lille gruppe af tilhæng, der opfører sig lidt særpræget, idet det indledende g opfører sig som g plejer at gøre (rg ⇒ r og pg ⇒ *gg ⇒ kk) undtagen når til­hæn­get sættes efter en vokal. Så anvendes nemlig varianten -rusup- i stedet for det forventede ­gusup-.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="352"/>
         <location filename="src/TaskChooser.cpp" line="353"/>
         <source>exercises/6.3.2</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {6.3.2?}</translation>
+        <translation>Sæt tilhænget Vb+GUSUP-NNGIT på samtlige følgende ver­ber.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="354"/>
         <location filename="src/TaskChooser.cpp" line="355"/>
         <source>exercises/6.4.1</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {6.4.1?}</translation>
+        <translation>Brug det meget, meget vigtige tilhæng Vb+TAR på samtlige følgende verber. Husk at Vb+TAR tilhører gruppen af tilhæng og endelser, der har en variabel konsonant som første lyd (T bliver t efter konsonant, men s efter vokal). I glo­selister er +TAR&apos;s betyd­ning normalt anført som “pleje at Vb”. Det er som nævnt noget for håndfast, men vi har ikke en passende kort oversæt­telse til dansk. Faktisk er den negative definition den mest præcise, nemlig den, at hvis Vb ikke har +TAR betyder ordet &apos;Vb-er een gang&apos; som i 1969-imi ilisimatusarfimmi taamaatippunga eller “Vb-er altid” som i arnaavu­nga. Men det ville have været taamaatittarpunga hvis jeg var droppet ud af universitetet fx tre gange og det ville være arnaasar­punga hvis jeg arbejdede som drag-queen om lørdagen. Og husk, at +TAR er obligatorisk sammen med ord, der udtrykker gentagen tid.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="358"/>
         <location filename="src/TaskChooser.cpp" line="359"/>
         <source>exercises/6.4.2</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {6.4.2?}</translation>
+        <translation>Brug den meget vigtige kombination af tilhæng Vb+TAR=NNGIT på samtlige følgende verber.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="360"/>
         <location filename="src/TaskChooser.cpp" line="361"/>
         <source>exercises/6.5</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {6.5?}</translation>
+        <translation>Sæt TERMINALIS-KAR på samtlige følgende nominer. Der er jo blot tale om en meka­nisk udvidelse af terminalis, så det er egentlig ret let. Afhæn­gig af N findes til­hæn­get altså i føl­gende 4 varianter N-mukar ved ubøjede N af p-bøjningen, N-nukar ved (de fleste) bøjede ord af p-bøjningen, N+mukar ved ubøjede N af up-bøjningen og endelig N+nukar ved de fleste bøjede ord af up-bøjningen. Lad subjektet være ”jeg”.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="362"/>
         <source>exercises/6.6</source>
-        <translation type="unfinished">Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled. {6.6?}</translation>
+        <translation>Denne øvelse er en udvidelse af 6-5. Sæt TERMINALIS-KAR på samtlige føl­gen­de no­mi­ner, men medtag nu sammenhængen ullumi, naamik og aqagu (&apos;i mor­gen&apos;) og gør det for såvel subjektet ”de” som subjektet ”jeg”</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="362"/>

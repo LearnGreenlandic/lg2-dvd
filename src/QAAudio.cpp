@@ -53,7 +53,7 @@ curAt(-1)
 
     qvbl->addSpacing(15);
 
-    QPushButton *nb = new QPushButton(tr("Gå til næste ord"));
+    QPushButton *nb = new QPushButton(tr("Gå til næste opgave"));
     connect(nb, SIGNAL(clicked()), this, SLOT(showNext()));
     qvbl->addWidget(nb);
 
@@ -117,7 +117,7 @@ void QAAudio::checkInput() {
 }
 
 void QAAudio::yieldWord() {
-    QMessageBox::information(0, tr("Hrhm..."), QString("<h1>") + tr("Det korrekte ord var:") + QString("</h1><br>") + data.getA(curAt));
+    QMessageBox::information(0, tr("Hrhm..."), QString("<h1>") + tr("Det korrekte svar var:") + QString("</h1><br>") + data.getA(curAt));
     showNext();
 }
 
