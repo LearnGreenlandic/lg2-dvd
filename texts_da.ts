@@ -1981,49 +1981,49 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/UpdownThree.cpp" line="20"/>
+        <location filename="src/UpdownThree.cpp" line="21"/>
         <source>Check</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/UpdownThree.cpp" line="22"/>
+        <location filename="src/UpdownThree.cpp" line="23"/>
         <source>Giv op...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/UpdownThree.cpp" line="34"/>
+        <location filename="src/UpdownThree.cpp" line="35"/>
         <source>Gå til næste ord</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/UpdownThree.cpp" line="49"/>
+        <location filename="src/UpdownThree.cpp" line="50"/>
         <source>Færdig!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/UpdownThree.cpp" line="49"/>
+        <location filename="src/UpdownThree.cpp" line="50"/>
         <source>Der er ikke flere ord...vinduet lukker sig selv nu.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/UpdownThree.cpp" line="63"/>
+        <location filename="src/UpdownThree.cpp" line="64"/>
         <source>Korrekt!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/UpdownThree.cpp" line="67"/>
+        <location filename="src/UpdownThree.cpp" line="68"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/UpdownThree.cpp" line="71"/>
+        <location filename="src/UpdownThree.cpp" line="72"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/UpdownThree.cpp" line="82"/>
+        <location filename="src/UpdownThree.cpp" line="83"/>
         <source>Det korrekte færdige ord var:</source>
         <translation type="unfinished"></translation>
     </message>

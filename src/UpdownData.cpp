@@ -230,74 +230,108 @@ void UpdownData::loadRandom() {
     }
 
     for (int i=0 ; i<ups.size() && i<downs.size() ; ++i) {
-        updowns.push_back(qMakePair(downs.at(i), ups.at(i)));
+        updowns.push_back(qMakePair(downs[i].replace("SULI", "suli"), ups.at(i)));
+
+        if (0) {
+            glossUpperDetailed(ups.at(i));
+            glossUpperShort(ups.at(i));
+        }
     }
 }
 
 QString UpdownData::glossUpperDetailed(QString upper) {
     QStringList ql;
     QRegExp qr("[-<>+]");
-    int o = 0, n = 0;
-    while ((n = qr.indexIn(upper, o)) != -1) {
-        if (o) {
-            --o;
+    while (!upper.isEmpty()) {
+        QMap<QString,QString>::const_iterator it = glosses.lowerBound(upper), good = it;
+        if (it == glosses.end() || upper != it.key()) {
+            --it;
         }
-        QString t = upper.mid(o, n-o), tx = t;
-        tx.replace("<", "&lt;").replace(">", "&gt;");
-        if (glosses.find(t) != glosses.end()) {
-            ql.push_back(QString("<tr><td>") + tx + "</td><td width='20'>&nbsp;</td><td>" + glosses[t] + "</td></tr>");
+        int f = 0;
+        for (; it != glosses.end() && upper.indexOf(it.key()) == 0 && (
+            upper.size() == it.key().size()
+         || upper.at(it.key().size()) == '<' || upper.at(it.key().size()) == '>'
+         || upper.at(it.key().size()) == '+' || upper.at(it.key().size()) == '-')
+         ; ++it) {
+            if (it.key().size() < f) {
+                break;
+            }
+            if (f != 0) {
+                f = it.key().size();
+            }
+            f = it.key().size();
+            good = it;
+        }
+
+        if (f && good != glosses.end()) {
+            QString tx = upper.left(f), rx = good.value();
+            upper = upper.mid(f);
+            tx.replace("<", "&lt;").replace(">", "&gt;");
+            rx.replace("<", "&lt;").replace(">", "&gt;");
+            ql.push_back(QString("<tr><td>") + tx + "</td><td width='20'>&nbsp;</td><td>" + rx + "</td></tr>");
         }
         else {
+            QString tx = upper;
+            int o = upper.indexOf(qr, 1);
+            if (o != -1) {
+                tx = upper.left(o);
+                upper = upper.mid(o);
+            }
+            else {
+                upper.clear();
+            }
+            tx.replace("<", "&lt;").replace(">", "&gt;");
             ql.push_back(QString("<tr><td>") + tx + "</td><td width='20'>&nbsp;</td><td>" + tx + "</td></tr>");
         }
-        o = n+1;
     }
 
-    if (o) {
-        --o;
-    }
-    QString t = upper.mid(o), tx = t;
-    tx.replace("<", "&lt;").replace(">", "&gt;");
-    if (glosses.find(t) != glosses.end()) {
-        ql.push_back(QString("<tr><td>") + tx + "</td><td width='20'>&nbsp;</td><td>" + glosses[t] + "</td></tr>");
-    }
-    else {
-        ql.push_back(QString("<tr><td>") + tx + "</td><td width='20'>&nbsp;</td><td>" + tx + "</td></tr>");
-    }
-
-    return QString("<font size='+2'><table>") + ql.join("\n") + "</table></font>";
+    return QString("<font size='+2'><table>") + ql.join("\n").replace("SULI", "suli") + "</table></font>";
 }
 
 QString UpdownData::glossUpperShort(QString upper) {
     QStringList ql;
     QRegExp qr("[-<>+]");
-    int o = 0, n = 0;
-    while ((n = qr.indexIn(upper, o)) != -1) {
-        if (o) {
-            --o;
+    while (!upper.isEmpty()) {
+        QMap<QString,QString>::const_iterator it = glosses.lowerBound(upper), good = it;
+        if (it == glosses.end() || upper != it.key()) {
+            --it;
         }
-        QString t = upper.mid(o, n-o), tx = t;
-        tx.replace("<", "&lt;").replace(">", "&gt;");
-        if (glosses.find(t) != glosses.end()) {
-            ql.push_back(glosses[t]);
+        int f = 0;
+        for (; it != glosses.end() && upper.indexOf(it.key()) == 0 && (
+            upper.size() == it.key().size()
+         || upper.at(it.key().size()) == '<' || upper.at(it.key().size()) == '>'
+         || upper.at(it.key().size()) == '+' || upper.at(it.key().size()) == '-')
+         ; ++it) {
+            if (it.key().size() < f) {
+                break;
+            }
+            if (f != 0) {
+                f = it.key().size();
+            }
+            f = it.key().size();
+            good = it;
         }
-        else {
+
+        if (f && good != glosses.end()) {
+            QString tx = good.value();
+            upper = upper.mid(f);
+            tx.replace("<", "&lt;").replace(">", "&gt;");
             ql.push_back(tx);
         }
-        o = n+1;
+        else {
+            QString tx = upper;
+            int o = upper.indexOf(qr, 1);
+            if (o != -1) {
+                tx = upper.left(o);
+                upper = upper.mid(o);
+            }
+            else {
+                upper.clear();
+            }
+            tx.replace("<", "&lt;").replace(">", "&gt;");
+            ql.push_back(tx);
+        }
     }
 
-    if (o) {
-        --o;
-    }
-    QString t = upper.mid(o), tx = t;
-    tx.replace("<", "&lt;").replace(">", "&gt;");
-    if (glosses.find(t) != glosses.end()) {
-        ql.push_back(glosses[t]);
-    }
-    else {
-        ql.push_back(tx);
-    }
-
-    return QString("<font size='+2'>") + ql.join(" + ") + "</font>";
+    return QString("<font size='+2'>") + ql.join(" + ").replace("SULI", "suli") + "</font>";
 }
