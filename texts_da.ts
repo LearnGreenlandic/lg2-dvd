@@ -1646,7 +1646,7 @@ Brug ledsagemåden til at skrive følgende sætningssæt sammen til enkelte sæt
         <location filename="src/TaskChooser.cpp" line="235"/>
         <location filename="src/TaskChooser.cpp" line="236"/>
         <source>exercises/3.1</source>
-        <translation>Her kommer en stribe udsagn om nogen, der har gjort noget. Besvar dem benægtende og sig, at det var &apos;os&apos;, der gjorde det. Brug ordet &lt;i&gt;naamik&lt;/i&gt;, der betyder &apos;nej&apos;</translation>
+        <translation>Her kommer en stribe udsagn om nogen, der har gjort noget. Besvar dem benægtende og sig, at det var &apos;os&apos;, der gjorde det. Indled svaret med &lt;i&gt;Naamik, ...&lt;/i&gt;, der betyder &apos;Nej, ...&apos;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="235"/>
@@ -1663,7 +1663,7 @@ Brug ledsagemåden til at skrive følgende sætningssæt sammen til enkelte sæt
         <location filename="src/TaskChooser.cpp" line="239"/>
         <location filename="src/TaskChooser.cpp" line="240"/>
         <source>exercises/3.3</source>
-        <translation>Her kommer en stribe udsagn om nogen, der har gjort noget. Afvis det kategorisk og sig, at det var &apos;jeg&apos;, der gjorde det. Brug konstruktionen med det personlige stedord, &lt;i&gt;uanga&lt;/i&gt;, efterfulgt af tilhængspartiklen UNA og udsagnet i participium. Det er en normal måde, at konstruere modsvarigheden af sætningskløvning</translation>
+        <translation>Her kommer en stribe udsagn om nogen, der har gjort noget. Afvis det kategorisk og sig, at det var &apos;jeg&apos;, der gjorde det. Brug konstruktionen med det personlige stedord, &lt;i&gt;uanga&lt;/i&gt;, efterfulgt af tilhængspartiklen UNA og udsagnet i participium. Det er en normal måde, at konstruere modsvarigheden af sætningskløvning. Indled svaret med &lt;i&gt;Naamik, ...&lt;/i&gt;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="239"/>

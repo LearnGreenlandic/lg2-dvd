@@ -1,4 +1,5 @@
 #include "UpdownData.hpp"
+#include <fstream>
 #include <algorithm>
 
 UpdownData::UpdownData(const dirmap_t& dirs, QString which) :
@@ -127,6 +128,14 @@ void UpdownData::loadRandom() {
         }
     }
 
+    if (0) {
+        std::ofstream f("C:/Temp/lg2-foma-output.txt", std::ios::binary);
+        foreach (QString s, ups) {
+            f.write(s.toUtf8().constData(), s.toUtf8().size());
+            f << '\n';
+        }
+    }
+
     {
         QProcess pf;
         //pf.setProcessChannelMode(QProcess::MergedChannels);
@@ -147,6 +156,10 @@ void UpdownData::loadRandom() {
             ab.append(s.toUtf8());
             ab.append("\n");
         }
+        if (0) {
+            std::ofstream f("C:/Temp/lg2-flookup-input.txt", std::ios::binary);
+            f.write(ab.constData(), ab.size());
+        }
         if (pf.write(ab) != ab.size()) {
             QMessageBox::critical(0, "Flookup Error!", "Could not write to Flookup");
             throw(-1);
@@ -164,19 +177,51 @@ void UpdownData::loadRandom() {
         }
         ab = pf.readAllStandardOutput();
 
+        if (0) {
+            std::ofstream f("C:/Temp/lg2-flookup-output.txt", std::ios::binary);
+            f.write(ab.constData(), ab.size());
+        }
+
         QTextStream tg(&ab, QIODevice::ReadOnly);
         tg.setCodec("UTF-8");
+        QString down;
         QString tmp;
         while (!tg.atEnd()) {
             tmp = tg.readLine();
-            tmp = tmp.trimmed();
-            if (tmp.isNull()) {
+            if (tmp.trimmed().isNull()) {
                 break;
             }
-            if (tmp.isEmpty()) {
-                continue;
+            down += tmp;
+            down += '\n';
+            if (tmp.trimmed().isEmpty()) {
+                down = down.trimmed();
+                downs.push_back(down);
+                if (down.at(0) == '+') {
+                    downs.pop_back();
+                    ups.erase(ups.begin()+downs.size());
+                }
+                else if (down.indexOf('\n') != -1) {
+                    downs.pop_back();
+                    ups.erase(ups.begin()+downs.size());
+                }
+                down.clear();
             }
-            downs.push_back(tmp);
+        }
+    }
+
+    if (0) {
+        std::ofstream f("C:/Temp/lg2-flookup-ups.txt", std::ios::binary);
+        foreach (QString s, ups) {
+            f.write(s.toUtf8().constData(), s.toUtf8().size());
+            f << '\n';
+        }
+    }
+
+    if (0) {
+        std::ofstream f("C:/Temp/lg2-flookup-downs.txt", std::ios::binary);
+        foreach (QString s, downs) {
+            f.write(s.toUtf8().constData(), s.toUtf8().size());
+            f << '\n';
         }
     }
 

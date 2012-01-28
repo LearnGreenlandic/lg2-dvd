@@ -1755,7 +1755,7 @@ Combine the following sentence pairs into single sentences letting the latter be
         <location filename="src/TaskChooser.cpp" line="235"/>
         <location filename="src/TaskChooser.cpp" line="236"/>
         <source>exercises/3.1</source>
-        <translation>Here you get a number of statements about somebody. Deny them saying that the statement is about us. Use the word &lt;i&gt;naamik&lt;/i&gt; meaning &apos;no&apos;</translation>
+        <translation>Here you get a number of statements about somebody. Deny them saying that the statement is about us. Start with &lt;i&gt;Naamik, ...&lt;/i&gt; meaning &apos;No, ...&apos;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="237"/>
@@ -1767,7 +1767,7 @@ Combine the following sentence pairs into single sentences letting the latter be
         <location filename="src/TaskChooser.cpp" line="239"/>
         <location filename="src/TaskChooser.cpp" line="240"/>
         <source>exercises/3.3</source>
-        <translation>Here you get a number of statements about somebody. Deny them saying that the statement is about me. Use the word &lt;i&gt;naamik&lt;/i&gt; meaning &apos;no&apos; plus an often heard emphatic construction: A personal pronoun (in this case &lt;i&gt;uanga&lt;/i&gt;) followed by clitic UNA and a verb i the participle mood.</translation>
+        <translation>Here you get a number of statements about somebody. Deny them saying that the statement is about me. Use the word &lt;i&gt;naamik&lt;/i&gt; meaning &apos;no&apos; plus an often heard emphatic construction: A personal pronoun (in this case &lt;i&gt;uanga&lt;/i&gt;) followed by clitic UNA and a verb i the participle mood. Start with &lt;i&gt;Naamik, ...&lt;/i&gt;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="241"/>

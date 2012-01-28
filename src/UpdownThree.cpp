@@ -15,6 +15,7 @@ curAt(-1)
 
     QVBoxLayout *curWord = new QVBoxLayout;
     up = new QLabel;
+    up->setWordWrap(true);
     input = new QLineEdit;
     connect(input, SIGNAL(returnPressed()), this, SLOT(checkInput()));
     check = new QPushButton(tr("Check"));
