@@ -58,8 +58,8 @@ which(which)
                 tmp = tmp.trimmed();
                 if (!tmp.isEmpty() && tmp.at(0) != '#' && tmp.contains('\t')) {
                     QStringList ls = tmp.split('\t');
-                    ls.pop_front();
                     QStringList &qls = data[ls.at(0)];
+                    ls.pop_front();
                     for (int i=0 ; i<ls.size() ; ++i) {
                         qls[i] = ls.at(i);
                     }

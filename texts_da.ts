@@ -681,15 +681,15 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="198"/>
         <source>exercises/2.1</source>
-        <translation>Vi skal øve lydopfattelse. Du hører nu en indtaling af før­ste vers af de to na­tional­san­ge. Nedskriv dem så vidt mu­ligt uden at misbruge skip-knappen. Det lærer du nemlig ikke noget af.&lt;br&gt;
+        <translation>Vi skal øve lydopfattelse. Du hører nu en indtaling af første vers af de to nationalsange. Nedskriv dem så vidt muligt uden at misbruge skip-knappen. Det lærer du nemlig ikke noget af.&lt;br&gt;
 &lt;br&gt;
-Her er først en meget direkte ord-til-ord oversættelse til dansk af Hen­rik Lunds &lt;i&gt;Qitor­nat saperasi&lt;/i&gt;, som blev trykt første gang i 1913:
+Her er først en meget direkte ord-til-ord oversættelse til dansk af Henrik Lunds &lt;i&gt;Qitornat saperasi&lt;/i&gt;, som blev trykt første gang i 1913:
 &lt;blockquote&gt;Vort-land  fordi-du-er-blevet-meget-gammel&lt;br&gt;
 dit-hoved  det-er-fuldt  af-grå-hår&lt;br&gt;
 dine-børn  du-har-altid-favnet-dem&lt;br&gt;
 du-har-givet-dem  din-kysts  ting&lt;/blockquote&gt;
 &lt;br&gt;
-Og her en ligeledes direkte oversættelse af Jonathan Petersens &lt;i&gt;Sine­riak&lt;/i&gt; fra samme år:
+Og her en ligeledes direkte oversættelse af Jonathan Petersens &lt;i&gt;Sineriak&lt;/i&gt; fra samme år:
 &lt;blockquote&gt;Et-land  som-er-rummelig&lt;br&gt;
 grønlændere  vi-har-det&lt;br&gt;
 det-hele  bjergrig&lt;br&gt;
@@ -1181,7 +1181,7 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="347"/>
         <source>Øvelse 6.1 (audio)</source>
-        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængs­par­tik­len LI (audio)</translation>
+        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængspartiklen LI (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="348"/>
@@ -1431,7 +1431,7 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="421"/>
         <source>Øvelse 8.1 NOT FINISHED</source>
-        <translation>Øvelse 8-1: Hold tungen lige i munden, når du skal forstå og forme nav­ne­ord, for der er altid 3 forskellige størrelser at holde styr på, nemlig ka­sus, person og tal</translation>
+        <translation>Øvelse 8-1: Hold tungen lige i munden, når du skal forstå og forme navneord, for der er altid 3 forskellige størrelser at holde styr på, nemlig kasus, person og tal</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="422"/>
@@ -1794,31 +1794,31 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="346"/>
         <source>Øvelse 6.1 (tekst)</source>
-        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængs­par­tik­len LI (tekst)</translation>
+        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængspartiklen LI (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="348"/>
         <location filename="src/TaskChooser.cpp" line="349"/>
         <source>exercises/6.2</source>
-        <translation>Sæt tilhænget N-INNAQ på samtlige følgende navneord. Du skal også sætte til­hæn­get på navneordene selv om der kommer N-U efter dem. Husk at navneord med N-INNAQ er -up-stammer. Det er altså endelsen {-it}, du skal bruge i flertal</translation>
+        <translation>Sæt tilhænget N-INNAQ på samtlige følgende navneord. Du skal også sætte tilhænget på navneordene selv om der kommer N-U efter dem. Husk at navneord med N-INNAQ er -up-stammer. Det er altså endelsen {-it}, du skal bruge i flertal</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="350"/>
         <location filename="src/TaskChooser.cpp" line="351"/>
         <source>exercises/6.3.1</source>
-        <translation>Sæt tilhænget Vb+GUSUP på samtlige følgende ver­ber. Vb+GUSUP tilhører en lille gruppe af tilhæng, der opfører sig lidt særpræget, idet det indledende g opfører sig som g plejer at gøre (rg ⇒ r og pg ⇒ *gg ⇒ kk) undtagen når til­hæn­get sættes efter en vokal. Så anvendes nemlig varianten -rusup- i stedet for det forventede ­gusup-.</translation>
+        <translation>Sæt tilhænget Vb+GUSUP på samtlige følgende verber. Vb+GUSUP tilhører en lille gruppe af tilhæng, der opfører sig lidt særpræget, idet det indledende g opfører sig som g plejer at gøre (rg ⇒ r og pg ⇒ *gg ⇒ kk) undtagen når tilhænget sættes efter en vokal. Så anvendes nemlig varianten -rusup- i stedet for det forventede gusup-.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="352"/>
         <location filename="src/TaskChooser.cpp" line="353"/>
         <source>exercises/6.3.2</source>
-        <translation>Sæt tilhænget Vb+GUSUP-NNGIT på samtlige følgende ver­ber.</translation>
+        <translation>Sæt tilhænget Vb+GUSUP-NNGIT på samtlige følgende verber.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="354"/>
         <location filename="src/TaskChooser.cpp" line="355"/>
         <source>exercises/6.4.1</source>
-        <translation>Brug det meget, meget vigtige tilhæng Vb+TAR på samtlige følgende verber. Husk at Vb+TAR tilhører gruppen af tilhæng og endelser, der har en variabel konsonant som første lyd (T bliver t efter konsonant, men s efter vokal). I glo­selister er +TAR&apos;s betyd­ning normalt anført som “pleje at Vb”. Det er som nævnt noget for håndfast, men vi har ikke en passende kort oversæt­telse til dansk. Faktisk er den negative definition den mest præcise, nemlig den, at hvis Vb ikke har +TAR betyder ordet &apos;Vb-er een gang&apos; som i 1969-imi ilisimatusarfimmi taamaatippunga eller “Vb-er altid” som i arnaavu­nga. Men det ville have været taamaatittarpunga hvis jeg var droppet ud af universitetet fx tre gange og det ville være arnaasar­punga hvis jeg arbejdede som drag-queen om lørdagen. Og husk, at +TAR er obligatorisk sammen med ord, der udtrykker gentagen tid.</translation>
+        <translation>Brug det meget, meget vigtige tilhæng Vb+TAR på samtlige følgende verber. Husk at Vb+TAR tilhører gruppen af tilhæng og endelser, der har en variabel konsonant som første lyd (T bliver t efter konsonant, men s efter vokal). I gloselister er +TAR&apos;s betydning normalt anført som “pleje at Vb”. Det er som nævnt noget for håndfast, men vi har ikke en passende kort oversættelse til dansk. Faktisk er den negative definition den mest præcise, nemlig den, at hvis Vb ikke har +TAR betyder ordet &apos;Vb-er een gang&apos; som i 1969-imi ilisimatusarfimmi taamaatippunga eller “Vb-er altid” som i arnaavunga. Men det ville have været taamaatittarpunga hvis jeg var droppet ud af universitetet fx tre gange og det ville være arnaasarpunga hvis jeg arbejdede som drag-queen om lørdagen. Og husk, at +TAR er obligatorisk sammen med ord, der udtrykker gentagen tid.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="358"/>
@@ -1830,12 +1830,12 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
         <location filename="src/TaskChooser.cpp" line="360"/>
         <location filename="src/TaskChooser.cpp" line="361"/>
         <source>exercises/6.5</source>
-        <translation>Sæt TERMINALIS-KAR på samtlige følgende nominer. Der er jo blot tale om en meka­nisk udvidelse af terminalis, så det er egentlig ret let. Afhæn­gig af N findes til­hæn­get altså i føl­gende 4 varianter N-mukar ved ubøjede N af p-bøjningen, N-nukar ved (de fleste) bøjede ord af p-bøjningen, N+mukar ved ubøjede N af up-bøjningen og endelig N+nukar ved de fleste bøjede ord af up-bøjningen. Lad subjektet være ”jeg”.</translation>
+        <translation>Sæt TERMINALIS-KAR på samtlige følgende nominer. Der er jo blot tale om en mekanisk udvidelse af terminalis, så det er egentlig ret let. Afhængig af N findes tilhænget altså i følgende 4 varianter N-mukar ved ubøjede N af p-bøjningen, N-nukar ved (de fleste) bøjede ord af p-bøjningen, N+mukar ved ubøjede N af up-bøjningen og endelig N+nukar ved de fleste bøjede ord af up-bøjningen. Lad subjektet være ”jeg”.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="362"/>
         <source>exercises/6.6</source>
-        <translation>Denne øvelse er en udvidelse af 6-5. Sæt TERMINALIS-KAR på samtlige føl­gen­de no­mi­ner, men medtag nu sammenhængen ullumi, naamik og aqagu (&apos;i mor­gen&apos;) og gør det for såvel subjektet ”de” som subjektet ”jeg”</translation>
+        <translation>Denne øvelse er en udvidelse af 6-5. Sæt TERMINALIS-KAR på samtlige følgende nominer, men medtag nu sammenhængen ullumi, naamik og aqagu (&apos;i morgen&apos;) og gør det for såvel subjektet ”de” som subjektet ”jeg”</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="362"/>
