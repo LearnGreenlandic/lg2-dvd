@@ -8,6 +8,7 @@
 #include "ListenRepeatAudio.hpp"
 #include "Fillout11.hpp"
 #include "Fillout12.hpp"
+#include "Fillout81.hpp"
 #include "TaskChooser.hpp"
 
 #include <QtGlobal>
@@ -419,7 +420,7 @@ translator(translator)
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/8"), tr("LFG 8"));
     COLUMN_BR(1,0);
     vbox->addSpacing(10);
-    MK_ANY(QT_TR_NOOP("exercises/8.1"), tr("Øvelse 8.1 NOT FINISHED"), showFillout11);
+    MK_ANY(QT_TR_NOOP("exercises/8.1"), tr("Øvelse 8.1"), showFillout81);
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.2.1"), tr("Øvelse 8.2.1 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/8.2.1"), tr("Øvelse 8.2.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.2.2"), tr("Øvelse 8.2.2 (tekst)"));
@@ -516,6 +517,14 @@ void TaskChooser::showFillout11() {
 void TaskChooser::showFillout12() {
     const QPair<QString,QString>& p = mappings[sender()];
     Fillout12 *lp = new Fillout12(*this, p.first, p.second);
+    lp->show();
+    lp->raise();
+    lp->activateWindow();
+}
+
+void TaskChooser::showFillout81() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    Fillout81 *lp = new Fillout81(*this, p.first, p.second);
     lp->show();
     lp->raise();
     lp->activateWindow();

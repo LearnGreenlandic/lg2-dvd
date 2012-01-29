@@ -21,6 +21,7 @@ public slots:
     void showSlidesPDF();
     void showFillout11();
     void showFillout12();
+    void showFillout81();
     void showListenRepeat();
     void showListenRepeatAudio();
     void showExercise_qaTextOnly();
