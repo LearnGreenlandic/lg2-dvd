@@ -16,6 +16,7 @@ public:
 public slots:
     void toggleLanguage();
     void switchSection();
+    void showFirstLecture();
     void showLecture();
     void showLecturePDF();
     void showSlidesPDF();

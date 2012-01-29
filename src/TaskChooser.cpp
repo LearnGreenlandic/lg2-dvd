@@ -126,6 +126,7 @@ translator(translator)
     sections->setContentsMargins(0,0,0,0);
     sections->setSpacing(0);
     ClickLabel *section = 0;
+    MK_SECTION(tr("Intro"));
     MK_SECTION(tr("Kapitel 1"));
     MK_SECTION(tr("Kapitel 2"));
     MK_SECTION(tr("Kapitel 3"));
@@ -145,8 +146,21 @@ translator(translator)
     QVBoxLayout *vbox = 0;
     QGridLayout *grid = 0;
 
-    COLUMNS_BEGIN;
+    vbox = new QVBoxLayout;
     section = dynamic_cast<ClickLabel*>(section_list.at(0));
+    QLabel *l = new QLabel(tr("introduktion tekst"));
+    l->setTextFormat(Qt::RichText);
+    vbox->addWidget(l);
+    vbox->addSpacing(15);
+    MK_ANY(QT_TR_NOOP("null"), tr("Gå til første forelæsning"), showFirstLecture);
+    button->setStyleSheet("font-weight: bold;");
+    widget = new QWidget;
+    widget->setStyleSheet("margin: 0; padding: 0; text-align: center;");
+    widget->setLayout(vbox);
+    stack->addWidget(widget);
+
+    COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(1));
     MK_LECTURE(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1 dias"));
@@ -191,7 +205,7 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
-    section = dynamic_cast<ClickLabel*>(section_list.at(1));
+    section = dynamic_cast<ClickLabel*>(section_list.at(2));
     MK_LECTURE(tr("lectures/danish") + "/2.1", tr("Forelæsning 2.1"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/2.1", tr("Forelæsning 2.1 dias"));
@@ -231,7 +245,7 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
-    section = dynamic_cast<ClickLabel*>(section_list.at(2));
+    section = dynamic_cast<ClickLabel*>(section_list.at(3));
     MK_LECTURE(tr("lectures/danish") + "/3.1", tr("Forelæsning 3.1"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/3.1", tr("Forelæsning 3.1 dias"));
@@ -265,7 +279,7 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
-    section = dynamic_cast<ClickLabel*>(section_list.at(3));
+    section = dynamic_cast<ClickLabel*>(section_list.at(4));
     MK_LECTURE(tr("lectures/danish") + "/4.1", tr("Forelæsning 4.1"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/4.1", tr("Forelæsning 4.1 dias"));
@@ -304,7 +318,7 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
-    section = dynamic_cast<ClickLabel*>(section_list.at(4));
+    section = dynamic_cast<ClickLabel*>(section_list.at(5));
     MK_LECTURE(tr("lectures/danish") + "/5.1", tr("Forelæsning 5.1"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/5.1", tr("Forelæsning 5.1 dias"));
@@ -345,7 +359,7 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
-    section = dynamic_cast<ClickLabel*>(section_list.at(5));
+    section = dynamic_cast<ClickLabel*>(section_list.at(6));
     MK_LECTURE(tr("lectures/danish") + "/6.1", tr("Forelæsning 6.1"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/6.1", tr("Forelæsning 6.1 dias"));
@@ -387,7 +401,7 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
-    section = dynamic_cast<ClickLabel*>(section_list.at(6));
+    section = dynamic_cast<ClickLabel*>(section_list.at(7));
     MK_LECTURE(tr("lectures/danish") + "/7.1", tr("Forelæsning 7.1"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/7.1", tr("Forelæsning 7.1 dias"));
@@ -422,7 +436,7 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
-    section = dynamic_cast<ClickLabel*>(section_list.at(7));
+    section = dynamic_cast<ClickLabel*>(section_list.at(8));
     MK_LECTURE(tr("lectures/danish") + "/8.1", tr("Forelæsning 8.1"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/8.1", tr("Forelæsning 8.1 dias"));
@@ -459,7 +473,7 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
-    section = dynamic_cast<ClickLabel*>(section_list.at(8));
+    section = dynamic_cast<ClickLabel*>(section_list.at(9));
     MK_LECTURE(tr("lectures/danish") + "/9", tr("Forelæsning 9"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/9", tr("Forelæsning 9 dias"));
@@ -526,6 +540,11 @@ void TaskChooser::showNext(const QString& title) {
             break;
         }
     }
+}
+
+void TaskChooser::showFirstLecture() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    showNext(p.second);
 }
 
 void TaskChooser::showLecture() {
