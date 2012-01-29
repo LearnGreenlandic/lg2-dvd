@@ -20,6 +20,7 @@ public slots:
     void showLecturePDF();
     void showSlidesPDF();
     void showFillout11();
+    void showFillout12();
     void showListenRepeat();
     void showListenRepeatAudio();
     void showExercise_qaTextOnly();

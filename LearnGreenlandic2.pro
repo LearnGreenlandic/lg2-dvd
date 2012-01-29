@@ -30,7 +30,8 @@ SOURCES += \
     src/Fillout11.cpp \
     src/ListenRepeatAudio.cpp \
     src/QAAudio.cpp \
-    src/ClickLabel.cpp
+    src/ClickLabel.cpp \
+    src/Fillout12.cpp
 
 HEADERS  += \
     src/CryptFile.hpp \
@@ -48,7 +49,8 @@ HEADERS  += \
     src/Fillout11.hpp \
     src/ListenRepeatAudio.hpp \
     src/QAAudio.hpp \
-    src/ClickLabel.hpp
+    src/ClickLabel.hpp \
+    src/Fillout12.hpp
 
 CONFIG -= warn_off
 CONFIG += warn_on

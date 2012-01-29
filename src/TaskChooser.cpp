@@ -7,6 +7,7 @@
 #include "ListenRepeatPlayer.hpp"
 #include "ListenRepeatAudio.hpp"
 #include "Fillout11.hpp"
+#include "Fillout12.hpp"
 #include "TaskChooser.hpp"
 
 #include <QtGlobal>
@@ -156,7 +157,7 @@ translator(translator)
     COLUMN_BR(1,0);
     vbox->addSpacing(10);
     MK_ANY(QT_TR_NOOP("exercises/1.1"), tr("Øvelse 1.1"), showFillout11);
-    MK_ANY(QT_TR_NOOP("exercises/1.2"), tr("Øvelse 1.2 NOT FINISHED"), showFillout11);
+    MK_ANY(QT_TR_NOOP("exercises/1.2"), tr("Øvelse 1.2"), showFillout12);
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.4"), tr("Øvelse 1.4 (tekst)"));
@@ -507,6 +508,14 @@ void TaskChooser::showSlidesPDF() {
 void TaskChooser::showFillout11() {
     const QPair<QString,QString>& p = mappings[sender()];
     Fillout11 *lp = new Fillout11(*this, p.first, p.second);
+    lp->show();
+    lp->raise();
+    lp->activateWindow();
+}
+
+void TaskChooser::showFillout12() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    Fillout12 *lp = new Fillout12(*this, p.first, p.second);
     lp->show();
     lp->raise();
     lp->activateWindow();
