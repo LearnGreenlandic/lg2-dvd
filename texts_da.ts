@@ -1690,9 +1690,14 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="423"/>
         <source>exercises/8.1</source>
-        <translation>I denne øvelse skal du sikre dig, at du ikke har tabt overblikket. Derfor får du her he­le det nominale system i oversigt. Bemærk at den tredie kolonne repræsenterer alle 6 &quot;små&quot; ka­sus1. De opfører sig stort set ens, så lokalis får lov at repræsentere samtlige 6 i denne o­ver­sigt.
-Kontroller først, at du forstår systemets princip. Det gør du, hvis du u­be­sværet kan fyl­de samtlige celler med danske eksempler. Check der­næst, at du behersker de en­del­ser, der hidtil har været præsenteret, ved at sætte de korrekte endelser på ordene erneq, panik i­kin­ngut og nuna. Det er alle de celler, der ikke er lagt skygge på.
+        <translation>I denne øvelse skal du sikre dig, at du ikke har tabt overblikket. Derfor får du her hele det nominale system i oversigt. Bemærk at den tredie kolonne repræsenterer alle 6 &quot;små&quot; kasus1. De opfører sig stort set ens, så lokalis får lov at repræsentere samtlige 6 i denne oversigt.
+Kontroller først, at du forstår systemets princip. Det gør du, hvis du ubesværet kan fylde samtlige celler med danske eksempler. Check dernæst, at du behersker de endelser, der hidtil har været præsenteret, ved at sætte de korrekte endelser på ordene erneq, panik ikinngut og nuna. Det er alle de celler, der ikke er lagt skygge på.
 Husk at erneq er et +up-ord, at panik er et -up-ord, at ikinngut er et p-ord, der bare slutter på ә og at nuna er et p-ord.</translation>
+    </message>
+    <message>
+        <location filename="src/TaskChooser.cpp" line="423"/>
+        <source>Øvelse 8.1</source>
+        <translation>Øvelse 8-1: Hold tungen lige i munden, når du skal forstå og forme navneord, for der er altid 3 forskellige størrelser at holde styr på, nemlig kasus, person og tal</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="424"/>
@@ -2111,9 +2116,9 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="389"/>
         <source>exercises/7.1</source>
-        <translation>Husker du su- fra kapitel 5? su- er lidt vanskelig at oversætte til noget entydigt, mund­ret dansk. su- betyder nemlig ikke rigtigt noget. Den er en spørgende dummy, vi anvender, når det er tilhængenes og endelsernes betydning, vi har brug for.
+        <translation>Husker du su- fra kapitel 5? su- er lidt vanskelig at oversætte til noget entydigt, mundret dansk. su- betyder nemlig ikke rigtigt noget. Den er en spørgende dummy, vi anvender, når det er tilhængenes og endelsernes betydning, vi har brug for.
 I læsestykke 6 forekom udsagnet .. nalullugu suniarnerlunga (&apos;uden at vide, hvad jeg mon ville&apos;), hvor hele betydningen for så vidt ligger i tilhængene +NIAR+NIR. Det er en typisk anvendelse af su-
-Oversæt følgende spørgsmål og nægtede sætninger til grøn­landsk. Du skal bruge su- plus en endelse og undertiden også et tilhæng i samtlige sætninger.</translation>
+Oversæt følgende spørgsmål og nægtede sætninger til grønlandsk. Du skal bruge su- plus en endelse og undertiden også et tilhæng i samtlige sætninger.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="389"/>
@@ -2130,7 +2135,7 @@ Oversæt følgende spørgsmål og nægtede sætninger til grøn­landsk. Du skal
         <location filename="src/TaskChooser.cpp" line="392"/>
         <source>exercises/7.3.1</source>
         <translation>I denne øvelse får du eksempelsætninger af typen “Subjektet har N”. Omsæt dem til “Subjektets/ subjekternes ene N”. Bemærk at du skal gå ud fra formerne N-NNGUK og N+SUK når endelserne {-up} og {-it} skal sættes efter N-NNGUAQ og N+SUAQ.
-NB: Denne øvelse er ganske vanskelig, men uhyre vigtig, så afsæt mindst et par timer til at komme ordentligt igennem den, så du forstår ALLE eksemplerne helt ned i de­taljen</translation>
+NB: Denne øvelse er ganske vanskelig, men uhyre vigtig, så afsæt mindst et par timer til at komme ordentligt igennem den, så du forstår ALLE eksemplerne helt ned i detaljen</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="393"/>
@@ -2142,8 +2147,8 @@ NB: Denne øvelse er ganske vanskelig, men uhyre vigtig, så afsæt mindst et pa
         <location filename="src/TaskChooser.cpp" line="395"/>
         <location filename="src/TaskChooser.cpp" line="396"/>
         <source>exercises/7.4</source>
-        <translation>I denne øvelse får du eksempelsætninger af typen “Grundled verbum gen­stands­led”. Genstandsleddet er altså bestemt/ bekendt sådan som det altid er til­fæl­det ved tran­si­tive verber.
-Omsæt dem nu til sætninger med ubestemt genstandsled ved hjælp af HTR (halv­tran­si­tiv). Husk at sætte det ubestemte &quot;genstandsled&quot; i instrumentalis.</translation>
+        <translation>I denne øvelse får du eksempelsætninger af typen “Grundled verbum genstandsled”. Genstandsleddet er altså bestemt/ bekendt sådan som det altid er tilfældet ved transitive verber.
+Omsæt dem nu til sætninger med ubestemt genstandsled ved hjælp af HTR (halvtransitiv). Husk at sætte det ubestemte &quot;genstandsled&quot; i instrumentalis.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="395"/>
@@ -2153,8 +2158,8 @@ Omsæt dem nu til sætninger med ubestemt genstandsled ved hjælp af HTR (halv­
     <message>
         <location filename="src/TaskChooser.cpp" line="397"/>
         <source>exercises/7.5</source>
-        <translation>Man har ofte brug for at danne navneord også af betydninger, der normalt er transiti­ve som i asa- (&apos;at elske ham&apos;), der kan danne ordet &apos;kærlighed&apos;, eller pilersor- (&apos;at for­syne ham&apos;), der kan danne ord som &apos;forsyningsselskab&apos;. På grønlandsk er dette kun muligt efter at transitiviteten - og dermed fokus på genstandsleddet - er fjernet. Det klares med HTR.
-Dan navneord ved hjælp af Vb+TUQ og Vb+NIQ sat på de relevante transitive stam­mer, men husk at stammerne først skal gøres halvtransitive før TUQ og NIQ kan til­fø­jes.</translation>
+        <translation>Man har ofte brug for at danne navneord også af betydninger, der normalt er transitive som i asa- (&apos;at elske ham&apos;), der kan danne ordet &apos;kærlighed&apos;, eller pilersor- (&apos;at forsyne ham&apos;), der kan danne ord som &apos;forsyningsselskab&apos;. På grønlandsk er dette kun muligt efter at transitiviteten - og dermed fokus på genstandsleddet - er fjernet. Det klares med HTR.
+Dan navneord ved hjælp af Vb+TUQ og Vb+NIQ sat på de relevante transitive stammer, men husk at stammerne først skal gøres halvtransitive før TUQ og NIQ kan tilføjes.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="397"/>
@@ -2176,7 +2181,7 @@ Dan navneord ved hjælp af Vb+TUQ og Vb+NIQ sat på de relevante transitive stam
         <location filename="src/TaskChooser.cpp" line="426"/>
         <location filename="src/TaskChooser.cpp" line="427"/>
         <source>exercises/8.2.2</source>
-        <translation>I denne øvelse får du eksempelsætninger af typen &apos;Subjektet Vb&apos;. Omsæt dem til &apos;Der er in­gen, der Vb&apos;</translation>
+        <translation>I denne øvelse får du eksempelsætninger af typen &apos;Subjektet Vb&apos;. Omsæt dem til &apos;Der er ingen, der Vb&apos;</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="428"/>

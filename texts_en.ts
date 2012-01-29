@@ -976,13 +976,13 @@ Tikaajaat Kristensen</translation>
         <source>exercises/2.1</source>
         <translation>Practice your reception. You now hear a recording of the first stanza from each of the two national anthems. Write them down pressing the skip button only when absolutely needed.&lt;br&gt;
 &lt;br&gt;
-Here is a very direct word-by-word translation into English of Henrik Lund&apos;s &lt;i&gt;Qitor­nat saperasi&lt;/i&gt;. It was first printed in 1913:
+Here is a very direct word-by-word translation into English of Henrik Lund&apos;s &lt;i&gt;Qitornat saperasi&lt;/i&gt;. It was first printed in 1913:
 &lt;blockquote&gt;Our-land because-you-have-grown-very-old&lt;br&gt;
 your-head it-is-full of-grey-hair&lt;br&gt;
 your-children you-have-always-embraced-them&lt;br&gt;
 yoy-have-given-them your-cost&apos;s things&lt;/blockquote&gt;
 &lt;br&gt;
-And here a word-by-word translation of Jonathan Petersen&apos;s &lt;i&gt;Sine­riak&lt;/i&gt; from the same year:
+And here a word-by-word translation of Jonathan Petersen&apos;s &lt;i&gt;Sineriak&lt;/i&gt; from the same year:
 &lt;blockquote&gt;a-land that-is-roomy&lt;br&gt;
 Greenlanders we-have-it&lt;br&gt;
 it-all mountainous&lt;br&gt;
@@ -1562,7 +1562,7 @@ Per Rosing</translation>
         <location filename="src/TaskChooser.cpp" line="353"/>
         <source>exercises/6.3.1</source>
         <oldsource>Exercise 6.3.1: Øv Vb+GUSUP (text)</oldsource>
-        <translation>Add the morpheme Vb+GUSUP to the verbs hereunder. Note that Vb+GUSUP belongs to a small group of morphemes with a slightly deviation behaviour after vowels. The initial g behaves as g normally behaves i connection with consonants (rg ⇒ r and pg ⇒ *gg ⇒ kk). But after vowels it takes the shape of -rusup- instead of expected * ­gusup-.</translation>
+        <translation>Add the morpheme Vb+GUSUP to the verbs hereunder. Note that Vb+GUSUP belongs to a small group of morphemes with a slightly deviation behaviour after vowels. The initial g behaves as g normally behaves i connection with consonants (rg ⇒ r and pg ⇒ *gg ⇒ kk). But after vowels it takes the shape of -rusup- instead of expected * gusup-.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="352"/>
@@ -1596,7 +1596,7 @@ Per Rosing</translation>
         <location filename="src/TaskChooser.cpp" line="357"/>
         <source>exercises/6.4.1</source>
         <oldsource>Exercise 6.4.1: Øv Vb+TAR (text)</oldsource>
-        <translation>Add the very important morpheme Vb+TAR to the verbs hereunder. Remember that  Vb+TAR belongs to the group of derivatives and endings with a variable first consonant (T turns /t/ after a consonant but /s/ after a vowel). In dictionaries and word lists +TAR&apos;s meaning is often glossed as &apos;uses to Vb&apos;. That is as mentioned a rather unprecise glossing but unfortunately we have no adequate short glossing into English. The negative translation is probably the best one: If the verb does not include +TAR it means &apos;to Vb only once&apos; as in 1969-imi ilisimatusarfimmi taamaatip­punga or &apos;to Vb always&apos; as in arnaavu­nga. It would have been taamaatittarpunga had I dropped out of studyuing several times and it would have been arnaasar­punga if I worked as a drag queen every Saturday. Remember that +TAR is mandatory in connection with words meaning repeated time:</translation>
+        <translation>Add the very important morpheme Vb+TAR to the verbs hereunder. Remember that  Vb+TAR belongs to the group of derivatives and endings with a variable first consonant (T turns /t/ after a consonant but /s/ after a vowel). In dictionaries and word lists +TAR&apos;s meaning is often glossed as &apos;uses to Vb&apos;. That is as mentioned a rather unprecise glossing but unfortunately we have no adequate short glossing into English. The negative translation is probably the best one: If the verb does not include +TAR it means &apos;to Vb only once&apos; as in 1969-imi ilisimatusarfimmi taamaatippunga or &apos;to Vb always&apos; as in arnaavunga. It would have been taamaatittarpunga had I dropped out of studyuing several times and it would have been arnaasarpunga if I worked as a drag queen every Saturday. Remember that +TAR is mandatory in connection with words meaning repeated time:</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="356"/>
@@ -1840,8 +1840,13 @@ Tikaajaat Kristensen</translation>
         <source>exercises/8.1</source>
         <translation>In this exercise you will make sure to have kept the overview. To do so you hereunder get the complex nominal system as a paradigm.
 Please, observe that the locative case endings in the third column also represents the other 5 local cases1. They behave almost exactly alike so if you master the locative you master the whole system.
-First you make sure to understand the paradigm in principle. If you without problems can fill in English examples in the paradigm this is not a problem for you. Then you will add all the endings you have seen this far to the nouns erneq, panik i­kin­ngut and nuna. All cells without shadings should be known to you by now.
+First you make sure to understand the paradigm in principle. If you without problems can fill in English examples in the paradigm this is not a problem for you. Then you will add all the endings you have seen this far to the nouns erneq, panik ikinngut and nuna. All cells without shadings should be known to you by now.
 Remember that erneq is a +up-stem, that panik is a -up-stemord, that ikinngut is a normal p-stem with a final ә, and that nuna is a p-stem.</translation>
+    </message>
+    <message>
+        <location filename="src/TaskChooser.cpp" line="423"/>
+        <source>Øvelse 8.1</source>
+        <translation>Exercise 8-1: Tread carefully when you understand and produce nominal wordforms for you must be able to handle case, person and number at the same time</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="424"/>
