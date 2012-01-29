@@ -2,7 +2,6 @@
 #define TASKCHOOSER_HPP
 
 #include "common.hpp"
-#include "ClickLabel.hpp"
 #include <QtGui>
 
 class TaskChooser : public QWidget {
@@ -10,6 +9,7 @@ class TaskChooser : public QWidget {
 
 public:
     TaskChooser(const dirmap_t& dirs, QTranslator *translator);
+    void showNext(const QString& title);
 
     const dirmap_t& dirs;
 
@@ -32,6 +32,8 @@ public slots:
 
 private:
     QHash<QObject*,QPair<QString,QString> > mappings;
+    QList<QPair<QString,QPushButton*> > buttons;
+    QHash<QPushButton*,QObject*> button_sect;
     QList<QObject*> section_list;
     QList<QString> section_texts;
     QStackedLayout *stack;

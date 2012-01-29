@@ -70,6 +70,7 @@ tc(tc)
     video->dynamicCall("setUiMode(QString)", "full");
     video->dynamicCall("setEnabled(bool)", true);
     video->dynamicCall("SetURL(QString)", QUrl::fromLocalFile(tmpfile));
+    connect(video, SIGNAL(PlayStateChange(int)), this, SLOT(stateChange(int)));
 
     QTimer *timer = new QTimer(this);
     timer->start(1000);
@@ -134,6 +135,12 @@ void LecturePlayer::tick() {
         qp.load(curSlide);
         slide->setPixmap(qp);
         slide->update();
+    }
+}
+
+void LecturePlayer::stateChange(int state) {
+    if (state == 9) {
+        finished();
     }
 }
 
@@ -285,10 +292,6 @@ void LecturePlayer::togglePlay() {
     }
 }
 
-void LecturePlayer::finished() {
-
-}
-
 QSize LecturePlayer::sizeHint() const {
     return QSize(1010, 335);
 }
@@ -298,3 +301,19 @@ QSize LecturePlayer::minimumSizeHint() const {
 }
 
 #endif
+
+void LecturePlayer::finished() {
+    QTimer::singleShot(1000, this, SLOT(askNext()));
+}
+
+void LecturePlayer::askNext() {
+    QMessageBox *mbox = new QMessageBox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne del. Vil du fortsætte med næste del?"));
+    QPushButton *yes = mbox->addButton(tr("Ja, næste del"), QMessageBox::YesRole);
+    mbox->addButton(tr("Nej, tilbage til menuen"), QMessageBox::NoRole);
+    mbox->exec();
+
+    if (mbox->clickedButton() == yes) {
+        tc.showNext(windowTitle());
+    }
+    close();
+}

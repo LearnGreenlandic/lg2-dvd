@@ -336,16 +336,14 @@ void ListenRepeatPlayer::showNext() {
     sum->setText(sumtext.replace('\n', "<br>"));
 
     if (curAt >= words.size()) {
-        /*
-        QMessageBox mbox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne øvelse. Vil du læse forelæsningen som PDF?"));
-        QPushButton *yes = mbox.addButton(tr("Ja, åben PDF"), QMessageBox::YesRole);
+        QMessageBox mbox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne del. Vil du fortsætte med næste del?"));
+        QPushButton *yes = mbox.addButton(tr("Ja, næste del"), QMessageBox::YesRole);
         mbox.addButton(tr("Nej, tilbage til menuen"), QMessageBox::NoRole);
         mbox.exec();
 
         if (mbox.clickedButton() == yes) {
-            tc.showLectureFourPDF();
+            tc.showNext(windowTitle());
         }
-        //*/
         close();
         return;
     }

@@ -38,24 +38,32 @@ curAt(-1)
     qvbl->addSpacing(15);
     qvbl->addWidget(nb);
 
+    nb = new QPushButton(tr("Luk og gå til næste del"));
+    connect(nb, SIGNAL(clicked()), this, SLOT(skipExercise()));
+    qvbl->addSpacing(15);
+    qvbl->addWidget(nb);
+
     setLayout(qvbl);
 
     showNext();
 }
 
+void UpdownTwo::skipExercise() {
+    tc.showNext(windowTitle());
+    close();
+}
+
 void UpdownTwo::showNext() {
     ++curAt;
     if (curAt >= data.updowns.size()) {
-        QMessageBox mbox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?"));
-        QPushButton *yes = mbox.addButton(tr("Ja, næste øvelse"), QMessageBox::YesRole);
+        QMessageBox mbox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne del. Vil du fortsætte med næste del?"));
+        QPushButton *yes = mbox.addButton(tr("Ja, næste del"), QMessageBox::YesRole);
         mbox.addButton(tr("Nej, tilbage til menuen"), QMessageBox::NoRole);
         mbox.exec();
 
-        /*
         if (mbox.clickedButton() == yes) {
-            tc.showUpdownThree();
+            tc.showNext(windowTitle());
         }
-        //*/
         close();
         return;
     }

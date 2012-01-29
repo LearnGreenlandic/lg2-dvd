@@ -28,6 +28,9 @@ public:
 public slots:
     void show();
     void tick();
+    void stateChange(int state);
+    void finished();
+    void askNext();
 
 private:
     TaskChooser& tc;
@@ -72,6 +75,7 @@ public slots:
     void tick(qint64 time);
     void togglePlay();
     void finished();
+    void askNext();
 
 private:
     TaskChooser& tc;

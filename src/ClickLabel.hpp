@@ -9,6 +9,7 @@ class ClickLabel : public QLabel {
 public:
     ClickLabel(QString text);
     void mousePressEvent(QMouseEvent *e);
+    void click();
 
 signals:
     void onClick();

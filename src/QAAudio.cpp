@@ -64,17 +64,17 @@ curAt(-1)
 
 void QAAudio::showNext() {
     ++curAt;
-    while (data.getQW(curAt).isEmpty()) {
+    while (curAt < data.size() && data.getQW(curAt).isEmpty()) {
         ++curAt;
     }
     if (curAt >= data.size()) {
-        QMessageBox mbox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?"));
-        QPushButton *yes = mbox.addButton(tr("Ja, næste øvelse"), QMessageBox::YesRole);
+        QMessageBox mbox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne del. Vil du fortsætte med næste del?"));
+        QPushButton *yes = mbox.addButton(tr("Ja, næste del"), QMessageBox::YesRole);
         mbox.addButton(tr("Nej, tilbage til menuen"), QMessageBox::NoRole);
         mbox.exec();
 
         if (mbox.clickedButton() == yes) {
-            //tc.showStructureTwo();
+            tc.showNext(windowTitle());
         }
         close();
         return;

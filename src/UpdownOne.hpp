@@ -13,6 +13,7 @@ public:
     UpdownOne(TaskChooser& tc, QString which, QString title);
 
 public slots:
+    void skipExercise();
     void showNext();
     void showHelp();
 

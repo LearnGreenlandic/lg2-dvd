@@ -13,6 +13,7 @@ public:
     UpdownThree(TaskChooser& tc, QString which, QString title);
 
 public slots:
+    void skipExercise();
     void showNext();
     void checkInput();
     void yieldWord();

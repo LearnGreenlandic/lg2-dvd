@@ -39,15 +39,32 @@ curAt(-1)
     qvbl->addSpacing(15);
     qvbl->addWidget(nb);
 
+    nb = new QPushButton(tr("Luk og gå til næste del"));
+    connect(nb, SIGNAL(clicked()), this, SLOT(skipExercise()));
+    qvbl->addSpacing(15);
+    qvbl->addWidget(nb);
+
     setLayout(qvbl);
 
     showNext();
 }
 
+void UpdownThree::skipExercise() {
+    tc.showNext(windowTitle());
+    close();
+}
+
 void UpdownThree::showNext() {
     ++curAt;
     if (curAt >= data.updowns.size()) {
-        QMessageBox::information(0, tr("Færdig!"), tr("Der er ikke flere ord...vinduet lukker sig selv nu."));
+        QMessageBox mbox(QMessageBox::Question, tr("Færdig!"), tr("Der er ikke mere i denne del. Vil du fortsætte med næste del?"));
+        QPushButton *yes = mbox.addButton(tr("Ja, næste del"), QMessageBox::YesRole);
+        mbox.addButton(tr("Nej, tilbage til menuen"), QMessageBox::NoRole);
+        mbox.exec();
+
+        if (mbox.clickedButton() == yes) {
+            tc.showNext(windowTitle());
+        }
         close();
         return;
     }

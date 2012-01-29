@@ -10,3 +10,7 @@ QLabel(text)
 void ClickLabel::mousePressEvent(QMouseEvent*) {
     emit onClick();
 }
+
+void ClickLabel::click() {
+    emit onClick();
+}

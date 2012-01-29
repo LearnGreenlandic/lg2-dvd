@@ -1,3 +1,4 @@
+#include "ClickLabel.hpp"
 #include "QATextOnly.hpp"
 #include "QAAudio.hpp"
 #include "UpdownOne.hpp"
@@ -14,10 +15,12 @@
 #include <QtGlobal>
 
 #define MK_ANY(which, title, function) \
-    p = QPair<QString,QString>(which, title); \
+    p = qMakePair(QString(which), title); \
     button = new QPushButton(p.second); \
     button->setFlat(true); \
     mappings[button] = p; \
+    buttons.push_back(qMakePair(title,button)); \
+    button_sect[button] = section; \
     connect(button, SIGNAL(clicked()), this, SLOT(function())); \
     vbox->addWidget(button, Qt::AlignLeft|Qt::AlignTop);
 
@@ -34,11 +37,13 @@
 
 #define MK_SLIDES(which, title) \
     MK_ANY(which, title, showSlidesPDF); \
+    buttons.pop_back(); \
     button->setIconSize(QSize(20, 20)); \
     button->setIcon(QIcon(find_newest(dirs, "gfx/pdf_icon.png")));
 
 #define MK_LECTURE_PDF(which, title) \
     MK_ANY(which, title, showLecturePDF); \
+    buttons.pop_back(); \
     button->setIconSize(QSize(20, 20)); \
     button->setIcon(QIcon(find_newest(dirs, "gfx/pdf_icon.png")));
 
@@ -141,10 +146,9 @@ translator(translator)
     QGridLayout *grid = 0;
 
     COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(0));
     MK_LECTURE(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1"));
     COLUMN_BR(0,0);
-    MK_LECTURE(tr("lectures/danish") + "/1.2", tr("Forelæsning 1.2"));
-    COLUMN_BR(0,1);
     MK_SLIDES(tr("lectures/danish") + "/1.1", tr("Forelæsning 1.1 dias"));
     MK_SLIDES(tr("lectures/danish") + "/1.2", tr("Forelæsning 1.2 dias"));
     MK_LECTURE_PDF(tr("lectures/danish") + "/1.1", tr("Kapitel 1 som PDF"));
@@ -156,6 +160,8 @@ translator(translator)
     vbox->addSpacing(20);
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/1"), tr("LFG 1"));
     COLUMN_BR(1,0);
+    MK_LECTURE(tr("lectures/danish") + "/1.2", tr("Forelæsning 1.2"));
+    COLUMN_BR(0,1);
     vbox->addSpacing(10);
     MK_ANY(QT_TR_NOOP("exercises/1.1"), tr("Øvelse 1.1"), showFillout11);
     button->setIconSize(QSize(20, 20));
@@ -185,10 +191,9 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(1));
     MK_LECTURE(tr("lectures/danish") + "/2.1", tr("Forelæsning 2.1"));
     COLUMN_BR(0,0);
-    MK_LECTURE(tr("lectures/danish") + "/2.2", tr("Forelæsning 2.2"));
-    COLUMN_BR(0,1);
     MK_SLIDES(tr("lectures/danish") + "/2.1", tr("Forelæsning 2.1 dias"));
     MK_SLIDES(tr("lectures/danish") + "/2.2", tr("Forelæsning 2.2 dias"));
     MK_LECTURE_PDF(tr("lectures/danish") + "/2.1", tr("Kapitel 2 som PDF"));
@@ -200,6 +205,8 @@ translator(translator)
     vbox->addSpacing(20);
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/2"), tr("LFG 2"));
     COLUMN_BR(1,0);
+    MK_LECTURE(tr("lectures/danish") + "/2.2", tr("Forelæsning 2.2"));
+    COLUMN_BR(0,1);
     vbox->addSpacing(10);
     MK_ANY(QT_TR_NOOP("exercises/2.1"), tr("Øvelse 2.1"), showListenRepeatAudio);
     button->setIconSize(QSize(20, 20));
@@ -224,10 +231,9 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(2));
     MK_LECTURE(tr("lectures/danish") + "/3.1", tr("Forelæsning 3.1"));
     COLUMN_BR(0,0);
-    MK_LECTURE(tr("lectures/danish") + "/3.2", tr("Forelæsning 3.2"));
-    COLUMN_BR(0,1);
     MK_SLIDES(tr("lectures/danish") + "/3.1", tr("Forelæsning 3.1 dias"));
     MK_SLIDES(tr("lectures/danish") + "/3.2", tr("Forelæsning 3.2 dias"));
     MK_LECTURE_PDF(tr("lectures/danish") + "/3.1", tr("Kapitel 3 som PDF"));
@@ -239,6 +245,8 @@ translator(translator)
     vbox->addSpacing(20);
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/3"), tr("LFG 3"));
     COLUMN_BR(1,0);
+    MK_LECTURE(tr("lectures/danish") + "/3.2", tr("Forelæsning 3.2"));
+    COLUMN_BR(0,1);
     vbox->addSpacing(10);
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/3.1"), tr("Øvelse 3.1 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/3.1"), tr("Øvelse 3.1 (audio)"));
@@ -257,10 +265,9 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(3));
     MK_LECTURE(tr("lectures/danish") + "/4.1", tr("Forelæsning 4.1"));
     COLUMN_BR(0,0);
-    MK_LECTURE(tr("lectures/danish") + "/4.2", tr("Forelæsning 4.2"));
-    COLUMN_BR(0,1);
     MK_SLIDES(tr("lectures/danish") + "/4.1", tr("Forelæsning 4.1 dias"));
     MK_SLIDES(tr("lectures/danish") + "/4.2", tr("Forelæsning 4.2 dias"));
     MK_LECTURE_PDF(tr("lectures/danish") + "/4.1", tr("Kapitel 4 som PDF"));
@@ -272,6 +279,8 @@ translator(translator)
     vbox->addSpacing(20);
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/4"), tr("LFG 4"));
     COLUMN_BR(1,0);
+    MK_LECTURE(tr("lectures/danish") + "/4.2", tr("Forelæsning 4.2"));
+    COLUMN_BR(0,1);
     vbox->addSpacing(10);
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/4.1"), tr("Øvelse 4.1 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/4.1"), tr("Øvelse 4.1 (audio)"));
@@ -295,10 +304,9 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(4));
     MK_LECTURE(tr("lectures/danish") + "/5.1", tr("Forelæsning 5.1"));
     COLUMN_BR(0,0);
-    MK_LECTURE(tr("lectures/danish") + "/5.2", tr("Forelæsning 5.2"));
-    COLUMN_BR(0,1);
     MK_SLIDES(tr("lectures/danish") + "/5.1", tr("Forelæsning 5.1 dias"));
     MK_SLIDES(tr("lectures/danish") + "/5.2", tr("Forelæsning 5.2 dias"));
     MK_LECTURE_PDF(tr("lectures/danish") + "/5.1", tr("Kapitel 5 som PDF"));
@@ -310,6 +318,8 @@ translator(translator)
     vbox->addSpacing(20);
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/5"), tr("LFG 5"));
     COLUMN_BR(1,0);
+    MK_LECTURE(tr("lectures/danish") + "/5.2", tr("Forelæsning 5.2"));
+    COLUMN_BR(0,1);
     vbox->addSpacing(10);
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/5.1"), tr("Øvelse 5.1 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/5.1"), tr("Øvelse 5.1 (audio)"));
@@ -335,10 +345,9 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(5));
     MK_LECTURE(tr("lectures/danish") + "/6.1", tr("Forelæsning 6.1"));
     COLUMN_BR(0,0);
-    MK_LECTURE(tr("lectures/danish") + "/6.2", tr("Forelæsning 6.2"));
-    COLUMN_BR(0,1);
     MK_SLIDES(tr("lectures/danish") + "/6.1", tr("Forelæsning 6.1 dias"));
     MK_SLIDES(tr("lectures/danish") + "/6.2", tr("Forelæsning 6.2 dias"));
     MK_LECTURE_PDF(tr("lectures/danish") + "/6.1", tr("Kapitel 6 som PDF"));
@@ -350,6 +359,8 @@ translator(translator)
     vbox->addSpacing(20);
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/6"), tr("LFG 6"));
     COLUMN_BR(1,0);
+    MK_LECTURE(tr("lectures/danish") + "/6.2", tr("Forelæsning 6.2"));
+    COLUMN_BR(0,1);
     vbox->addSpacing(10);
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/6.1"), tr("Øvelse 6.1 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/6.1"), tr("Øvelse 6.1 (audio)"));
@@ -376,10 +387,9 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(6));
     MK_LECTURE(tr("lectures/danish") + "/7.1", tr("Forelæsning 7.1"));
     COLUMN_BR(0,0);
-    MK_LECTURE(tr("lectures/danish") + "/7.2", tr("Forelæsning 7.2"));
-    COLUMN_BR(0,1);
     MK_SLIDES(tr("lectures/danish") + "/7.1", tr("Forelæsning 7.1 dias"));
     MK_SLIDES(tr("lectures/danish") + "/7.2", tr("Forelæsning 7.2 dias"));
     MK_LECTURE_PDF(tr("lectures/danish") + "/7.1", tr("Kapitel 7 som PDF"));
@@ -391,6 +401,8 @@ translator(translator)
     vbox->addSpacing(20);
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/7"), tr("LFG 7"));
     COLUMN_BR(1,0);
+    MK_LECTURE(tr("lectures/danish") + "/7.2", tr("Forelæsning 7.2"));
+    COLUMN_BR(0,1);
     vbox->addSpacing(10);
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.1"), tr("Øvelse 7.1 (tekst)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/7.2"), tr("Øvelse 7.2 (tekst)"));
@@ -410,10 +422,9 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(7));
     MK_LECTURE(tr("lectures/danish") + "/8.1", tr("Forelæsning 8.1"));
     COLUMN_BR(0,0);
-    MK_LECTURE(tr("lectures/danish") + "/8.2", tr("Forelæsning 8.2"));
-    COLUMN_BR(0,1);
     MK_SLIDES(tr("lectures/danish") + "/8.1", tr("Forelæsning 8.1 dias"));
     MK_SLIDES(tr("lectures/danish") + "/8.2", tr("Forelæsning 8.2 dias"));
     MK_LECTURE_PDF(tr("lectures/danish") + "/8.1", tr("Kapitel 8 som PDF"));
@@ -425,6 +436,8 @@ translator(translator)
     vbox->addSpacing(20);
     MK_LISTENREPEAT(QT_TR_NOOP("listenrepeat/8"), tr("LFG 8"));
     COLUMN_BR(1,0);
+    MK_LECTURE(tr("lectures/danish") + "/8.2", tr("Forelæsning 8.2"));
+    COLUMN_BR(0,1);
     vbox->addSpacing(10);
     MK_ANY(QT_TR_NOOP("exercises/8.1"), tr("Øvelse 8.1"), showFillout81);
     button->setIconSize(QSize(20, 20));
@@ -446,6 +459,7 @@ translator(translator)
     COLUMNS_STACK;
 
     COLUMNS_BEGIN;
+    section = dynamic_cast<ClickLabel*>(section_list.at(8));
     MK_LECTURE(tr("lectures/danish") + "/9", tr("Forelæsning 9"));
     COLUMN_BR(0,0);
     MK_SLIDES(tr("lectures/danish") + "/9", tr("Forelæsning 9 dias"));
@@ -496,6 +510,22 @@ translator(translator)
     QSettings settings;
     int si = settings.value("chapter", 0).toInt();
     dynamic_cast<ClickLabel*>(section_list.at(si))->mousePressEvent(0);
+}
+
+void TaskChooser::showNext(const QString& title) {
+    for (int i=0 ; i<buttons.size() ; ++i) {
+        if (buttons.at(i).first == title) {
+            ++i;
+            if (i >= buttons.size()) {
+
+            }
+            else {
+                dynamic_cast<ClickLabel*>(button_sect[buttons.at(i).second])->click();
+                buttons.at(i).second->click();
+            }
+            break;
+        }
+    }
 }
 
 void TaskChooser::showLecture() {
