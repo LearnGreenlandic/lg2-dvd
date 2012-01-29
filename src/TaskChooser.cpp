@@ -158,7 +158,11 @@ translator(translator)
     COLUMN_BR(1,0);
     vbox->addSpacing(10);
     MK_ANY(QT_TR_NOOP("exercises/1.1"), tr("Øvelse 1.1"), showFillout11);
+    button->setIconSize(QSize(20, 20));
+    button->setIcon(QIcon(find_newest(dirs, "gfx/table_icon.png")));
     MK_ANY(QT_TR_NOOP("exercises/1.2"), tr("Øvelse 1.2"), showFillout12);
+    button->setIconSize(QSize(20, 20));
+    button->setIcon(QIcon(find_newest(dirs, "gfx/table_icon.png")));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/1.3"), tr("Øvelse 1.3 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/1.4"), tr("Øvelse 1.4 (tekst)"));
@@ -198,6 +202,8 @@ translator(translator)
     COLUMN_BR(1,0);
     vbox->addSpacing(10);
     MK_ANY(QT_TR_NOOP("exercises/2.1"), tr("Øvelse 2.1"), showListenRepeatAudio);
+    button->setIconSize(QSize(20, 20));
+    button->setIcon(QIcon(find_newest(dirs, "gfx/listen_icon.png")));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/2.2"), tr("Øvelse 2.2 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/2.2"), tr("Øvelse 2.2 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/2.3.1"), tr("Øvelse 2.3.1 (tekst)"));
@@ -421,6 +427,8 @@ translator(translator)
     COLUMN_BR(1,0);
     vbox->addSpacing(10);
     MK_ANY(QT_TR_NOOP("exercises/8.1"), tr("Øvelse 8.1"), showFillout81);
+    button->setIconSize(QSize(20, 20));
+    button->setIcon(QIcon(find_newest(dirs, "gfx/table_icon.png")));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.2.1"), tr("Øvelse 8.2.1 (tekst)"));
     MK_EXERCISE_AUDIO(QT_TR_NOOP("exercises/8.2.1"), tr("Øvelse 8.2.1 (audio)"));
     MK_EXERCISE_TEXT(QT_TR_NOOP("exercises/8.2.2"), tr("Øvelse 8.2.2 (tekst)"));
@@ -444,7 +452,9 @@ translator(translator)
     MK_LECTURE_PDF(tr("lectures/danish") + "/9", tr("Kapitel 9 som PDF"));
     COLUMN_BR(0,1);
     vbox->addSpacing(10);
-    MK_ANY(QT_TR_NOOP("corpus"), tr("Korpussøgeinterface NOT FINISHED"), showFillout11);
+    MK_ANY(QT_TR_NOOP("corpus"), tr("Korpussøgeinterface"), showCorpus);
+    button->setIconSize(QSize(24, 24));
+    button->setIcon(QIcon(find_newest(dirs, "gfx/corpus_icon.png")));
     COLUMN_BR(1,0);
     COLUMNS_STACK;
 

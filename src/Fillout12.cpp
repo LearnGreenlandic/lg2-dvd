@@ -146,8 +146,9 @@ void Fillout12::showNext() {
         return;
     }
 
-    foreach (QLineEdit *l, inputs) {
-        l->setText("");
+    for (int i=0 ; i<inputs.size() ; ++i) {
+        inputs[i]->setText("");
+        inputs[i]->setStyleSheet(QString("width: %1ex;").arg(words.at(curAt).at(i+1).size()+3));
     }
 
     foreach (QLabel *l, checks) {

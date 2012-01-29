@@ -1000,7 +1000,8 @@ hele  dens-kyst&lt;br&gt;
     <message>
         <location filename="src/TaskChooser.cpp" line="212"/>
         <source>Øvelse 2.5 (audio)</source>
-        <translation>Øvelse 2-5: Brug ledsagemåden til det sekundære udsagn (audio)</translation>
+        <translation>Øvelse 2-5: Brug ledsagemåden 
+til det sekundære udsagn (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="214"/>
@@ -1220,12 +1221,14 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="282"/>
         <source>Øvelse 4.5 (tekst)</source>
-        <translation>Øvelse 4-5: Øv tilhængspartiklerne LI og LU + ledsagemåde (tekst)</translation>
+        <translation>Øvelse 4-5: Øv tilhængspartiklerne LI og LU 
++ ledsagemåde (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="283"/>
         <source>Øvelse 4.5 (audio)</source>
-        <translation>Øvelse 4-5: Øv tilhængspartiklerne LI og LU + ledsagemåde (audio)</translation>
+        <translation>Øvelse 4-5: Øv tilhængspartiklerne LI og LU 
++ ledsagemåde (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="285"/>
@@ -1445,7 +1448,8 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="349"/>
         <source>Øvelse 6.1 (audio)</source>
-        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængspartiklen LI (audio)</translation>
+        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT 
+sammen med tilhængspartiklen LI (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="350"/>
@@ -1697,7 +1701,9 @@ Husk at erneq er et +up-ord, at panik er et -up-ord, at ikinngut er et p-ord, de
     <message>
         <location filename="src/TaskChooser.cpp" line="423"/>
         <source>Øvelse 8.1</source>
-        <translation>Øvelse 8-1: Hold tungen lige i munden, når du skal forstå og forme navneord, for der er altid 3 forskellige størrelser at holde styr på, nemlig kasus, person og tal</translation>
+        <translation>Øvelse 8-1: Hold tungen lige i munden, når du skal forstå og forme navneord, 
+for der er altid 3 forskellige størrelser at holde styr på, 
+nemlig kasus, person og tal</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="424"/>
@@ -1896,7 +1902,8 @@ Brug ledsagemåden til at skrive følgende sætningssæt sammen til enkelte sæt
     <message>
         <location filename="src/TaskChooser.cpp" line="211"/>
         <source>Øvelse 2.5 (tekst)</source>
-        <translation>Øvelse 2-5: Brug ledsagemåden til det sekundære udsagn (tekst)</translation>
+        <translation>Øvelse 2-5: Brug ledsagemåden 
+til det sekundære udsagn (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="214"/>
@@ -2060,7 +2067,8 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="348"/>
         <source>Øvelse 6.1 (tekst)</source>
-        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængspartiklen LI (tekst)</translation>
+        <translation>Øvelse 6-1: Øv N-U og N-U-NNGIT 
+sammen med tilhængspartiklen LI (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="350"/>
@@ -2106,7 +2114,8 @@ Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjnin
     <message>
         <location filename="src/TaskChooser.cpp" line="364"/>
         <source>Øvelse 6.6 (tekst)</source>
-        <translation>Øvelse 6-6: Øv TERMINALIS-KAR med yderligere tilhæng (tekst)</translation>
+        <translation>Øvelse 6-6: Øv TERMINALIS-KAR 
+med yderligere tilhæng (tekst)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="338"/>

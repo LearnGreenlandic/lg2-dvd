@@ -149,7 +149,7 @@ void Fillout81::showNext() {
 
     for (int i=0 ; i<inputs.size() ; ++i) {
         inputs[i]->setText("");
-        inputs[i]->setMaxLength(words.at(curAt).at(i+1).size()+3);
+        inputs[i]->setStyleSheet(QString("width: %1ex;").arg(words.at(curAt).at(i+1).size()+3));
     }
 
     foreach (QLabel *l, checks) {

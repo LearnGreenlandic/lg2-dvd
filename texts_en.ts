@@ -1039,12 +1039,14 @@ islands they-lie-in-front-of-it&lt;/blockquote&gt;</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="211"/>
         <source>Øvelse 2.5 (tekst)</source>
-        <translation>Exercise 2-5: Use contemporative as a subordinate mood (text)</translation>
+        <translation>Exercise 2-5: Use contemporative 
+as a subordinate mood (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="212"/>
         <source>Øvelse 2.5 (audio)</source>
-        <translation>Exercise 2-5: Use contemporative as a subordinate mood (audio)</translation>
+        <translation>Exercise 2-5: Use contemporative 
+as a subordinate mood (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="214"/>
@@ -1310,12 +1312,14 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="282"/>
         <source>Øvelse 4.5 (tekst)</source>
-        <translation>Exercise 4-5: Practise clitics LI and LU together with the contemporative mood (text)</translation>
+        <translation>Exercise 4-5: Practise clitics LI and LU 
+together with the contemporative mood (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="283"/>
         <source>Øvelse 4.5 (audio)</source>
-        <translation>Exercise 4-5: Practise clitics LI and LU together with the contemporative mood (audio)</translation>
+        <translation>Exercise 4-5: Practise clitics LI and LU 
+together with the contemporative mood (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="285"/>
@@ -1540,12 +1544,14 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="348"/>
         <source>Øvelse 6.1 (tekst)</source>
-        <translation>Exercise 6-1: Practice N-U and N-U-NNGIT in combination with the clitic particle LI (text)</translation>
+        <translation>Exercise 6-1: Practice N-U and N-U-NNGIT 
+in combination with the clitic particle LI (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="349"/>
         <source>Øvelse 6.1 (audio)</source>
-        <translation>Exercise 6-1: Practice N-U and N-U-NNGIT in combination with the clitic particle LI (audio)</translation>
+        <translation>Exercise 6-1: Practice N-U and N-U-NNGIT 
+in combination with the clitic particle LI (audio)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="350"/>
@@ -1638,7 +1644,8 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="364"/>
         <source>Øvelse 6.6 (tekst)</source>
-        <translation>Exercise 6-6: Practise TERMINALIS-KAR with further morphemes (text)</translation>
+        <translation>Exercise 6-6: Practise TERMINALIS-KAR 
+with further morphemes (text)</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="366"/>
@@ -1846,7 +1853,8 @@ Remember that erneq is a +up-stem, that panik is a -up-stemord, that ikinngut is
     <message>
         <location filename="src/TaskChooser.cpp" line="423"/>
         <source>Øvelse 8.1</source>
-        <translation>Exercise 8-1: Tread carefully when you understand and produce nominal wordforms for you must be able to handle case, person and number at the same time</translation>
+        <translation>Exercise 8-1: Tread carefully when you understand and produce nominal wordforms 
+for you must be able to handle case, person and number at the same time</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="424"/>
