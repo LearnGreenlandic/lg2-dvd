@@ -100,7 +100,7 @@ int main(int argc, char *argv[]) {
         settings.beginWriteArray("paths", z);
         for (dirmap_t::const_iterator it = dirs.begin() ; it != dirs.end() ; ++it, ++i) {
             settings.setArrayIndex(i);
-            settings.setValue("revision", it->first);
+            settings.setValue("revision", uint(it->first));
             settings.setValue("path", it->second);
         }
         settings.endArray();
