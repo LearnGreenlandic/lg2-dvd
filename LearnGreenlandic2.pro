@@ -52,7 +52,8 @@ HEADERS  += \
     src/QAAudio.hpp \
     src/ClickLabel.hpp \
     src/Fillout12.hpp \
-    src/Fillout81.hpp
+    src/Fillout81.hpp \
+    src/files.hpp
 
 CONFIG -= warn_off
 CONFIG += warn_on

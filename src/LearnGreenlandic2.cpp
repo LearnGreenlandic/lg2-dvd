@@ -25,48 +25,85 @@ int main(int argc, char *argv[]) {
         return -1;
     }
 
-
     uint32_t seed = static_cast<uint32_t>(time(0)) ^ app.applicationPid();
     qsrand(seed);
     srand(seed);
 
     dirmap_t dirs;
 
-    QDir tDir(app.applicationDirPath());
-    do {
-        size_t rev = 0;
-        if (tDir.exists("./lessons2/revision.txt") && (rev = read_revision(tDir.absoluteFilePath("./lessons2/revision.txt")))) {
-            dirs.insert(std::make_pair(rev, tDir.absoluteFilePath("lessons2")));
+    if (settings.contains("paths")) {
+        int z = settings.beginReadArray("paths");
+        for (int i=0 ; i<z ; ++i) {
+            settings.setArrayIndex(i);
+            size_t rev = settings.value("revision").toUInt();
+            QString path = settings.value("path").toString();
+            dirs.insert(std::make_pair(rev,path));
         }
-        if (tDir.exists("./demo2/lessons2/revision.txt") && (rev = read_revision(tDir.absoluteFilePath("./demo2/lessons2/revision.txt")))) {
-            dirs.insert(std::make_pair(rev, tDir.absoluteFilePath("demo2/lessons2")));
-        }
-    } while (tDir.cdUp());
-
-    //*
-    {
-        QProgressDialog progress("Checking all drives for LG2 data...", "", 0, 26);
-        progress.setWindowModality(Qt::WindowModal);
-        progress.setCancelButton(0);
-        progress.show();
-        QFileInfoList drives = QDir::drives();
-        progress.setMaximum(drives.size());
-
-        foreach (QFileInfo drive, drives) {
-            size_t rev = 0;
-            progress.setLabelText(QString("Trying to read ") + drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt") + " ...");
-            if (drive.absoluteDir().exists("./lessons2/revision.txt") && (rev = read_revision(drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt")))) {
-                dirs.insert(std::make_pair(rev, drive.absoluteDir().absoluteFilePath("lessons2")));
-            }
-            progress.setValue(progress.value()+1);
-        }
-        progress.setValue(drives.size());
+        settings.endArray();
     }
-    //*/
-    if (dirs.empty() || find_newest(dirs, "./revision.txt").isEmpty()) {
-        QMessageBox::critical(0, "Missing Data!", "Could not find a suitable lessons2 folder. Maybe you forgot to insert the DVD?");
-        app.exit(-1);
-        return -1;
+
+    if (dirs.empty() || dirs.begin()->first < lg2_revision || !check_files(dirs)) {
+        dirs.clear();
+        QDir tDir(app.applicationDirPath());
+        do {
+            size_t rev = 0;
+            if (tDir.exists("./lessons2/revision.txt") && (rev = read_revision(tDir.absoluteFilePath("./lessons2/revision.txt")))) {
+                dirs.insert(std::make_pair(rev, tDir.absoluteFilePath("lessons2")));
+            }
+            if (tDir.exists("./demo2/lessons2/revision.txt") && (rev = read_revision(tDir.absoluteFilePath("./demo2/lessons2/revision.txt")))) {
+                dirs.insert(std::make_pair(rev, tDir.absoluteFilePath("demo2/lessons2")));
+            }
+        } while (tDir.cdUp());
+
+        {
+            QProgressDialog progress("Checking all drives for LG2 data...", "", 0, 26);
+            progress.setWindowModality(Qt::WindowModal);
+            progress.setCancelButton(0);
+            progress.show();
+            QFileInfoList drives = QDir::drives();
+            drives.append(QDir("/mnt/").entryInfoList());
+            drives.append(QDir("/media/").entryInfoList());
+            drives.append(QDir("/Volumes/").entryInfoList());
+            progress.setMaximum(drives.size());
+
+            foreach (QFileInfo drive, drives) {
+                size_t rev = 0;
+                progress.setLabelText(QString("Trying to read ") + drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt") + " ...");
+                if (drive.absoluteDir().exists("./lessons2/revision.txt") && (rev = read_revision(drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt")))) {
+                    dirs.insert(std::make_pair(rev, drive.absoluteDir().absoluteFilePath("lessons2")));
+                }
+                progress.setValue(progress.value()+1);
+            }
+            progress.setValue(drives.size());
+        }
+
+        if (dirs.empty() || find_newest(dirs, "./revision.txt").isEmpty() || !check_files(dirs)) {
+            QMessageBox::information(0, "Missing Data / Manglende Data!",
+                                     "English: Could not find a suitable lessons2 folder. Maybe you forgot to insert the DVD or mount a network share? You will now be asked to find the revisions.txt file from the lessons2 folder.\n\n"
+                                     "Dansk: Kunne ikke finde en passende lessons2 mappe. Måske har du glemt at indsætte DVD'en eller forbinde til netværket? Du vil nu blive bedt om at finde revision.txt fra lessons2 mappen.");
+            QFileInfo revfile = QFileDialog::getOpenFileName(0, "Find lessons2/revision.txt", QString(), "revision.txt (*.txt)");
+            size_t rev = read_revision(revfile.absoluteFilePath());
+            dirs.insert(std::make_pair(rev, revfile.absoluteDir().absolutePath()));
+
+            if (dirs.empty() || find_newest(dirs, "./revision.txt").isEmpty() || !check_files(dirs)) {
+                QMessageBox::critical(0, "Missing Data / Manglende Data!",
+                                         "English: Could not find a suitable lessons2 folder. Maybe you forgot to insert the DVD or mount a network share?\n\n"
+                                         "Dansk: Kunne ikke finde en passende lessons2 mappe. Måske har du glemt at indsætte DVD'en eller forbinde til netværket?");
+                app.exit(-1);
+                return -1;
+            }
+        }
+    }
+
+    if (!dirs.empty()) {
+        int z = dirs.size(), i = 0;
+        settings.beginWriteArray("paths", z);
+        for (dirmap_t::const_iterator it = dirs.begin() ; it != dirs.end() ; ++it, ++i) {
+            settings.setArrayIndex(i);
+            settings.setValue("revision", it->first);
+            settings.setValue("path", it->second);
+        }
+        settings.endArray();
     }
 
     QTranslator xtl;
