@@ -1387,7 +1387,22 @@ Tikaajaat Kristensen</translation>
         <location filename="src/TaskChooser.cpp" line="151"/>
         <source>introduktion tekst</source>
         <translation>&lt;center&gt;&lt;h1&gt;Velkommen til modul 2&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;
-Indsæt lidt forord og forklaring på hvordan man bedst bruger systemet her.</translation>
+Ambitionsniveauet var relativt lavt i modul 1, men det er meget højt i dette modul, så det hele går meget stærkt. Dette er et bevidst valg, for vi ved af bitter erfaring, at indlærere plejer at blive meget frustrerede efter nogle måneders grønlandskundervisning. Ved den tid har man som regel opdaget, hvor uoverskueligt meget, der skal læres før man overhovedet kan få lov at begynde at lære at bruge sproget til noget fornuftigt.&lt;br&gt;
+Desværre er der ingen nemme løsninger, for der ER mange forhold at lære før du har forstået den grundliggende struktur i sproget, der er forudsætningen for at du reelt kan begynde &quot;at sætte kød&quot; på sproget i virkelighedens verden. Det er derfor vi har valgt den stejle progression, fordi den så at sige tvinger dig til at løbe fra dine egne frustrationer.&lt;br&gt;
+Men der er lys også for enden af denne lange mørke tunnel! Når du om ca. 100 timer når frem til lektion 9 vil du opdage, at du til den tid nogenlunde ubesværet kan forstå og håndtere de flere hundrede tusinder af ord, lektion 9 indeholder. Til den tid vil du nemlig have forstået så meget af sprogets grundliggende systematik, at du kan begynde at lære nyt på næsten samme måde som du har gjort det i andre fremmedsprog, du kender.&lt;br&gt;
+&lt;br&gt;
+Den stejle progression kræver af dig, at du holder dig til det foreskrevne work-flow i samtlige kapitler. Ellers bliver du væk!&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;Se kapitlets første forelæsning og lær gloserne præliminært, evt. ved hjælp af tekst og dias i pdf-filerne.&lt;/li&gt;
+&lt;li&gt; Få lært de nye gloser mv. så du virkelig kan dem ved hjælp af kapitlets gloseautomat. Husk at automaten er en dum maskine, så vær opmærksom på kommentaren på indstikshæftets side 14.&lt;/li&gt;
+&lt;li&gt;Gennemarbejd dagens lyt/forstå/gentag øvelse og noter ned, hvis der er ord eller konstruktioner, du ikke forstår.&lt;/li&gt;
+&lt;li&gt;Se den anden forelæsning, læs forelæsningen i pdf-versionen og arbejd dig igennem samtlige øvelser.  Dette bør besvare de spørgsmål, du sad med efter dagens tekst, så du nu kan aflytte den igen og nogenlunde ubesværet gentage alt, hvad Tika og Per siger.&lt;/li&gt;
+&lt;li&gt;Gå i gang med den kumulerende automat (type 2). Sørg for at du forstår hver eneste ord og bliv ved i mindst en times tid. Husk at gentage ordene højt.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+Og sørg så for at finde nogle ligesindede. Du får brug for støtte og nogen at snakke med i denne proces. Brug evt. forum på &lt;a href=&quot;http://learngreenlandic.com/&quot;&gt;LearnGreenlandic.com&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+Per, Tika og Tino</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="155"/>

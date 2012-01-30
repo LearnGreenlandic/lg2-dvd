@@ -149,7 +149,10 @@ translator(translator)
     vbox = new QVBoxLayout;
     section = dynamic_cast<ClickLabel*>(section_list.at(0));
     QLabel *l = new QLabel(tr("introduktion tekst"));
+    l->setWordWrap(true);
     l->setTextFormat(Qt::RichText);
+    l->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::LinksAccessibleByKeyboard);
+    l->setOpenExternalLinks(true);
     vbox->addWidget(l);
     vbox->addSpacing(15);
     MK_ANY(QT_TR_NOOP("null"), tr("Gå til første forelæsning"), showFirstLecture);
