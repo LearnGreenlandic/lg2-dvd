@@ -1394,7 +1394,7 @@ Men der er lys også for enden af denne lange mørke tunnel! Når du om ca. 100 
 Den stejle progression kræver af dig, at du holder dig til det foreskrevne work-flow i samtlige kapitler. Ellers bliver du væk!&lt;br&gt;
 &lt;ol&gt;
 &lt;li&gt;Se kapitlets første forelæsning og lær gloserne præliminært, evt. ved hjælp af tekst og dias i pdf-filerne.&lt;/li&gt;
-&lt;li&gt; Få lært de nye gloser mv. så du virkelig kan dem ved hjælp af kapitlets gloseautomat. Husk at automaten er en dum maskine, så vær opmærksom på kommentaren på indstikshæftets side 14.&lt;/li&gt;
+&lt;li&gt;Få lært de nye gloser mv. så du virkelig kan dem ved hjælp af kapitlets gloseautomat. Husk at automaten er en dum maskine, så vær opmærksom på kommentaren på indstikshæftets side 14.&lt;/li&gt;
 &lt;li&gt;Gennemarbejd dagens lyt/forstå/gentag øvelse og noter ned, hvis der er ord eller konstruktioner, du ikke forstår.&lt;/li&gt;
 &lt;li&gt;Se den anden forelæsning, læs forelæsningen i pdf-versionen og arbejd dig igennem samtlige øvelser.  Dette bør besvare de spørgsmål, du sad med efter dagens tekst, så du nu kan aflytte den igen og nogenlunde ubesværet gentage alt, hvad Tika og Per siger.&lt;/li&gt;
 &lt;li&gt;Gå i gang med den kumulerende automat (type 2). Sørg for at du forstår hver eneste ord og bliv ved i mindst en times tid. Husk at gentage ordene højt.&lt;/li&gt;

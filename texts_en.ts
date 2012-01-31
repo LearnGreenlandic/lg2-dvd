@@ -122,7 +122,7 @@
         <location filename="src/Fillout12.cpp" line="52"/>
         <location filename="src/Fillout12.cpp" line="67"/>
         <source>&quot;mig&quot;</source>
-        <translation>&quot;I&quot;</translation>
+        <translation>&quot;me&quot;</translation>
     </message>
     <message>
         <location filename="src/Fillout12.cpp" line="53"/>
@@ -134,13 +134,13 @@
         <location filename="src/Fillout12.cpp" line="54"/>
         <location filename="src/Fillout12.cpp" line="69"/>
         <source>&quot;ham&quot;</source>
-        <translation>&quot;he&quot;</translation>
+        <translation>&quot;him&quot;</translation>
     </message>
     <message>
         <location filename="src/Fillout12.cpp" line="55"/>
         <location filename="src/Fillout12.cpp" line="70"/>
         <source>&quot;os&quot;</source>
-        <translation>&quot;we&quot;</translation>
+        <translation>&quot;us&quot;</translation>
     </message>
     <message>
         <location filename="src/Fillout12.cpp" line="56"/>
@@ -152,12 +152,12 @@
         <location filename="src/Fillout12.cpp" line="57"/>
         <location filename="src/Fillout12.cpp" line="72"/>
         <source>&quot;dem&quot;</source>
-        <translation>&quot;they&quot;</translation>
+        <translation>&quot;them&quot;</translation>
     </message>
     <message>
         <location filename="src/Fillout12.cpp" line="59"/>
         <source>&quot;jeg&quot;</source>
-        <translation>&quot;me&quot;</translation>
+        <translation>&quot;I&quot;</translation>
     </message>
     <message>
         <location filename="src/Fillout12.cpp" line="60"/>
@@ -168,12 +168,12 @@
     <message>
         <location filename="src/Fillout12.cpp" line="61"/>
         <source>&quot;han&quot;</source>
-        <translation>&quot;him&quot;</translation>
+        <translation>&quot;he&quot;</translation>
     </message>
     <message>
         <location filename="src/Fillout12.cpp" line="62"/>
         <source>&quot;vi&quot;</source>
-        <translation>&quot;us&quot;</translation>
+        <translation>&quot;we&quot;</translation>
     </message>
     <message>
         <location filename="src/Fillout12.cpp" line="63"/>
@@ -184,7 +184,7 @@
     <message>
         <location filename="src/Fillout12.cpp" line="64"/>
         <source>&quot;de&quot;</source>
-        <translation>&quot;them&quot;</translation>
+        <translation>&quot;they&quot;</translation>
     </message>
     <message>
         <location filename="src/Fillout12.cpp" line="66"/>
@@ -1624,8 +1624,23 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="151"/>
         <source>introduktion tekst</source>
-        <translation>&lt;center&gt;&lt;h1&gt;Welcome to the 2nd module&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;
-Indsæt lidt forord og forklaring på hvordan man bedst bruger systemet her.</translation>
+        <translation>&lt;center&gt;&lt;h1&gt;Welcome to module 2&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;
+The level of ambition was relatively low in module 1, but it is much higher in this module, so everything will be proceeding swiftly. This is a conscious choice as we know from bitter experience that learners tend to become very frustrated after a few months of learning Greenlandic. By that time one has usually discovered how unimaginably much one has to learn before you can even start to learn how to use the language productively.&lt;br&gt;
+Unfortunately there is no easy solution, since there ARE many relations to learn before you understand the underlying structure of the language that is a prerequisite before you can &quot;sink your teeth in&quot; using the language in the real world. This is why we have chosen the steep progression; to so to say force you to run away from your own frustrations.&lt;br&gt;
+But there is light at the end of this very long dark tunnel! When you in about 100 hours reach the 9th lecture, you will discover that you by that time reasonably unhindered can understand and handle most of the hundred thousands of words that 9th lecture contains. By that time you will have understood so much of the language&apos;s underlying systems that you can start learning new material almost in the same way you know from other foreign language learning.&lt;br&gt;
+&lt;br&gt;
+The steep progression demands that you stick with the prescribed work flow in each chapter. If not, you will lose yourself!&lt;br&gt;
+&lt;ol&gt;
+&lt;li&gt;Watch the chapter&apos;s first lecture and learn the initial glosses, possibly with help from the text and slides in the PDF files.&lt;/li&gt;
+&lt;li&gt;Learn all the new glosses thoroughly by using the chapter&apos;s word automaton. Remember that the automaton is an ignorant machine, so please be mindful of the comment on page 14 in the pamphlet.&lt;/li&gt;
+&lt;li&gt;Work through the day&apos;s listen/understand/repeat exercise and note if there are any words or constructs which you do not understand.&lt;/li&gt;
+&lt;li&gt;Watch the second lecture, read the lecture&apos;s PDF version, and work through all the exercises. This should answer any questions you may have had after the day&apos;s text, so you can now listen to it again and reasonably unhindered repeat everything Tika and Per are saying.&lt;/li&gt;
+&lt;li&gt;Start on the cumulative automaton (type 2). Make sure you understand each and every word and keep going for at least an hour. Remember to speak the words out loud.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;br&gt;
+And make sure to find like-minded students. You will need support and someone to talk to during this process. You can for example use the forums at &lt;a href=&quot;http://learngreenlandic.com/&quot;&gt;LearnGreenlandic.com&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;
+Per, Tika, and Tino</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="155"/>
@@ -2109,8 +2124,8 @@ Use the contemporative to make idiomatic sentences out of the following</transla
         <location filename="src/TaskChooser.cpp" line="237"/>
         <location filename="src/TaskChooser.cpp" line="238"/>
         <source>exercises/2.5</source>
-        <translation>Contemporative often translates as English ing-form as in &lt;i&gt;He came running (= He came and he ran)&lt;/i&gt;. Contemporative is namely the mood we use to express secondary actions coming with the main statements as in the example where the primary message is that he cames whereas his running is just a secondary message.&lt;br&gt;
-Combine the following sentence pairs into single sentences letting the latter be the main message </translation>
+        <translation>Contemporative often translates as English ing-form as in &lt;i&gt;He came running (= He came and he ran)&lt;/i&gt;. Contemporative is namely the mood we use to express secondary actions coming with the main statements as in the example where the primary message is that he came whereas his running is just a secondary message.&lt;br&gt;
+Combine the following sentence pairs into single sentences letting the latter be the main message</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="212"/>
