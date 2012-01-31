@@ -2034,7 +2034,7 @@ til det sekundære udsagn (tekst)</translation>
         <location filename="src/TaskChooser.cpp" line="266"/>
         <location filename="src/TaskChooser.cpp" line="267"/>
         <source>exercises/3.2</source>
-        <translation>Her kommer en stribe udsagn om nogen, der har gjort noget. Besvar dem benægtende og sig, at det var &apos;jeg&apos;, der gjorde det. Brug ordet &lt;i&gt;naamik&lt;/i&gt;, der betyder &apos;nej&apos;</translation>
+        <translation>Her kommer en stribe udsagn om nogen, der har gjort noget. Besvar dem benægtende og sig, at det var &apos;jeg&apos;, der gjorde det. Indled svaret med &lt;i&gt;Naamik, ...&lt;/i&gt; som betyder nej.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="268"/>

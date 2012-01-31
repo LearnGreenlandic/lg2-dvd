@@ -2142,7 +2142,7 @@ Combine the following sentence pairs into single sentences letting the latter be
         <location filename="src/TaskChooser.cpp" line="266"/>
         <location filename="src/TaskChooser.cpp" line="267"/>
         <source>exercises/3.2</source>
-        <translation>Here you get a number of statements about somebody. Deny them saying that the statement is about me. Use the word &lt;i&gt;naamik&lt;/i&gt; meaning &apos;no&apos;</translation>
+        <translation>Here you get a number of statements about somebody. Deny them saying that the statement is about me. Start with &lt;i&gt;Naamik, ...&lt;/i&gt; which means no.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="268"/>
