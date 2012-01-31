@@ -32,7 +32,8 @@ SOURCES += \
     src/QAAudio.cpp \
     src/ClickLabel.cpp \
     src/Fillout12.cpp \
-    src/Fillout81.cpp
+    src/Fillout81.cpp \
+    src/CorpusQuery.cpp
 
 HEADERS  += \
     src/CryptFile.hpp \
@@ -53,7 +54,8 @@ HEADERS  += \
     src/ClickLabel.hpp \
     src/Fillout12.hpp \
     src/Fillout81.hpp \
-    src/files.hpp
+    src/files.hpp \
+    src/CorpusQuery.hpp
 
 CONFIG -= warn_off
 CONFIG += warn_on

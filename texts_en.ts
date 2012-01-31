@@ -1679,7 +1679,7 @@ in combination with the clitic particle LI (audio)</translation>
         <location filename="src/TaskChooser.cpp" line="383"/>
         <source>exercises/6.3.1</source>
         <oldsource>Exercise 6.3.1: Øv Vb+GUSUP (text)</oldsource>
-        <translation>Add the morpheme Vb+GUSUP to the verbs hereunder. Note that Vb+GUSUP belongs to a small group of morphemes with a slightly deviation behaviour after vowels. The initial g behaves as g normally behaves i connection with consonants (rg ⇒ r and pg ⇒ *gg ⇒ kk). But after vowels it takes the shape of -rusup- instead of expected * gusup-.</translation>
+        <translation>Add the morpheme Vb+GUSUP to the verbs hereunder. Note that Vb+GUSUP belongs to a small group of morphemes with a slightly deviating behaviour after vowels. The initial g behaves as g normally behaves i connection with consonants (rg ⇒ r and pg ⇒ *gg ⇒ kk). But after vowels it takes the shape of -rusup- instead of expected * gusup-.</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="382"/>
@@ -1713,7 +1713,7 @@ in combination with the clitic particle LI (audio)</translation>
         <location filename="src/TaskChooser.cpp" line="387"/>
         <source>exercises/6.4.1</source>
         <oldsource>Exercise 6.4.1: Øv Vb+TAR (text)</oldsource>
-        <translation>Add the very important morpheme Vb+TAR to the verbs hereunder. Remember that  Vb+TAR belongs to the group of derivatives and endings with a variable first consonant (T turns /t/ after a consonant but /s/ after a vowel). In dictionaries and word lists +TAR&apos;s meaning is often glossed as &apos;uses to Vb&apos;. That is as mentioned a rather unprecise glossing but unfortunately we have no adequate short glossing into English. The negative translation is probably the best one: If the verb does not include +TAR it means &apos;to Vb only once&apos; as in 1969-imi ilisimatusarfimmi taamaatippunga or &apos;to Vb always&apos; as in arnaavunga. It would have been taamaatittarpunga had I dropped out of studyuing several times and it would have been arnaasarpunga if I worked as a drag queen every Saturday. Remember that +TAR is mandatory in connection with words meaning repeated time:</translation>
+        <translation>Add the very important morpheme Vb+TAR to the verbs hereunder. Remember that  Vb+TAR belongs to the group of derivatives and endings with a variable first consonant (T turns /t/ after a consonant but /s/ after a vowel). In dictionaries and word lists +TAR&apos;s meaning is often glossed as &apos;uses to Vb&apos;. That is as mentioned a rather unprecise glossing but unfortunately we have no adequate short glossing into English. The negative translation is probably the best one: If the verb does not include +TAR it means &apos;to Vb only once&apos; as in 1969-imi ilisimatusarfimmi taamaatippunga or &apos;to Vb always&apos; as in arnaavunga. It would have been taamaatittarpunga had I dropped out of studying several times and it would have been arnaasarpunga if I worked as a drag queen every Saturday. Remember that +TAR is mandatory in connection with words meaning repeated time:</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="386"/>

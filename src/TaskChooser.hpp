@@ -23,6 +23,7 @@ public slots:
     void showFillout11();
     void showFillout12();
     void showFillout81();
+    void showCorpusQuery();
     void showListenRepeat();
     void showListenRepeatAudio();
     void showExercise_qaTextOnly();

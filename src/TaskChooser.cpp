@@ -10,6 +10,7 @@
 #include "Fillout11.hpp"
 #include "Fillout12.hpp"
 #include "Fillout81.hpp"
+#include "CorpusQuery.hpp"
 #include "TaskChooser.hpp"
 
 #include <QtGlobal>
@@ -483,7 +484,7 @@ translator(translator)
     MK_LECTURE_PDF(tr("lectures/danish") + "/9", tr("Kapitel 9 som PDF"));
     COLUMN_BR(0,1);
     vbox->addSpacing(10);
-    MK_ANY(QT_TR_NOOP("corpus"), tr("Korpussøgeinterface"), showCorpus);
+    MK_ANY(QT_TR_NOOP("corpus"), tr("Korpussøgeinterface"), showCorpusQuery);
     button->setIconSize(QSize(24, 24));
     button->setIcon(QIcon(find_newest(dirs, "gfx/corpus_icon.png")));
     COLUMN_BR(1,0);
@@ -590,6 +591,14 @@ void TaskChooser::showFillout81() {
     lp->show();
     lp->raise();
     lp->activateWindow();
+}
+
+void TaskChooser::showCorpusQuery() {
+    const QPair<QString,QString>& p = mappings[sender()];
+    CorpusQuery *cq = new CorpusQuery(*this, p.first, p.second);
+    cq->show();
+    cq->raise();
+    cq->activateWindow();
 }
 
 void TaskChooser::showListenRepeat() {
