@@ -12,6 +12,14 @@ public:
     CorpusQuery(TaskChooser& tc, QString which, QString title);
 
 public slots:
+    void doSearch();
+    void insertTag(int i);
+    void optCases(int i);
+    void optTags(int i);
+    void optText(int i);
+    void optWhole(int i);
+    void optRegex(int i);
+    void openMore();
 
 private:
     TaskChooser& tc;
@@ -29,6 +37,12 @@ private:
     QList<QStringList> kals;
     QStringList dans, engs;
     std::set<QString> tags;
+
+    QComboBox *cbox;
+    QLineEdit *input;
+    QHash<QString,QCheckBox*> xsx;
+    QScrollArea *results;
+    QHash<QObject*,int> mapping;
 };
 
 #endif // CORPUSQUERY_HPP
