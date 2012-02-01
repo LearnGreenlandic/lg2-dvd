@@ -861,7 +861,21 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="491"/>
         <source>outtro text</source>
-        <translation type="unfinished"></translation>
+        <translation>You have now made it through the course. Or maybe rather: You have made it through the lectures and exercises.
+
+You are not done with learning Greenlandic simply because you are done with the DVD. L2 is a lifelong process that calls for your attention just to keep it active. You can do so in many ways. The best means are for you to use your new skills for what they really are meant for namely as a bridge to people who speak the language in their everyday.
+
+Only that it is unlikely that real use and real communication will cover your needs however intensively you use the language. For a learner in an L2 environment the risk that the learning process will cease and survival strategies will take over is always present - notwithstanding target language. Greenlandic being no exception to that rule.
+
+It is a fact that demands for meaningful social interaction with fellow beings again and again force you to accept only partly understood language and call for you to use only the vocabulary and sentence structures you master already. Understanding 50% of what is going on uttering oneself only plain main clauses takes one far. It is good survival - and lousy learning.
+
+You must ALSO keep your close listening up and you must force yourself into language more complex than the language you master already. Otherwise your language will fossilize at a - better or worse - level of Greenlandic pidgin or &apos;kitchen Greenlandic&apos; as that sociolect has been termed in Greenland for many years now.
+
+Therefore you still need the DVD and LearnGreenlandic. The automata and the corpus will have something in store for you for a long time to come and it is at LearnGreenlandic you easily find peers at your level of competence and with needs that compare to yours. Find them and use them and be used yourself.
+
+So from us &apos;until then&apos; and no &apos;farewell&apos; 
+
+Tino Didriksen, Tikaajaat Kristensen, Per Langgård</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="508"/>

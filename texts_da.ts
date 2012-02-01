@@ -866,19 +866,19 @@ Prøv igen...</source>
 
 Du er ikke færdig med at lære grønlandsk, fordi du er igennem DVD-en. Fremmedsprog er en livslang proces, som kræver løbende opmærksomhed for bare at holdes ved lige. Det kan du gøre på mange forskellige måder. Det bedste er selvfølgelig at du bruger dine nye færdigheder til det, som sproget nu engang er, nemlig som et middel til at være i kontakt med de mennesker, som taler sproget til hverdag.
 
-Det er bare højst usandsynligt, at faktisk og praktisk brug dækker alle dine behov næsten uanset hvor intensivt du bruger sproget. Som indlærer i en fremmedsproget dagligdag løber man nemlig altid en overhængende risiko for at den sproglige indlæring lynhurtigt afløses af sproglig overlevelse - uagtet målsprog. Grønlandsk ingen undtagelse fra den regel.
+Det er bare højst usandsynligt, at faktisk og praktisk brug dækker alle dine behov næsten uanset hvor intensivt du bruger sproget. Som indlærer i en fremmedsproget dagligdag løber man altid en overhængende risiko for at den sproglige indlæring lynhurtigt afløses af sproglig overlevelse - uagtet målsprog. Grønlandsk ingen undtagelse fra den regel.
 
 Dagligdagens krav til meningsfuld samvær med andre mennesker tvinger dig nemlig gang på gang til at holde en lav profil ved kun halvt opfattet sprog og tvinger dig til at bruge de strukturer, du nu engang kan, om og om igen. Man kommer langt ved at forstå hovedtrækkene af det, der siges, og ved selv at udtrykke sig i hovedsætninger. Det er effektiv sproglig overlevelse, men ikke god indlæring.
 
-Du er nødt til OGSÅ at holde gang i din evne til at forstå detaljeret og du er nødt til at tvinge dig selv ud i situationer, der stiller krav om mere komplekst produktivt sprog fra din side. Ellers stivner dit sprog på et - bedre eller dårligere - niveau af grønlandsk pidgin, eller &apos;køkkengrønlandsk&apos;, som den form for sprog har været kendt under i mange år.
+Du er nødt til OGSÅ at holde gang i din evne til at forstå detaljeret og du er nødt til at tvinge dig selv ud i situationer, der stiller krav om mere komplekst produktivt sprog fra din side. Ellers stivner dit sprog på et - bedre eller dårligere - niveau af grønlandsk pidgin, eller &apos;køkkengrønlandsk&apos;, som den form for sprog har været kendt som i mange år. 
 
 Derfor har du stadig noget at bruge DVD-en og LearnGreenlandic til. Automaterne og corpus vil indeholde relevant stof i meget lang tid fremover og det er på LearnGreenlandic, du let finder andre mennesker på ca. dit eget niveau og med ca. dine behov. Find dem og brug dem og bliv selv brugt.
 
 Arbejdsgruppen er i sig selv god læring, men derudover er den er også din adgangsbillet til at bede os om hjælp, når I sidder med problemer, I bare ikke kan få has på.
 
-Så altså ikke &apos;farvel&apos; fra mig men derimod &apos;på genhør&apos;
+Så altså ikke &apos;farvel&apos; fra os men derimod &apos;på genhør&apos;
 
-Per Langgård</translation>
+Tino Didriksen, Tikaajaat Kristensen, Per Langgård</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="508"/>

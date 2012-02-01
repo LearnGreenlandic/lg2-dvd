@@ -491,7 +491,7 @@ translator(translator)
     vbox->addLayout(grid);
     QLabel *text = new QLabel(tr("outtro text"));
     text->setWordWrap(true);
-    text->setMinimumWidth(700);
+    text->setMinimumWidth(800);
     vbox->addWidget(text, Qt::AlignLeft|Qt::AlignTop);
     widget = new QWidget;
     widget->setStyleSheet("margin: 0; padding: 0; text-align: left;");
