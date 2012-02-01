@@ -7,7 +7,21 @@
     <message>
         <location filename="src/CorpusQuery.cpp" line="313"/>
         <source>corpus query text</source>
-        <translation>Insert explanation here</translation>
+        <translation>Welcome to the corpus query tool. You will soon realize that the amount of information you can find here is huge and the different ways for you to find the pieces many. You might get a little lost in the beginning but you will no doubt soon get accustomed to this way of learning as well as to the many words and concepts we had to exploit to control the about one million pieces of information one finds here.
+
+Here is a little help to get started. You find a thorough manual including an annotated list of all tags at LearnGreenlandic.com.
+
+You can search for text or for tags. &apos;Tags&apos; are codes or code-like words attached to the text bearing information about what morphemes, endings, grammatical functions etc. in the words.
+
+Text search: Write an appropriate part of the text you need information about into the search box &apos;Insert explanation here&apos; and press &apos;Search&apos;. Try for instance to search for &apos;aallarpoq&apos;. Observe that it normally is not a good idea to search for lexicon words proper if one wants to learn about them. In polysynthetic Greenlandic lexicon words very seldom appear in exact this shape. For instance would a search for &apos;aallarpoq&apos; only give two hits whereas a search for &apos;aallar&apos; gives hundreds of examples.
+Your query results are KWIC formatted t.i. your keywords in context. The first instance of  &apos;aallar&apos; in this example search is &apos;aallartippaat&apos; which you get together with the sentence &apos;aallartippaat&apos; was found in.
+Now try to touch &apos;aallartippaat&apos; with the mouse. That will make an analysis of &apos;aallartippaa&apos; pop up in a little yellow box. As you see it is the stem &quot;aallar&quot; followed by the derivational morpheme TIP that is a morpheme added to verbs and creating a new verb (vv V). Here we have it in the indicative mood with subject &apos;they&apos; and object &apos;it&apos; (Ind 3Pl 3SgO). @PRED is a tag telling us that &apos;aallartippaat&apos; is the main verb in the sentence.
+Try also to click the button &apos;Translate&apos; next to the sentence. That lauches a new window with the newspaper&apos;s original equivalent to the Greenlandic sentence and our machine translation into English.
+
+Searching for tags: If you are not looking for words or stems but need other pieces of information you can also search for tags. As an example we can search for the derivational morpheme TIP that is part of &apos;aallartippaat&apos;:
+Uncheck &apos;Search in text&apos; and check &apos;Search in tags&apos; instead. In the drop-box &apos;Insert a tag ... &apos; you find TIP and click it. Again you get hundreds of examples which you can exploit via mouse-over analysis and translations so that you gradually learn both what the morpheme means and the formal specialities like when TIP truncates and when it does not, and when it is pronounced -sip- instead of -tip-.
+
+The possibilities are almost unlimited so just get going your own way. Have fun</translation>
     </message>
     <message>
         <location filename="src/CorpusQuery.cpp" line="322"/>
@@ -842,10 +856,15 @@ Prøv igen...</source>
     <message>
         <location filename="src/TaskChooser.cpp" line="487"/>
         <source>Korpussøgeinterface</source>
+        <translation>Corpus query tool</translation>
+    </message>
+    <message>
+        <location filename="src/TaskChooser.cpp" line="491"/>
+        <source>outtro text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="505"/>
+        <location filename="src/TaskChooser.cpp" line="508"/>
         <source>Switch to English</source>
         <translation>Skift til dansk</translation>
     </message>
@@ -2070,7 +2089,7 @@ Tikaajaat Kristensen</translation>
         <location filename="src/TaskChooser.cpp" line="460"/>
         <source>exercises/8.1</source>
         <translation>In this exercise you will make sure to have kept the overview. To do so you hereunder get the complex nominal system as a paradigm.
-Please, observe that the locative case endings in the third column also represents the other 5 local cases1. They behave almost exactly alike so if you master the locative you master the whole system.
+Please, observe that the locative case endings in the third column also represents the other 5 local cases. They behave almost exactly alike so if you master the locative you master the whole system.
 First you make sure to understand the paradigm in principle. If you without problems can fill in English examples in the paradigm this is not a problem for you. Then you will add all the endings you have seen this far to the nouns erneq, panik ikinngut and nuna. All cells without shadings should be known to you by now.
 Remember that erneq is a +up-stem, that panik is a -up-stemord, that ikinngut is a normal p-stem with a final ә, and that nuna is a p-stem.</translation>
     </message>
@@ -2158,12 +2177,12 @@ for you must be able to handle case, person and number at the same time</transla
         <translation>Chapter 9 as PDF</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="509"/>
+        <location filename="src/TaskChooser.cpp" line="512"/>
         <source>gfx/english.png</source>
         <translation>gfx/danish.png</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="515"/>
+        <location filename="src/TaskChooser.cpp" line="518"/>
         <source>Afslut LG2</source>
         <translation>Exit LG2</translation>
     </message>

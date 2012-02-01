@@ -488,7 +488,15 @@ translator(translator)
     button->setIconSize(QSize(24, 24));
     button->setIcon(QIcon(find_newest(dirs, "gfx/corpus_icon.png")));
     COLUMN_BR(1,0);
-    COLUMNS_STACK;
+    vbox->addLayout(grid);
+    QLabel *text = new QLabel(tr("outtro text"));
+    text->setWordWrap(true);
+    text->setMinimumWidth(700);
+    vbox->addWidget(text, Qt::AlignLeft|Qt::AlignTop);
+    widget = new QWidget;
+    widget->setStyleSheet("margin: 0; padding: 0; text-align: left;");
+    widget->setLayout(vbox);
+    stack->addWidget(widget);
 
     middleHBox->addSpacing(10);
     middleHBox->addLayout(stack);
@@ -699,5 +707,4 @@ void TaskChooser::switchSection() {
             l->setStyleSheet("QLabel { background-color: #fff; color: #000; border-right: 2px solid #000; }");
         }
     }
-    adjustSize();
 }

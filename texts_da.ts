@@ -7,7 +7,22 @@
     <message>
         <location filename="src/CorpusQuery.cpp" line="313"/>
         <source>corpus query text</source>
-        <translation>Indsæt forklaring her</translation>
+        <translation>Velkommen til corpussøgeinterfacet. Som du snart vil opdage det, er der svimlende mange informationer at hente her og mange forskellige måder at hente dem på. Du har sikkert lidt problemer med at overskue systemet i begyndelsen, men du vænner dig snart til det - både til arbejdsformen og de mange mærkelige ord og begreber, vi nødvendigvis har måttet gribe til for at kunne håndtere den rundt regnet ene million informationsstumper, som systemet indeholder.
+
+Her er lidt hjælp til at komme i gang med interfacet, for pladsen tillader os desværre ikke at forklare alle systemets muligheder her. Du kan i stedet downloade en mere udførlig manual med forklaringer på alle tags mv. fra LearnGreenlandic.com.
+
+Du kan søge på tekst eller på tags. Tags er koder og kodelignende ord knyttet til teksten med oplysninger om ordets morfemer, endelser, grammatiske funktioner etc.
+
+Tekstsøgning: Skriv en passende del af det ord, du gerne vil have eksempler på i boksen &apos;Indsæt forklaring her&apos; og tryk på søg. Prøv fx at søge på &apos;aallarpoq&apos;. Bemærk, at det sjældent er hensigtsmæssigt at søge på leksikonord, hvis du ønsker at vide noget om, hvordan et bestemt ord bruges. I det polysyntetiske grønlandske sprog står stammerne som bekendt meget sjældent som sig selv. For eksempel vil en søgning på &apos;aallarpoq&apos; kun give 2 svar, medens en søgning på &apos;aallar&apos; derimod giver hundredvis af eksempler.
+
+Svaret får du i form af en konkordans, dvs. søgeordet i kontekst. Første forekomst af &apos;aallar&apos; i eksemplet er ordet &apos;aallartippaat&apos;, som du får sammen med den sætning, ordet er fundet i.
+Prøv nu at berøre &apos;aallartippaat&apos; med musen. Det får en analyse af ordet til at poppe op i en lille gul boks. Som du kan se er stammen &quot;aallar&quot; fulgt af tilhænget TIP, som er et af de tilhæng, der sættes til verber og skaber et nyt verbum (vv V). Her står det i indikativ med grundleddet &apos;de&apos; og genstandsleddet &apos;den&apos; (Ind 3Pl 3SgO). @PRED er en tag, der fortæller os, at &apos;aallartippaat&apos; er sætningens hovedverballed (udsagnsled).
+Prøv også at klikke på knappen &apos;Oversæt&apos; ud for sætningen. Det vil give dig et nyt vindue med avisens danske parallel til den grønlandske sætnings og vores maskinoversættelse til engelsk.
+
+Tagsøgning: Hvis det ikke er ord og stammer, men noget andet, du har brug for at vide noget om, kan du i stedet søge på tags. Prøv fx at finde nogle eksempler på det TIP, der indgår i &apos;aallartippaat&apos;:
+Fjern fluebenet fra &apos;Søg i tekst&apos; og check i stedet &apos;Søg i tags&apos;. I boksen &apos;Indsæt et tag&apos; finder du TIP og klikker på det. Så får du igen hundredvis af eksempler, du lige som før kan få analyseret som mouse-over analyser og få oversat til dansk og engelsk, så du efterhånden både får dannnet dig et indtryk af, hvad tilhænget betyder og også får lært specialiteterne såsom hvornår TIP er et minus-tilhæng, og hvornår det er et plus-tilhæng eller hvornår det udtales som -sip- og ikke som -tip-.
+
+Mulighederne er næsten uanede, så gå bare i gang på din egen måde. God fornøjelse</translation>
     </message>
     <message>
         <location filename="src/CorpusQuery.cpp" line="322"/>
@@ -845,7 +860,28 @@ Prøv igen...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="505"/>
+        <location filename="src/TaskChooser.cpp" line="491"/>
+        <source>outtro text</source>
+        <translation>Du er nu nået igennem kurset, eller måske bedre: Du er nu nået igennem forelæsninger og øvelser.
+
+Du er ikke færdig med at lære grønlandsk, fordi du er igennem DVD-en. Fremmedsprog er en livslang proces, som kræver løbende opmærksomhed for bare at holdes ved lige. Det kan du gøre på mange forskellige måder. Det bedste er selvfølgelig at du bruger dine nye færdigheder til det, som sproget nu engang er, nemlig som et middel til at være i kontakt med de mennesker, som taler sproget til hverdag.
+
+Det er bare højst usandsynligt, at faktisk og praktisk brug dækker alle dine behov næsten uanset hvor intensivt du bruger sproget. Som indlærer i en fremmedsproget dagligdag løber man nemlig altid en overhængende risiko for at den sproglige indlæring lynhurtigt afløses af sproglig overlevelse - uagtet målsprog. Grønlandsk ingen undtagelse fra den regel.
+
+Dagligdagens krav til meningsfuld samvær med andre mennesker tvinger dig nemlig gang på gang til at holde en lav profil ved kun halvt opfattet sprog og tvinger dig til at bruge de strukturer, du nu engang kan, om og om igen. Man kommer langt ved at forstå hovedtrækkene af det, der siges, og ved selv at udtrykke sig i hovedsætninger. Det er effektiv sproglig overlevelse, men ikke god indlæring.
+
+Du er nødt til OGSÅ at holde gang i din evne til at forstå detaljeret og du er nødt til at tvinge dig selv ud i situationer, der stiller krav om mere komplekst produktivt sprog fra din side. Ellers stivner dit sprog på et - bedre eller dårligere - niveau af grønlandsk pidgin, eller &apos;køkkengrønlandsk&apos;, som den form for sprog har været kendt under i mange år.
+
+Derfor har du stadig noget at bruge DVD-en og LearnGreenlandic til. Automaterne og corpus vil indeholde relevant stof i meget lang tid fremover og det er på LearnGreenlandic, du let finder andre mennesker på ca. dit eget niveau og med ca. dine behov. Find dem og brug dem og bliv selv brugt.
+
+Arbejdsgruppen er i sig selv god læring, men derudover er den er også din adgangsbillet til at bede os om hjælp, når I sidder med problemer, I bare ikke kan få has på.
+
+Så altså ikke &apos;farvel&apos; fra mig men derimod &apos;på genhør&apos;
+
+Per Langgård</translation>
+    </message>
+    <message>
+        <location filename="src/TaskChooser.cpp" line="508"/>
         <source>Switch to English</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1916,7 +1952,7 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="460"/>
         <source>exercises/8.1</source>
-        <translation>I denne øvelse skal du sikre dig, at du ikke har tabt overblikket. Derfor får du her hele det nominale system i oversigt. Bemærk at den tredie kolonne repræsenterer alle 6 &quot;små&quot; kasus1. De opfører sig stort set ens, så lokalis får lov at repræsentere samtlige 6 i denne oversigt.
+        <translation>I denne øvelse skal du sikre dig, at du ikke har tabt overblikket. Derfor får du her hele det nominale system i oversigt. Bemærk at den tredie kolonne repræsenterer alle 6 &quot;små&quot; kasus. De opfører sig stort set ens, så lokalis får lov at repræsentere samtlige 6 i denne oversigt.
 Kontroller først, at du forstår systemets princip. Det gør du, hvis du ubesværet kan fylde samtlige celler med danske eksempler. Check dernæst, at du behersker de endelser, der hidtil har været præsenteret, ved at sætte de korrekte endelser på ordene erneq, panik ikinngut og nuna. Det er alle de celler, der ikke er lagt skygge på.
 Husk at erneq er et +up-ord, at panik er et -up-ord, at ikinngut er et p-ord, der bare slutter på ә og at nuna er et p-ord.</translation>
     </message>
@@ -1995,12 +2031,12 @@ nemlig kasus, person og tal</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="509"/>
+        <location filename="src/TaskChooser.cpp" line="512"/>
         <source>gfx/english.png</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="515"/>
+        <location filename="src/TaskChooser.cpp" line="518"/>
         <source>Afslut LG2</source>
         <translation type="unfinished"></translation>
     </message>
