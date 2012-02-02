@@ -60,9 +60,9 @@ int main(int argc, char *argv[]) {
             progress.setCancelButton(0);
             progress.show();
             QFileInfoList drives = QDir::drives();
-            drives.append(QDir("/mnt/").entryInfoList());
-            drives.append(QDir("/media/").entryInfoList());
-            drives.append(QDir("/Volumes/").entryInfoList());
+            drives.append(QDir("/mnt/").entryInfoList(QDir::Dirs|QDir::NoDotAndDotDot));
+            drives.append(QDir("/media/").entryInfoList(QDir::Dirs|QDir::NoDotAndDotDot));
+            drives.append(QDir("/Volumes/").entryInfoList(QDir::Dirs|QDir::NoDotAndDotDot));
             progress.setMaximum(drives.size());
 
             foreach (QFileInfo drive, drives) {
@@ -95,8 +95,8 @@ int main(int argc, char *argv[]) {
     }
 
     if (settings.value("revision", uint(0)).toUInt() > lg2_revision) {
-        QMessageBox runoldq(QMessageBox::Question,
-                          "Old version / Gammel version?",
+        QMessageBox runoldq(QMessageBox::Warning,
+                          "Old version / Gammel version",
                           "English: You have previously run a newer version of LG2 on this machine.\n"
                           "Are you sure you want to run this older version instead?\n\n"
                           "Dansk: Du har tidligere brugt en nyere version af LG2 på denne maskine.\n"
