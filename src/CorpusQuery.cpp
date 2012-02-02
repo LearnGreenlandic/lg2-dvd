@@ -1,3 +1,4 @@
+#include "CryptFile.hpp"
 #include "CorpusQuery.hpp"
 #include <algorithm>
 
@@ -18,15 +19,15 @@ tc(tc)
         progress.setMaximum(3727);
         progress.setValue(0);
 
-        QString txtfn = find_newest(tc.dirs, which + "/text_greenlandic.txt");
+        QString txtfn = find_newest(tc.dirs, which + "/text_greenlandic.dat");
         if (txtfn.isEmpty()) {
-            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/text_greenlandic.txt");
+            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/text_greenlandic.dat");
             throw(-1);
         }
 
-        QFile txtf(txtfn);
+        CryptFile txtf(txtfn);
         if (!txtf.open(QIODevice::ReadOnly)) {
-            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/text_greenlandic.txt");
+            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/text_greenlandic.dat");
             throw(-1);
         }
 
@@ -48,15 +49,15 @@ tc(tc)
         progress.setMaximum(3727);
         progress.setValue(0);
 
-        QString txtfn = find_newest(tc.dirs, which + "/text_english.txt");
+        QString txtfn = find_newest(tc.dirs, which + "/text_english.dat");
         if (txtfn.isEmpty()) {
-            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/text_english.txt");
+            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/text_english.dat");
             throw(-1);
         }
 
-        QFile txtf(txtfn);
+        CryptFile txtf(txtfn);
         if (!txtf.open(QIODevice::ReadOnly)) {
-            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/text_english.txt");
+            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/text_english.dat");
             throw(-1);
         }
 
@@ -78,15 +79,15 @@ tc(tc)
         progress.setMaximum(3727);
         progress.setValue(0);
 
-        QString txtfn = find_newest(tc.dirs, which + "/text_danish.txt");
+        QString txtfn = find_newest(tc.dirs, which + "/text_danish.dat");
         if (txtfn.isEmpty()) {
-            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/text_danish.txt");
+            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/text_danish.dat");
             throw(-1);
         }
 
-        QFile txtf(txtfn);
+        CryptFile txtf(txtfn);
         if (!txtf.open(QIODevice::ReadOnly)) {
-            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/text_danish.txt");
+            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/text_danish.dat");
             throw(-1);
         }
 
@@ -218,9 +219,9 @@ tc(tc)
         }
 
         {
-            QFile dbf("/Temp/cohorts.map");
+            QFile dbf("/Temp/cohorts.dat");
             if (!dbf.open(QIODevice::WriteOnly)) {
-                QMessageBox::critical(0, "Bad Data!", QString("Could not write /Temp/cohorts.map"));
+                QMessageBox::critical(0, "Bad Data!", QString("Could not write /Temp/cohorts.dat"));
                 throw(-1);
             }
 
@@ -233,9 +234,9 @@ tc(tc)
         }
 
         {
-            QFile dbf("/Temp/tags.txt");
+            QFile dbf("/Temp/tags.dat");
             if (!dbf.open(QIODevice::WriteOnly)) {
-                QMessageBox::critical(0, "Bad Data!", QString("Could not write /Temp/tags.txt"));
+                QMessageBox::critical(0, "Bad Data!", QString("Could not write /Temp/tags.dat"));
                 throw(-1);
             }
 
@@ -253,15 +254,15 @@ tc(tc)
         progress.setMaximum(31146);
         progress.setValue(0);
 
-        QString cohortsfn = find_newest(tc.dirs, which + "/cohorts.map");
+        QString cohortsfn = find_newest(tc.dirs, which + "/cohorts.dat");
         if (cohortsfn.isEmpty()) {
-            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/cohorts.map");
+            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/cohorts.dat");
             throw(-1);
         }
 
-        QFile cohortsf(cohortsfn);
+        CryptFile cohortsf(cohortsfn);
         if (!cohortsf.open(QIODevice::ReadOnly)) {
-            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/cohorts.map");
+            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/cohorts.dat");
             throw(-1);
         }
 
@@ -287,15 +288,15 @@ tc(tc)
         progress.setMaximum(460);
         progress.setValue(0);
 
-        QString tagsfn = find_newest(tc.dirs, which + "/tags.txt");
+        QString tagsfn = find_newest(tc.dirs, which + "/tags.dat");
         if (tagsfn.isEmpty()) {
-            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/tags.txt");
+            QMessageBox::critical(0, "Missing Data!", QString("Could not find ") + which + "/tags.dat");
             throw(-1);
         }
 
-        QFile tagsf(tagsfn);
+        CryptFile tagsf(tagsfn);
         if (!tagsf.open(QIODevice::ReadOnly)) {
-            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/tags.txt");
+            QMessageBox::critical(0, "Bad Data!", QString("Could not read ") + which + "/tags.dat");
             throw(-1);
         }
 

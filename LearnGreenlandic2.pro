@@ -33,7 +33,8 @@ SOURCES += \
     src/ClickLabel.cpp \
     src/Fillout12.cpp \
     src/Fillout81.cpp \
-    src/CorpusQuery.cpp
+    src/CorpusQuery.cpp \
+    src/ValidateKey.cpp
 
 HEADERS  += \
     src/CryptFile.hpp \
@@ -55,7 +56,8 @@ HEADERS  += \
     src/Fillout12.hpp \
     src/Fillout81.hpp \
     src/files.hpp \
-    src/CorpusQuery.hpp
+    src/CorpusQuery.hpp \
+    src/ValidateKey.hpp
 
 CONFIG -= warn_off
 CONFIG += warn_on

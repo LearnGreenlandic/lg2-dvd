@@ -43,7 +43,6 @@ int main(int argc, char *argv[]) {
     }
 
     if (dirs.empty() || dirs.begin()->first < lg2_revision || !check_files(dirs)) {
-        dirs.clear();
         QDir tDir(app.applicationDirPath());
         do {
             size_t rev = 0;
@@ -95,6 +94,27 @@ int main(int argc, char *argv[]) {
         }
     }
 
+    if (settings.value("revision", uint(0)).toUInt() > lg2_revision) {
+        QMessageBox runoldq(QMessageBox::Question,
+                          "Old version / Gammel version?",
+                          "English: You have previously run a newer version of LG2 on this machine.\n"
+                          "Are you sure you want to run this older version instead?\n\n"
+                          "Dansk: Du har tidligere brugt en nyere version af LG2 på denne maskine.\n"
+                          "Er du sikker på at du vil køre denne ældre version i stedet?"
+                          );
+        QPushButton *yes = runoldq.addButton("Run old / Kør gammel", QMessageBox::YesRole);
+        runoldq.addButton("Exit / Afslut", QMessageBox::NoRole);
+
+        runoldq.exec();
+        if (runoldq.clickedButton() != yes) {
+            app.quit();
+            return 0;
+        }
+    }
+    else {
+        settings.setValue("revision", lg2_revision);
+    }
+
     if (!dirs.empty()) {
         int z = dirs.size(), i = 0;
         settings.beginWriteArray("paths", z);
@@ -113,7 +133,7 @@ int main(int argc, char *argv[]) {
     QString lang = settings.value("language").toString();
     if (lang != "english" && lang != "danish") {
         QMessageBox langq(QMessageBox::Question,
-                          "First question / Første spørgsmål...",
+                          "English / Dansk...",
                           "Do you prefer English or Danish?\n"
                           "You can change language later from the main menu.\n\n"
                           "Foretrækker du engelsk eller dansk?\n"
@@ -140,14 +160,12 @@ int main(int argc, char *argv[]) {
     }
     app.installTranslator(&translator);
 
-    TaskChooser tc(dirs, &translator);
-    tc.show();
-    tc.raise();
-    tc.activateWindow();
+    TaskChooser *tc = new TaskChooser(dirs, &translator);
+    tc->show();
+    tc->raise();
+    tc->activateWindow();
 
-    /*
-    QTimer::singleShot(1000, &tc, SLOT(checkFirstRun()));
-    //*/
+    QTimer::singleShot(1000, tc, SLOT(checkFirstRun()));
 
     return app.exec();
 }

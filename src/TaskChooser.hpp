@@ -31,6 +31,7 @@ public slots:
     void showFST_Reception();
     void showFST_DownFromGloss();
     void showFST_DownFromTranslate();
+    void checkFirstRun();
 
 private:
     QHash<QObject*,QPair<QString,QString> > mappings;

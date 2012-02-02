@@ -5,7 +5,7 @@
 <context>
     <name>CorpusQuery</name>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="313"/>
+        <location filename="src/CorpusQuery.cpp" line="314"/>
         <source>corpus query text</source>
         <translation>Welcome to the corpus query tool. You will soon realize that the amount of information you can find here is huge and the different ways for you to find the pieces many. You might get a little lost in the beginning but you will no doubt soon get accustomed to this way of learning as well as to the many words and concepts we had to exploit to control the about one million pieces of information one finds here.
 
@@ -24,107 +24,107 @@ Uncheck &apos;Search in text&apos; and check &apos;Search in tags&apos; instead.
 The possibilities are almost unlimited so just get going your own way. Have fun</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="322"/>
+        <location filename="src/CorpusQuery.cpp" line="323"/>
         <source>Søg</source>
         <translation>Search</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="329"/>
+        <location filename="src/CorpusQuery.cpp" line="330"/>
         <source>Indsæt et tag...</source>
         <translation>Insert a tag...</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="337"/>
+        <location filename="src/CorpusQuery.cpp" line="338"/>
         <source>Søgningstilvalg</source>
         <translation>Search options</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="343"/>
+        <location filename="src/CorpusQuery.cpp" line="344"/>
         <source>Søg i tekst</source>
         <translation>Search in text</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="344"/>
+        <location filename="src/CorpusQuery.cpp" line="345"/>
         <source>Søg i tags</source>
         <translation>Search in tags</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="345"/>
+        <location filename="src/CorpusQuery.cpp" line="346"/>
         <source>Store/små bogstavsforskel</source>
         <translation>Case sensitive</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="346"/>
+        <location filename="src/CorpusQuery.cpp" line="347"/>
         <source>Kun hele ord</source>
         <translation>Only whole words</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="347"/>
+        <location filename="src/CorpusQuery.cpp" line="348"/>
         <source>Regular expression</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="356"/>
+        <location filename="src/CorpusQuery.cpp" line="357"/>
         <source>Resultater</source>
         <translation>Results</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="368"/>
+        <location filename="src/CorpusQuery.cpp" line="369"/>
         <source>Søger...</source>
         <translation>Searching...</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="407"/>
+        <location filename="src/CorpusQuery.cpp" line="408"/>
         <source>Søgningen gav ingen resultater.</source>
         <translation>The search returned no results</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="431"/>
+        <location filename="src/CorpusQuery.cpp" line="432"/>
         <source>Linie</source>
         <translation>Line</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="432"/>
+        <location filename="src/CorpusQuery.cpp" line="433"/>
         <source>Venstre kontekst</source>
         <translation>Left context</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="433"/>
+        <location filename="src/CorpusQuery.cpp" line="434"/>
         <source>Match</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="434"/>
+        <location filename="src/CorpusQuery.cpp" line="435"/>
         <source>Højre kontekst</source>
         <translation>Right context</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="435"/>
+        <location filename="src/CorpusQuery.cpp" line="436"/>
         <source>Mere</source>
         <translation>More</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="490"/>
+        <location filename="src/CorpusQuery.cpp" line="491"/>
         <source>Oversæt</source>
         <translation>Translate</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="533"/>
+        <location filename="src/CorpusQuery.cpp" line="534"/>
         <source>Linie %1 kontekst og oversættelse</source>
         <translation>Line %1 context and translations</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="541"/>
+        <location filename="src/CorpusQuery.cpp" line="542"/>
         <source>Grønlandsk</source>
         <translation>Greenlandic</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="561"/>
+        <location filename="src/CorpusQuery.cpp" line="562"/>
         <source>Dansk</source>
         <translation>Danish</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="579"/>
+        <location filename="src/CorpusQuery.cpp" line="580"/>
         <source>Engelsk</source>
         <translation>English</translation>
     </message>
@@ -859,7 +859,7 @@ Prøv igen...</source>
         <translation>Corpus query tool</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="491"/>
+        <location filename="src/TaskChooser.cpp" line="492"/>
         <source>outtro text</source>
         <translation>You have now made it through the course. Or maybe rather: You have made it through the lectures and exercises.
 
@@ -878,7 +878,7 @@ So from us &apos;until then&apos; and no &apos;farewell&apos;
 Tino Didriksen, Tikaajaat Kristensen, Per Langgård</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="508"/>
+        <location filename="src/TaskChooser.cpp" line="513"/>
         <source>Switch to English</source>
         <translation>Skift til dansk</translation>
     </message>
@@ -2191,12 +2191,12 @@ for you must be able to handle case, person and number at the same time</transla
         <translation>Chapter 9 as PDF</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="512"/>
+        <location filename="src/TaskChooser.cpp" line="517"/>
         <source>gfx/english.png</source>
         <translation>gfx/danish.png</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="518"/>
+        <location filename="src/TaskChooser.cpp" line="523"/>
         <source>Afslut LG2</source>
         <translation>Exit LG2</translation>
     </message>
@@ -2659,6 +2659,59 @@ Prøv igen...</source>
         <location filename="src/UpdownTwo.cpp" line="99"/>
         <source>Det korrekte færdige ord var:</source>
         <translation>The correct final word was:</translation>
+    </message>
+</context>
+<context>
+    <name>ValidateKey</name>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="10"/>
+        <source>Validering af licensnøgle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="17"/>
+        <source>license key text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="21"/>
+        <source>&lt;b&gt;Bemærk:&lt;/b&gt; Du må kun bruge din licensnøgle en gang, for en person, på en computer!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="32"/>
+        <source>Email</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="33"/>
+        <source>Gentag email</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="34"/>
+        <source>Licensnøgle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="40"/>
+        <source>Valider online</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="44"/>
+        <source>Afslut program</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="52"/>
+        <source>... checker licensnøgle via learngreenlandic.com ...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="64"/>
+        <source>danish</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

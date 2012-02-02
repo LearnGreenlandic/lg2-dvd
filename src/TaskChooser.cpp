@@ -1,3 +1,4 @@
+#include "ValidateKey.hpp"
 #include "ClickLabel.hpp"
 #include "QATextOnly.hpp"
 #include "QAAudio.hpp"
@@ -706,5 +707,15 @@ void TaskChooser::switchSection() {
             l->setText(QString("<h2>") + section_texts.at(i) + "</h2>");
             l->setStyleSheet("QLabel { background-color: #fff; color: #000; border-right: 2px solid #000; }");
         }
+    }
+}
+
+void TaskChooser::checkFirstRun() {
+    QSettings settings;
+    if (settings.value("license_key", "").toString().isEmpty() || settings.value("encryption_key", "").toString().isEmpty() || settings.value("encryption_key", "").toString().at(0) != 'P') {
+        ValidateKey *vk = new ValidateKey;
+        vk->show();
+        vk->raise();
+        vk->activateWindow();
     }
 }
