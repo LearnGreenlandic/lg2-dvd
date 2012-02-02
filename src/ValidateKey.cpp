@@ -38,6 +38,7 @@ QDialog(0, Qt::Window | Qt::CustomizeWindowHint | Qt::WindowTitleHint)
     qvbl->addLayout(form);
 
     result = new QLabel;
+    result->setWordWrap(true);
     qvbl->addWidget(result);
 
     QPushButton *check = new QPushButton(tr("Valider online"));
@@ -91,6 +92,35 @@ void ValidateKey::bailOut() {
 }
 
 void ValidateKey::finished(QNetworkReply *reply) {
+    QNetworkReply::NetworkError e = reply->error();
+    if (e != QNetworkReply::NoError) {
+        QString es;
+        switch (e) {
+        case QNetworkReply::ConnectionRefusedError:
+            es = "the remote server refused the connection (the server is not accepting requests)";
+            break;
+        case QNetworkReply::HostNotFoundError:
+            es = "the remote host name was not found (invalid hostname)";
+            break;
+        case QNetworkReply::TimeoutError:
+            es = "the connection to the remote server timed out";
+            break;
+        case QNetworkReply::TemporaryNetworkFailureError:
+            es = "the connection was broken due to disconnection from the network, however the system has initiated roaming to another access point. The request should be resubmitted and will be processed as soon as the connection is re-established.";
+            break;
+        case QNetworkReply::UnknownNetworkError:
+            es = "an unknown network-related error was detected";
+            break;
+        default:
+            es = "an unknown error occured with the connection";
+            break;
+        }
+        es = "<b>" + es + "</b>";
+        result->setText(es);
+        adjustSize();
+        return;
+    }
+
     QString rv = reply->readAll();
 
     if (rv[0] == 'P') {

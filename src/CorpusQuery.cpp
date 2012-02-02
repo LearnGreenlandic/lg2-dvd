@@ -311,7 +311,7 @@ tc(tc)
     }
 
     QVBoxLayout *vbox = new QVBoxLayout;
-    QLabel *text = new QLabel(tr("corpus query text"));
+    text = new QLabel(tr("corpus query text"));
     text->setWordWrap(true);
     vbox->addWidget(text);
 
@@ -348,6 +348,10 @@ tc(tc)
     ADDXSX("regex", tr("Regular expression"), optRegex, 3, 1);
 
     xsx["text"]->setChecked(true);
+
+    QPushButton *help = new QPushButton(tr("Vis hjælpeteksten igen"));
+    connect(help, SIGNAL(clicked()), this, SLOT(showHelp()));
+    opts->addWidget(help, 3, 0);
 
     hbox->addLayout(opts);
 
@@ -496,7 +500,13 @@ void CorpusQuery::doSearch() {
 
         w->setLayout(grid);
         results->setWidget(w);
+
+        text->setText("");
     }
+}
+
+void CorpusQuery::showHelp() {
+    text->setText(tr("corpus query text"));
 }
 
 void CorpusQuery::insertTag(int i) {

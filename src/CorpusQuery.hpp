@@ -20,6 +20,7 @@ public slots:
     void optWhole(int i);
     void optRegex(int i);
     void openMore();
+    void showHelp();
 
 private:
     TaskChooser& tc;
@@ -38,6 +39,7 @@ private:
     QStringList dans, engs;
     std::set<QString> tags;
 
+    QLabel *text;
     QComboBox *cbox;
     QLineEdit *input;
     QHash<QString,QCheckBox*> xsx;
