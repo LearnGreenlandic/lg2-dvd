@@ -67,9 +67,10 @@ int main(int argc, char *argv[]) {
 
             foreach (QFileInfo drive, drives) {
                 size_t rev = 0;
-                progress.setLabelText(QString("Trying to read ") + drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt") + " ...");
-                if (drive.absoluteDir().exists("./lessons2/revision.txt") && (rev = read_revision(drive.absoluteDir().absoluteFilePath("./lessons2/revision.txt")))) {
-                    dirs.insert(std::make_pair(rev, drive.absoluteDir().absoluteFilePath("lessons2")));
+                QFileInfo f(drive.absoluteFilePath() + "/lessons2/revision.txt");
+                progress.setLabelText(QString("Trying to read ") + f.absoluteFilePath() + " ...");
+                if (f.exists() && (rev = read_revision(f.absoluteFilePath()))) {
+                    dirs.insert(std::make_pair(rev, f.absoluteDir().absolutePath()));
                 }
                 progress.setValue(progress.value()+1);
             }
