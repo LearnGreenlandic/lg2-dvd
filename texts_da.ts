@@ -66,72 +66,72 @@ Mulighederne er næsten uanede, så gå bare i gang på din egen måde. God forn
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="357"/>
+        <location filename="src/CorpusQuery.cpp" line="361"/>
         <source>Resultater</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="369"/>
+        <location filename="src/CorpusQuery.cpp" line="373"/>
         <source>Søger...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="408"/>
+        <location filename="src/CorpusQuery.cpp" line="412"/>
         <source>Søgningen gav ingen resultater.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="432"/>
+        <location filename="src/CorpusQuery.cpp" line="436"/>
         <source>Linie</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="433"/>
+        <location filename="src/CorpusQuery.cpp" line="437"/>
         <source>Venstre kontekst</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="434"/>
+        <location filename="src/CorpusQuery.cpp" line="438"/>
         <source>Match</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="435"/>
+        <location filename="src/CorpusQuery.cpp" line="439"/>
         <source>Højre kontekst</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="436"/>
+        <location filename="src/CorpusQuery.cpp" line="440"/>
         <source>Mere</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="491"/>
+        <location filename="src/CorpusQuery.cpp" line="495"/>
         <source>Oversæt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="501"/>
+        <location filename="src/CorpusQuery.cpp" line="352"/>
         <source>Vis hjælpeteksten igen</source>
         <translation>Vis forklaringen igen</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="546"/>
+        <location filename="src/CorpusQuery.cpp" line="544"/>
         <source>Linie %1 kontekst og oversættelse</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="554"/>
+        <location filename="src/CorpusQuery.cpp" line="552"/>
         <source>Grønlandsk</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="574"/>
+        <location filename="src/CorpusQuery.cpp" line="572"/>
         <source>Dansk</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="592"/>
+        <location filename="src/CorpusQuery.cpp" line="590"/>
         <source>Engelsk</source>
         <translation type="unfinished"></translation>
     </message>
@@ -739,29 +739,29 @@ Prøv igen...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="98"/>
+        <location filename="src/QAAudio.cpp" line="100"/>
         <source>Korrekt!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="108"/>
+        <location filename="src/QAAudio.cpp" line="111"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="111"/>
+        <location filename="src/QAAudio.cpp" line="115"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="120"/>
+        <location filename="src/QAAudio.cpp" line="125"/>
         <source>Hrhm...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="120"/>
+        <location filename="src/QAAudio.cpp" line="125"/>
         <source>Det korrekte svar var:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1003,17 +1003,17 @@ Tino Didriksen, Tikaajaat Kristensen, Per Langgård</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="176"/>
         <source>FST 1.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 1.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="177"/>
         <source>FST 1.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 1.1.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="178"/>
         <source>FST 1.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 1.1.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="180"/>
@@ -1105,17 +1105,17 @@ der hvor elementerne støder sammen (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="206"/>
         <source>FST 1.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 1.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="207"/>
         <source>FST 1.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 1.2.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="208"/>
         <source>FST 1.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 1.2.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="214"/>
@@ -1137,17 +1137,17 @@ der hvor elementerne støder sammen (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="221"/>
         <source>FST 2.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 2.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="222"/>
         <source>FST 2.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 2.1.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="223"/>
         <source>FST 2.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 2.1.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="225"/>
@@ -1241,12 +1241,12 @@ til det sekundære udsagn (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="247"/>
         <source>FST 2.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 2.2.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="248"/>
         <source>FST 2.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 2.2.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="254"/>
@@ -1268,17 +1268,17 @@ til det sekundære udsagn (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="261"/>
         <source>FST 3.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 3.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="262"/>
         <source>FST 3.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 3.1.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="263"/>
         <source>FST 3.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 3.1.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="265"/>
@@ -1341,17 +1341,17 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="280"/>
         <source>FST 3.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 3.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="281"/>
         <source>FST 3.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 3.2.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="282"/>
         <source>FST 3.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 3.2.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="288"/>
@@ -1373,17 +1373,17 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="295"/>
         <source>FST 4.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 4.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="296"/>
         <source>FST 4.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 4.1.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="297"/>
         <source>FST 4.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 4.1.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="299"/>
@@ -1468,17 +1468,17 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="319"/>
         <source>FST 4.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 4.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="320"/>
         <source>FST 4.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 4.2.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="321"/>
         <source>FST 4.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 4.2.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="327"/>
@@ -1500,17 +1500,17 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="334"/>
         <source>FST 5.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 5.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="335"/>
         <source>FST 5.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 5.1.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="336"/>
         <source>FST 5.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 5.1.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="338"/>
@@ -1644,17 +1644,17 @@ Per, Tika og Tino</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="360"/>
         <source>FST 5.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 5.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="361"/>
         <source>FST 5.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 5.2.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="362"/>
         <source>FST 5.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 5.2.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="368"/>
@@ -1676,17 +1676,17 @@ Per, Tika og Tino</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="375"/>
         <source>FST 6.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 6.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="376"/>
         <source>FST 6.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 6.1.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="377"/>
         <source>FST 6.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 6.1.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="379"/>
@@ -1785,17 +1785,17 @@ sammen med tilhængspartiklen LI (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="402"/>
         <source>FST 6.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 6.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="403"/>
         <source>FST 6.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 6.2.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="404"/>
         <source>FST 6.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 6.2.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="410"/>
@@ -1817,17 +1817,17 @@ sammen med tilhængspartiklen LI (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="417"/>
         <source>FST 7.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 7.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="418"/>
         <source>FST 7.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 7.1.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="419"/>
         <source>FST 7.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 7.1.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="421"/>
@@ -1890,17 +1890,17 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="437"/>
         <source>FST 7.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 7.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="438"/>
         <source>FST 7.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 7.2.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="439"/>
         <source>FST 7.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 7.2.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="445"/>
@@ -1922,17 +1922,17 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="452"/>
         <source>FST 8.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 8.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="453"/>
         <source>FST 8.1.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 8.1.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="454"/>
         <source>FST 8.1.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 8.1.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="456"/>
@@ -2009,17 +2009,17 @@ nemlig kasus, person og tal</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="474"/>
         <source>FST 8.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 8.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="475"/>
         <source>FST 8.2.2: Produktion</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 8.2.2: Produktion</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="476"/>
         <source>FST 8.2.3: Oversættelse</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 8.2.3: Oversættelse</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="482"/>
@@ -2167,7 +2167,7 @@ til det sekundære udsagn (tekst)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="246"/>
         <source>FST 2.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automat 2.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="218"/>
@@ -2667,50 +2667,62 @@ Prøv igen...</source>
     </message>
     <message>
         <location filename="src/ValidateKey.cpp" line="18"/>
+        <source>xvid text</source>
+        <translation>&lt;h2&gt;Xvid / DivX video codec&lt;/h2&gt;
+Dette program kræver at din computer kan afspille videor i Xvid format med MP3 lyd. Hvis du ikke er sikker på om din computer kan dette så ligger der pakker på DVD&apos;en som kan installere disse for dig. Du kan også åbne dem via knappen nedenfor.</translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="25"/>
+        <source>Installer Xvid / DivX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="31"/>
         <source>license key text</source>
-        <translation>Indtast din email-addresse og licensnøgle nedenfor. Du finder licensnøglen bag på indstikshæftet. Dette check kræver at din computer er online og at din firewall tillader forbindelse til &lt;a href=&quot;http://learngreenlandic.com/&quot;&gt;learngreenlandic.com&lt;/a&gt; på TCP port 80.&lt;br&gt;
+        <translation>&lt;h2&gt;Validering af licensnøgle&lt;/h2&gt;
+Indtast din email-addresse og licensnøgle nedenfor. Du finder licensnøglen bag på indstikshæftet. Dette check kræver at din computer er online og at din firewall tillader forbindelse til &lt;a href=&quot;http://learngreenlandic.com/&quot;&gt;learngreenlandic.com&lt;/a&gt; på TCP port 80.&lt;br&gt;
 &lt;br&gt;
 Hvis du har problemer kan du kontakte support på &lt;a href=&quot;http://learngreenlandic.com/&quot;&gt;learngreenlandic.com&lt;/a&gt; eller &lt;a href=&quot;mailto:helpdesk@learngreenlandic.com&quot;&gt;helpdesk@learngreenlandic.com&lt;/a&gt;&lt;br&gt;
 &lt;br&gt;
 &lt;b&gt;Bemærk:&lt;/b&gt; Du må kun bruge din licensnøgle en gang, for en person, på en computer!</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="35"/>
+        <location filename="src/ValidateKey.cpp" line="48"/>
         <source>Email</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="36"/>
+        <location filename="src/ValidateKey.cpp" line="49"/>
         <source>Gentag email</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="37"/>
+        <location filename="src/ValidateKey.cpp" line="50"/>
         <source>Licensnøgle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="44"/>
+        <location filename="src/ValidateKey.cpp" line="57"/>
         <source>Valider online</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="48"/>
+        <location filename="src/ValidateKey.cpp" line="61"/>
         <source>Afslut program</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="57"/>
+        <location filename="src/ValidateKey.cpp" line="71"/>
         <source>Email-addresserne er ikke ens!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="60"/>
+        <location filename="src/ValidateKey.cpp" line="74"/>
         <source>... checker licensnøgle via learngreenlandic.com ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="70"/>
+        <location filename="src/ValidateKey.cpp" line="84"/>
         <source>danish</source>
         <translation type="unfinished"></translation>
     </message>

@@ -94,21 +94,26 @@ void QAAudio::showNext() {
 void QAAudio::checkInput() {
     playanswer->hide();
     yield->show();
-    if (input->text() == data.getA(curAt)) {
-        result->setText(QString("<center><span style='color: darkgreen;'><b>") + tr("Korrekt!") + "</b></span></center>");
-        if (!data.getAW(curAt).isEmpty()) {
-            media->stop();
-            media->setCurrentSource(data.getAW(curAt));
-            playanswer->show();
-            media->play();
+    QStringList as = data.getA(curAt).split('|');
+    foreach (QString a, as) {
+        if (input->text() == a) {
+            result->setText(QString("<center><span style='color: darkgreen;'><b>") + tr("Korrekt!") + "</b></span></center>");
+            if (!data.getAW(curAt).isEmpty()) {
+                media->stop();
+                media->setCurrentSource(data.getAW(curAt));
+                playanswer->show();
+                media->play();
+            }
+            yield->hide();
+            break;
         }
-        yield->hide();
-    }
-    else if (input->text().compare(data.getA(curAt), Qt::CaseInsensitive) == 0) {
-        result->setText(QString("<center><span style='color: darkyellow;'><b>") + tr("Næsten korrekt.\nStore og små bogstaver gælder...") + "</b></span></center>");
-    }
-    else {
-        result->setText(QString("<center><span style='color: darkred;'><b>") + tr("Ikke korrekt.\nPrøv igen...") + "</b></span></center>");
+        else if (input->text().compare(a, Qt::CaseInsensitive) == 0) {
+            result->setText(QString("<center><span style='color: darkyellow;'><b>") + tr("Næsten korrekt.\nStore og små bogstaver gælder...") + "</b></span></center>");
+            break;
+        }
+        else {
+            result->setText(QString("<center><span style='color: darkred;'><b>") + tr("Ikke korrekt.\nPrøv igen...") + "</b></span></center>");
+        }
     }
     result->show();
     input->setFocus();

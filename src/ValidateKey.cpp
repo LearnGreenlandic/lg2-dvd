@@ -15,7 +15,20 @@ QDialog(0, Qt::Window | Qt::CustomizeWindowHint | Qt::WindowTitleHint)
 
     QVBoxLayout *qvbl = new QVBoxLayout;
 
-    QLabel *label = new QLabel(tr("license key text"));
+    QLabel *label = new QLabel(tr("xvid text"));
+    label->setWordWrap(true);
+    label->setTextFormat(Qt::RichText);
+    label->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::LinksAccessibleByKeyboard);
+    label->setOpenExternalLinks(true);
+    qvbl->addWidget(label);
+
+    QPushButton *xvid = new QPushButton(tr("Installer Xvid / DivX"));
+    connect(xvid, SIGNAL(clicked()), this, SLOT(launchXvid()));
+    qvbl->addWidget(xvid);
+
+    qvbl->addSpacing(15);
+
+    label = new QLabel(tr("license key text"));
     label->setWordWrap(true);
     label->setTextFormat(Qt::RichText);
     label->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::LinksAccessibleByKeyboard);
@@ -50,6 +63,30 @@ QDialog(0, Qt::Window | Qt::CustomizeWindowHint | Qt::WindowTitleHint)
     qvbl->addWidget(close);
 
     setLayout(qvbl);
+    adjustSize();
+}
+
+void ValidateKey::launchXvid() {
+    QString torun = QCoreApplication::instance()->applicationDirPath() +
+    #if defined(Q_WS_WIN)
+        "/../Xvid-1.3.2-20110601.exe"
+    #elif defined(Q_WS_MAC)
+        "/../DivXInstaller.dmg"
+    #else
+        "/install-prereq-ubuntu.sh"
+    #endif
+    ;
+
+    if (!QFileInfo(torun).exists()) {
+        QMessageBox::information(0, "Missing Xvid / DivX packages!", QString("Could not locate ") + torun + "\nPlease open the DVD in your file manager and install Xvid / DivX manually, or have your system administrator help you.");
+    }
+
+    #if defined(Q_WS_WIN) || defined(Q_WS_MAC)
+        QDesktopServices::openUrl(QUrl::fromLocalFile(torun));
+    #else
+        torun = QString("/usr/bin/xterm -e \"") + torun + "\" &";
+        system(torun.toStdString().c_str());
+    #endif
 }
 
 void ValidateKey::checkInput() {

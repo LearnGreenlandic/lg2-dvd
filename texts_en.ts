@@ -65,72 +65,72 @@ The possibilities are almost unlimited so just get going your own way. Have fun<
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="357"/>
+        <location filename="src/CorpusQuery.cpp" line="361"/>
         <source>Resultater</source>
         <translation>Results</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="369"/>
+        <location filename="src/CorpusQuery.cpp" line="373"/>
         <source>Søger...</source>
         <translation>Searching...</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="408"/>
+        <location filename="src/CorpusQuery.cpp" line="412"/>
         <source>Søgningen gav ingen resultater.</source>
         <translation>The search returned no results</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="432"/>
+        <location filename="src/CorpusQuery.cpp" line="436"/>
         <source>Linie</source>
         <translation>Line</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="433"/>
+        <location filename="src/CorpusQuery.cpp" line="437"/>
         <source>Venstre kontekst</source>
         <translation>Left context</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="434"/>
+        <location filename="src/CorpusQuery.cpp" line="438"/>
         <source>Match</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="435"/>
+        <location filename="src/CorpusQuery.cpp" line="439"/>
         <source>Højre kontekst</source>
         <translation>Right context</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="436"/>
+        <location filename="src/CorpusQuery.cpp" line="440"/>
         <source>Mere</source>
         <translation>More</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="491"/>
+        <location filename="src/CorpusQuery.cpp" line="495"/>
         <source>Oversæt</source>
         <translation>Translate</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="501"/>
+        <location filename="src/CorpusQuery.cpp" line="352"/>
         <source>Vis hjælpeteksten igen</source>
         <translation>Show the explanation again</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="546"/>
+        <location filename="src/CorpusQuery.cpp" line="544"/>
         <source>Linie %1 kontekst og oversættelse</source>
         <translation>Line %1 context and translations</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="554"/>
+        <location filename="src/CorpusQuery.cpp" line="552"/>
         <source>Grønlandsk</source>
         <translation>Greenlandic</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="574"/>
+        <location filename="src/CorpusQuery.cpp" line="572"/>
         <source>Dansk</source>
         <translation>Danish</translation>
     </message>
     <message>
-        <location filename="src/CorpusQuery.cpp" line="592"/>
+        <location filename="src/CorpusQuery.cpp" line="590"/>
         <source>Engelsk</source>
         <translation>English</translation>
     </message>
@@ -738,29 +738,29 @@ Prøv igen...</source>
         <translation>No, back to the menu</translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="98"/>
+        <location filename="src/QAAudio.cpp" line="100"/>
         <source>Korrekt!</source>
         <translation>Correct!</translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="108"/>
+        <location filename="src/QAAudio.cpp" line="111"/>
         <source>Næsten korrekt.
 Store og små bogstaver gælder...</source>
         <translation>Almost correct. Upper and lower case matters...</translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="111"/>
+        <location filename="src/QAAudio.cpp" line="115"/>
         <source>Ikke korrekt.
 Prøv igen...</source>
         <translation>Incorrect. Try again...</translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="120"/>
+        <location filename="src/QAAudio.cpp" line="125"/>
         <source>Hrhm...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/QAAudio.cpp" line="120"/>
+        <location filename="src/QAAudio.cpp" line="125"/>
         <source>Det korrekte svar var:</source>
         <translation>The correct answer was:</translation>
     </message>
@@ -1000,17 +1000,17 @@ Tino Didriksen, Tikaajaat Kristensen, Per Langgård</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="176"/>
         <source>FST 1.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 1.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="177"/>
         <source>FST 1.1.2: Produktion</source>
-        <translation>FST 1.1.2: Production</translation>
+        <translation>Automaton 1.1.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="178"/>
         <source>FST 1.1.3: Oversættelse</source>
-        <translation>FST 1.1.3: Translation</translation>
+        <translation>Automaton 1.1.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="180"/>
@@ -1131,17 +1131,17 @@ whenever stems, morphemes, and endings meet (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="206"/>
         <source>FST 1.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 1.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="207"/>
         <source>FST 1.2.2: Produktion</source>
-        <translation>FST 1.2.2: Production</translation>
+        <translation>Automaton 1.2.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="208"/>
         <source>FST 1.2.3: Oversættelse</source>
-        <translation>FST 1.2.3: Translation</translation>
+        <translation>Automaton 1.2.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="214"/>
@@ -1163,17 +1163,17 @@ whenever stems, morphemes, and endings meet (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="221"/>
         <source>FST 2.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 2.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="222"/>
         <source>FST 2.1.2: Produktion</source>
-        <translation>FST 2.1.2: Production</translation>
+        <translation>Automaton 2.1.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="223"/>
         <source>FST 2.1.3: Oversættelse</source>
-        <translation>FST 2.1.3: Translation</translation>
+        <translation>Automaton 2.1.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="225"/>
@@ -1285,17 +1285,17 @@ as a subordinate mood (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="246"/>
         <source>FST 2.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 2.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="247"/>
         <source>FST 2.2.2: Produktion</source>
-        <translation>FST 2.2.2: Production</translation>
+        <translation>Automaton 2.2.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="248"/>
         <source>FST 2.2.3: Oversættelse</source>
-        <translation>FST 2.2.3: Translation</translation>
+        <translation>Automaton 2.2.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="254"/>
@@ -1317,17 +1317,17 @@ as a subordinate mood (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="261"/>
         <source>FST 3.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 3.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="262"/>
         <source>FST 3.1.2: Produktion</source>
-        <translation>FST 3.1.2: Production</translation>
+        <translation>Automaton 3.1.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="263"/>
         <source>FST 3.1.3: Oversættelse</source>
-        <translation>FST 3.1.3: Translation</translation>
+        <translation>Automaton 3.1.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="265"/>
@@ -1400,17 +1400,17 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="280"/>
         <source>FST 3.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 3.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="281"/>
         <source>FST 3.2.2: Produktion</source>
-        <translation>FST 3.2.2: Production</translation>
+        <translation>Automaton 3.2.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="282"/>
         <source>FST 3.2.3: Oversættelse</source>
-        <translation>FST 3.2.3: Translation</translation>
+        <translation>Automaton 3.2.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="288"/>
@@ -1432,17 +1432,17 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="295"/>
         <source>FST 4.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 4.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="296"/>
         <source>FST 4.1.2: Produktion</source>
-        <translation>FST 4.1.2: Production</translation>
+        <translation>Automaton 4.1.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="297"/>
         <source>FST 4.1.3: Oversættelse</source>
-        <translation>FST 4.1.3: Translation</translation>
+        <translation>Automaton 4.1.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="299"/>
@@ -1558,17 +1558,17 @@ together with the contemporative mood (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="319"/>
         <source>FST 4.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 4.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="320"/>
         <source>FST 4.2.2: Produktion</source>
-        <translation>FST 4.2.2: Production</translation>
+        <translation>Automaton 4.2.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="321"/>
         <source>FST 4.2.3: Oversættelse</source>
-        <translation>FST 4.2.3: Translation</translation>
+        <translation>Automaton 4.2.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="327"/>
@@ -1590,17 +1590,17 @@ together with the contemporative mood (audio)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="334"/>
         <source>FST 5.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 5.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="335"/>
         <source>FST 5.1.2: Produktion</source>
-        <translation>FST 5.1.2: Production</translation>
+        <translation>Automaton 5.1.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="336"/>
         <source>FST 5.1.3: Oversættelse</source>
-        <translation>FST 5.1.3: Translation</translation>
+        <translation>Automaton 5.1.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="338"/>
@@ -1703,17 +1703,17 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="360"/>
         <source>FST 5.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 5.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="361"/>
         <source>FST 5.2.2: Produktion</source>
-        <translation>FST 5.2.2: Production</translation>
+        <translation>Automaton 5.2.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="362"/>
         <source>FST 5.2.3: Oversættelse</source>
-        <translation>FST 5.2.3: Translation</translation>
+        <translation>Automaton 5.2.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="368"/>
@@ -1735,17 +1735,17 @@ Tikaajaat Kristensen</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="375"/>
         <source>FST 6.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 6.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="376"/>
         <source>FST 6.1.2: Produktion</source>
-        <translation>FST 6.1.2: Production</translation>
+        <translation>Automaton 6.1.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="377"/>
         <source>FST 6.1.3: Oversættelse</source>
-        <translation>FST 6.1.3: Translation</translation>
+        <translation>Automaton 6.1.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="379"/>
@@ -1920,17 +1920,17 @@ with further morphemes (text)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="402"/>
         <source>FST 6.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 6.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="403"/>
         <source>FST 6.2.2: Produktion</source>
-        <translation>FST 6.2.2: Production</translation>
+        <translation>Automaton 6.2.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="404"/>
         <source>FST 6.2.3: Oversættelse</source>
-        <translation>FST 6.2.3: Translation</translation>
+        <translation>Automaton 6.2.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="410"/>
@@ -1952,17 +1952,17 @@ with further morphemes (text)</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="417"/>
         <source>FST 7.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 7.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="418"/>
         <source>FST 7.1.2: Produktion</source>
-        <translation>FST 7.1.2: Production</translation>
+        <translation>Automaton 7.1.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="419"/>
         <source>FST 7.1.3: Oversættelse</source>
-        <translation>FST 7.1.3: Translation</translation>
+        <translation>Automaton 7.1.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="421"/>
@@ -2040,17 +2040,17 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="437"/>
         <source>FST 7.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 7.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="438"/>
         <source>FST 7.2.2: Produktion</source>
-        <translation>FST 7.2.2: Production</translation>
+        <translation>Automaton 7.2.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="439"/>
         <source>FST 7.2.3: Oversættelse</source>
-        <translation>FST 7.2.3: Translation</translation>
+        <translation>Automaton 7.2.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="445"/>
@@ -2072,17 +2072,17 @@ Per Rosing</translation>
     <message>
         <location filename="src/TaskChooser.cpp" line="452"/>
         <source>FST 8.1.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 8.1.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="453"/>
         <source>FST 8.1.2: Produktion</source>
-        <translation>FST 8.1.2: Production</translation>
+        <translation>Automaton 8.1.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="454"/>
         <source>FST 8.1.3: Oversættelse</source>
-        <translation>FST 8.1.3: Translation</translation>
+        <translation>Automaton 8.1.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="456"/>
@@ -2169,17 +2169,17 @@ for you must be able to handle case, person and number at the same time</transla
     <message>
         <location filename="src/TaskChooser.cpp" line="474"/>
         <source>FST 8.2.1: Reception</source>
-        <translation type="unfinished"></translation>
+        <translation>Automaton 8.2.1: Reception</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="475"/>
         <source>FST 8.2.2: Produktion</source>
-        <translation>FST 8.2.2: Production</translation>
+        <translation>Automaton 8.2.2: Production</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="476"/>
         <source>FST 8.2.3: Oversættelse</source>
-        <translation>FST 8.2.3: Translation</translation>
+        <translation>Automaton 8.2.3: Translation</translation>
     </message>
     <message>
         <location filename="src/TaskChooser.cpp" line="482"/>
@@ -2672,54 +2672,66 @@ Prøv igen...</source>
     <message>
         <location filename="src/ValidateKey.cpp" line="10"/>
         <source>Validering af licensnøgle</source>
-        <translation>License key validation</translation>
+        <translation>License Key Validation</translation>
     </message>
     <message>
         <location filename="src/ValidateKey.cpp" line="18"/>
+        <source>xvid text</source>
+        <translation>&lt;h2&gt;Xvid / DivX Video Codec&lt;/h2&gt;
+This program requires that your computer can play videos in Xvid format with MP3 audio. If you are uncertain whether your computer can do so, there are packages on the DVD which can install these for you. You can also launch them by clicking the button below.</translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="25"/>
+        <source>Installer Xvid / DivX</source>
+        <translation>Install Xvid / DivX</translation>
+    </message>
+    <message>
+        <location filename="src/ValidateKey.cpp" line="31"/>
         <source>license key text</source>
-        <translation>Input your email address and license key below. You can find your license key on the back of the pamphlet. This check requires that your computer is online and that your firewall allows connections to &lt;a href=&quot;http://learngreenlandic.com/&quot;&gt;learngreenlandic.com&lt;/a&gt; on TCP port 80.&lt;br&gt;
+        <translation>&lt;h2&gt;License Key Validation&lt;/h2&gt;
+Input your email address and license key below. You can find your license key on the back of the pamphlet. This check requires that your computer is online and that your firewall allows connections to &lt;a href=&quot;http://learngreenlandic.com/&quot;&gt;learngreenlandic.com&lt;/a&gt; on TCP port 80.&lt;br&gt;
 &lt;br&gt;
 If you encounter any issues you can contact support at &lt;a href=&quot;http://learngreenlandic.com/&quot;&gt;learngreenlandic.com&lt;/a&gt; or &lt;a href=&quot;mailto:helpdesk@learngreenlandic.com&quot;&gt;helpdesk@learngreenlandic.com&lt;/a&gt;&lt;br&gt;
 &lt;br&gt;
 &lt;b&gt;Notice:&lt;/b&gt; You may only use your license key one time for one person on one computer!</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="35"/>
+        <location filename="src/ValidateKey.cpp" line="48"/>
         <source>Email</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="36"/>
+        <location filename="src/ValidateKey.cpp" line="49"/>
         <source>Gentag email</source>
         <translation>Repeat email</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="37"/>
+        <location filename="src/ValidateKey.cpp" line="50"/>
         <source>Licensnøgle</source>
         <translation>License key</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="44"/>
+        <location filename="src/ValidateKey.cpp" line="57"/>
         <source>Valider online</source>
         <translation>Validate online</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="48"/>
+        <location filename="src/ValidateKey.cpp" line="61"/>
         <source>Afslut program</source>
         <translation>Exit application</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="57"/>
+        <location filename="src/ValidateKey.cpp" line="71"/>
         <source>Email-addresserne er ikke ens!</source>
         <translation>The email addresses don&apos;t match!</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="60"/>
+        <location filename="src/ValidateKey.cpp" line="74"/>
         <source>... checker licensnøgle via learngreenlandic.com ...</source>
         <translation>... checking license key via learngreenlandic.com ...</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="70"/>
+        <location filename="src/ValidateKey.cpp" line="84"/>
         <source>danish</source>
         <translation>english</translation>
     </message>

@@ -12,6 +12,7 @@ public:
 
 public slots:
     void checkInput();
+    void launchXvid();
     void bailOut();
     void finished(QNetworkReply *reply);
 
