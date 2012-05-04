@@ -884,7 +884,12 @@ So from us &apos;until then&apos; and no &apos;farewell&apos;
 Tino Didriksen, Tikaajaat Kristensen, Per Langgård</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="514"/>
+        <location filename="src/TaskChooser.cpp" line="516"/>
+        <source>Denne licens tilhører %1 og vil kræve fornyelse efter %2</source>
+        <translation>This license belongs to %1 and will require renewal after %2</translation>
+    </message>
+    <message>
+        <location filename="src/TaskChooser.cpp" line="524"/>
         <source>Switch to English</source>
         <translation>Skift til dansk</translation>
     </message>
@@ -2197,12 +2202,12 @@ for you must be able to handle case, person and number at the same time</transla
         <translation>Chapter 9 as PDF</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="518"/>
+        <location filename="src/TaskChooser.cpp" line="528"/>
         <source>gfx/english.png</source>
         <translation>gfx/danish.png</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="524"/>
+        <location filename="src/TaskChooser.cpp" line="534"/>
         <source>Afslut LG2</source>
         <translation>Exit LG2</translation>
     </message>
@@ -2721,17 +2726,17 @@ If you encounter any issues you can contact support at &lt;a href=&quot;http://l
         <translation>Exit application</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="71"/>
+        <location filename="src/ValidateKey.cpp" line="94"/>
         <source>Email-addresserne er ikke ens!</source>
         <translation>The email addresses don&apos;t match!</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="74"/>
+        <location filename="src/ValidateKey.cpp" line="97"/>
         <source>... checker licensnøgle via learngreenlandic.com ...</source>
         <translation>... checking license key via learngreenlandic.com ...</translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="84"/>
+        <location filename="src/ValidateKey.cpp" line="107"/>
         <source>danish</source>
         <translation>english</translation>
     </message>

@@ -5,14 +5,13 @@
 #include "ScalingGraphicsView.hpp"
 #include "CryptFile.hpp"
 #include "TaskChooser.hpp"
+#include <QtGui>
+#include <stdint.h>
 
-#include <QtGlobal>
 #if defined(Q_WS_WIN)
 
 #include <QAxWidget>
 #include <QAxObject>
-#include <QtGui>
-#include <stdint.h>
 
 class LecturePlayer : public QWidget {
     Q_OBJECT
@@ -56,8 +55,6 @@ private:
 #include <phonon/videowidget.h>
 #include <phonon/seekslider.h>
 #include <phonon/effect.h>
-#include <QtGui>
-#include <stdint.h>
 
 class LecturePlayer : public QWidget {
     Q_OBJECT

@@ -111,7 +111,12 @@ void ValidateKey::checkInput() {
 #elif defined(Q_WS_MAC)
     params.addQueryItem("os", "mac");
 #else
-    params.addQueryItem("os", "linux");
+    if (sizeof(void*) > 4) {
+        params.addQueryItem("os", "linux64");
+    }
+    else {
+        params.addQueryItem("os", "linux32");
+    }
 #endif
 
     QByteArray data;
@@ -162,8 +167,18 @@ void ValidateKey::finished(QNetworkReply *reply) {
 
     if (rv[0] == 'P') {
         QSettings settings;
-        settings.setValue("license_key", lkey->text().simplified());
+        settings.setValue("license_key", lkey->text().simplified().replace(QRegExp("\\W+"), "").toUpper());
         settings.setValue("encryption_key", rv.trimmed());
+        close();
+        return;
+    }
+    else if (rv.indexOf("site_verification")) {
+        QSettings settings;
+        QStringList rvs = rv.trimmed().split('\n');
+        foreach (QString r, rvs) {
+            QStringList rv = r.simplified().split('=');
+            settings.setValue(rv.at(0), rv.at(1));
+        }
         close();
         return;
     }

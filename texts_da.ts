@@ -887,7 +887,12 @@ Så altså ikke &apos;farvel&apos; fra os men derimod &apos;på genhør&apos;
 Tino Didriksen, Tikaajaat Kristensen, Per Langgård</translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="514"/>
+        <location filename="src/TaskChooser.cpp" line="516"/>
+        <source>Denne licens tilhører %1 og vil kræve fornyelse efter %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="src/TaskChooser.cpp" line="524"/>
         <source>Switch to English</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2037,12 +2042,12 @@ nemlig kasus, person og tal</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="518"/>
+        <location filename="src/TaskChooser.cpp" line="528"/>
         <source>gfx/english.png</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/TaskChooser.cpp" line="524"/>
+        <location filename="src/TaskChooser.cpp" line="534"/>
         <source>Afslut LG2</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2712,17 +2717,17 @@ Hvis du har problemer kan du kontakte support på &lt;a href=&quot;http://learng
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="71"/>
+        <location filename="src/ValidateKey.cpp" line="94"/>
         <source>Email-addresserne er ikke ens!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="74"/>
+        <location filename="src/ValidateKey.cpp" line="97"/>
         <source>... checker licensnøgle via learngreenlandic.com ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/ValidateKey.cpp" line="84"/>
+        <location filename="src/ValidateKey.cpp" line="107"/>
         <source>danish</source>
         <translation type="unfinished"></translation>
     </message>

@@ -511,6 +511,16 @@ translator(translator)
     middleHBox->setContentsMargins(5, 5, 5, 5);
     middleHBox->setAlignment(Qt::AlignRight|Qt::AlignTop);
 
+    QSettings settings;
+    if (!settings.value("site_title").toString().isEmpty()) {
+        QString labeltxt = QString(tr("Denne licens tilhører %1 og vil kræve fornyelse efter %2")).arg(settings.value("site_title").toString()).arg(settings.value("site_expire").toString());
+        QLabel *label = new QLabel(QString("<i>") + labeltxt + "</i>");
+        label->setStyleSheet("QWidget { border-top: 0; }");
+        //label->setWordWrap(true);
+        middleHBox->addWidget(label);
+        middleHBox->addSpacing(40);
+    }
+
     button = new QPushButton(tr("Switch to English"));
     button->setStyleSheet("QWidget { border-top: 0; }");
     button->setFlat(true);
@@ -534,7 +544,6 @@ translator(translator)
 
     setLayout(outerVBox);
 
-    QSettings settings;
     int si = settings.value("chapter", 0).toInt();
     dynamic_cast<ClickLabel*>(section_list.at(si))->mousePressEvent(0);
 }
@@ -712,6 +721,29 @@ void TaskChooser::switchSection() {
 
 void TaskChooser::checkFirstRun() {
     QSettings settings;
+
+    if (!settings.value("license_key", "").toString().isEmpty() && settings.value("license_key", "").toString().at(0) == 'V') {
+        QCryptographicHash sha1(QCryptographicHash::Sha1);
+        sha1.addData(settings.value("license_key").toString().toUtf8());
+        sha1.addData(settings.value("site_title").toString().toUtf8());
+        sha1.addData(settings.value("site_expire").toString().toUtf8());
+        sha1.addData("Keeping honest people honest.");
+        sha1.addData(settings.value("encryption_key").toString().toUtf8());
+        if (sha1.result().toHex() != settings.value("site_verification").toString().toUtf8()) {
+            settings.remove("site_expire");
+        }
+
+        QDate now = QDate::currentDate();
+        QDate expires = settings.value("site_expire").toDate();
+        if (!expires.isValid() || now > expires) {
+            settings.remove("license_key");
+            settings.remove("site_title");
+            settings.remove("site_expire");
+            settings.remove("site_verification");
+            settings.remove("encryption_key");
+        }
+    }
+
     if (settings.value("license_key", "").toString().isEmpty() || settings.value("encryption_key", "").toString().isEmpty() || settings.value("encryption_key", "").toString().at(0) != 'P') {
         ValidateKey *vk = new ValidateKey;
         vk->show();
