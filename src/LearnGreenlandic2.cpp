@@ -5,6 +5,12 @@
 #include <cstdlib>
 #include <stdint.h>
 
+#ifdef Q_WS_WIN
+    #define WIN32_LEAN_AND_MEAN
+    #define VC_EXTRALEAN
+    #include <windows.h>
+#endif
+
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
@@ -66,6 +72,9 @@ int main(int argc, char *argv[]) {
             progress.setMaximum(drives.size());
 
             foreach (QFileInfo drive, drives) {
+                if (GetDriveTypeA(drive.absolutePath().toStdString().c_str()) == DRIVE_REMOTE) {
+                    continue;
+                }
                 size_t rev = 0;
                 QFileInfo f(drive.absoluteFilePath() + "/lessons2/revision.txt");
                 progress.setLabelText(QString("Trying to read ") + f.absoluteFilePath() + " ...");
